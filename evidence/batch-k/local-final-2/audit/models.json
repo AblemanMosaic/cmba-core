@@ -1,0 +1,33 @@
+{
+  "I1": {
+    "authority_effect": "NONE",
+    "bound_files": 172,
+    "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+    "executed_test_binding": "CHECKED",
+    "external_anchor": "NOT_PROVIDED",
+    "obligations": 18,
+    "reference_files": 17,
+    "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+    "status": "PASS_REFERENCE_INTEGRITY"
+  },
+  "J1": {
+    "authority_effect": "NONE",
+    "bound_files": 172,
+    "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+    "executed_test_binding": "CHECKED",
+    "external_anchor": "NOT_PROVIDED",
+    "obligations": 28,
+    "semantic_commitment": "8734691fb74b3697a09c4eb67b57860fb3c95b2050a0185cd1c651db64dc97a8",
+    "status": "PASS_REFERENCE_INTEGRITY"
+  },
+  "K1": {
+    "authority_effect": "NONE",
+    "bound_files": 172,
+    "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+    "executed_test_binding": "CHECKED",
+    "external_anchor": "NOT_PROVIDED",
+    "obligations": 26,
+    "semantic_commitment": "397cd06aec8ce889c2fe98859732e331d1918b72d8aa6f97b7c76772fc1807f0",
+    "status": "PASS_REFERENCE_INTEGRITY"
+  }
+}

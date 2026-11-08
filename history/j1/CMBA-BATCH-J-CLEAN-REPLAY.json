@@ -1,0 +1,106 @@
+{
+  "authority_effect": "NONE",
+  "clean_test_results": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 561,
+    "skipped": 0
+  },
+  "clean_workflows": 4,
+  "conformance": {
+    "i1": {
+      "alternative_realization": false,
+      "authority_effect": "NONE",
+      "cases": 33,
+      "oracle": "EXACT_CANONICAL_RESPONSE_BYTES",
+      "status": "PASS",
+      "whole_program_equivalence": "NOT_ESTABLISHED"
+    },
+    "j1": {
+      "alternative_command_selected": false,
+      "authority_effect": "NONE",
+      "cases": 53,
+      "corpus_sha256": "3db64753a8f07bd370d4621ce7f3bfd552c0dd83a38edc6a7d2f22485f840fc6",
+      "oracle": "EXACT_CANONICAL_TYPED_RESULTS",
+      "process_groups": 4,
+      "status": "PASS",
+      "whole_program_equivalence": "NOT_ESTABLISHED"
+    }
+  },
+  "gui_regression": {
+    "authority_effect": "NONE",
+    "checks": 8,
+    "display": "Xvfb Linux",
+    "native_windows": "NOT_RUN",
+    "scope": "creation,render,explicit-context gate,positive/negative evaluation,replay,session,catalogue",
+    "status": "PASS",
+    "tk": "8.6.16"
+  },
+  "independent_review": "NOT_PERFORMED",
+  "native_crypto": {
+    "authority_effect": "NONE",
+    "backend": "libsodium.so.23",
+    "backend_version": "1.0.18",
+    "independent_review": "NOT_PERFORMED",
+    "mutated_signature_cases": 16,
+    "point_admission_cases": 68,
+    "status": "PASS",
+    "valid_signature_cases": 16
+  },
+  "native_suite_replay": "SEPARATE_SEGMENTED_FROZEN_DKN_REPLAY_NOT_REPEATED_IN_CLEAN_CMBA_LEG",
+  "platform": {
+    "machine": "x86_64",
+    "python": "3.13.5",
+    "system": "Linux"
+  },
+  "public_release_gate": "NOT_CLEARED",
+  "raw_local_run_sha256": "7b9e3d745e2e87f243cf5fc41e3193351b247e942b7b63ec7230791e7bbf7785",
+  "reproducibility": {
+    "artifacts": [
+      {
+        "bytes": 22243083,
+        "original": "CMBA-Core-0.1.0a2-BATCH-J-APPLICATIONS-CANDIDATE.zip",
+        "rebuilt_identical": true,
+        "sha256": "91c70d7f9c5bf4af335c45931ee997f873a9664e713e74ca4a0bfb3a75f2fb15"
+      },
+      {
+        "bytes": 82043,
+        "original": "cmba_core-0.1.0a2-py3-none-any.whl",
+        "rebuilt_identical": true,
+        "sha256": "a1614789d65a93199ac1399bd27ce870be4c744a3172522b3141b00fe0651920"
+      }
+    ],
+    "scope": "SERIALIZATION_OF_FROZEN_TREE_NOT_REGENERATED_TIMESTAMPED_EVIDENCE",
+    "status": "PASS"
+  },
+  "schema": "cmba.batch-j-clean-replay",
+  "semantic_models": {
+    "I1": {
+      "authority_effect": "NONE",
+      "bound_files": 131,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 18,
+      "reference_files": 17,
+      "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "J1": {
+      "authority_effect": "NONE",
+      "bound_files": 131,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 28,
+      "semantic_commitment": "8734691fb74b3697a09c4eb67b57860fb3c95b2050a0185cd1c651db64dc97a8",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    }
+  },
+  "source_archive_bytes": 22243083,
+  "source_archive_members": 285,
+  "source_archive_sha256": "91c70d7f9c5bf4af335c45931ee997f873a9664e713e74ca4a0bfb3a75f2fb15",
+  "source_fingerprint": "3ff3fe9f627a5afe48f7967721e36d9248aea245a4379ff86ddf86fa8e1b9c30",
+  "status": "PASS_SCOPED_ENGINEERING",
+  "wheel_sha256": "a1614789d65a93199ac1399bd27ce870be4c744a3172522b3141b00fe0651920"
+}

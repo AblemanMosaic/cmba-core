@@ -1,0 +1,46 @@
+{
+  "schema": "cmba.audit-preservation.r001",
+  "status": "PASS",
+  "predecessor_members": 641,
+  "runtime_files_unchanged": 52,
+  "semantic_files_unchanged": 6,
+  "corpus_files_unchanged": [
+    "interop/workbench-k1.json",
+    "interop/core-i1.json",
+    "interop/applications-j1.json"
+  ],
+  "changed": [
+    "RELEASE-BOUNDARY.json",
+    "PROGRAM-LEDGER.json",
+    "tools/verify_l.py",
+    "tools/verify_native_l.py",
+    "tests/test_l_release.py",
+    "model/REALIZATION-BINDING.json",
+    "docs/release/CLAIMS-AND-ACCEPTANCE.md",
+    "docs/release/DOCUMENT-STATUS.md",
+    "docs/release/README.md",
+    "model/j1/REALIZATION-BINDING.json",
+    "model/k1/REALIZATION-BINDING.json"
+  ],
+  "removed": [],
+  "added": [
+    "PROCESS-POSTURE.json",
+    "docs/audit-r001/FINDINGS.md",
+    "docs/audit-r001/NATIVE-ADMISSION-WORK-ORDER.md",
+    "docs/audit-r001/PIPPI-AUDIT.md",
+    "docs/audit-r001/PROCESS-MATRIX.md",
+    "docs/audit-r001/README.md",
+    "docs/audit-r001/REPLAY.md",
+    "docs/audit-r001/SOURCES.md",
+    "evidence/audit-r001/DELIVERY-RECOVERY.json",
+    "evidence/audit-r001/INITIAL-DELIVERY-INVENTORY.json",
+    "evidence/audit-r001/PLAN.json",
+    "evidence/audit-r001/PRE-REPAIR-WITNESSES.json",
+    "evidence/audit-r001/TARGETED-REPAIRS.stdout",
+    "evidence/audit-r001/TARGETED-REPAIRS.xml",
+    "evidence/audit-r001/probe_pipeline.py",
+    "tests/test_audit_r001_process.py",
+    "tools/qualification_integrity_r001.py"
+  ],
+  "authority_effect": "NONE"
+}

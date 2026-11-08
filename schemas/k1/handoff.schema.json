@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "body": {
+      "type": "object"
+    },
+    "handoff_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema": {
+      "const": "cmba.integration-handoff.k1"
+    }
+  },
+  "required": [
+    "schema",
+    "body",
+    "handoff_hash"
+  ],
+  "type": "object"
+}

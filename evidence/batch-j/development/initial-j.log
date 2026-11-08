@@ -1,0 +1,82 @@
+........................................................................ [ 30%]
+........................................................................ [ 61%]
+........................................................................ [ 92%]
+...............FFF                                                       [100%]
+=================================== FAILURES ===================================
+____________________ test_real_native_vault_and_index_read _____________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_real_native_vault_and_ind0')
+
+    def test_real_native_vault_and_index_read(tmp_path):
+        from dkn_v02 import pack
+        from dkn_v02.navigation import LocalIndex
+        from dkn_v02.vault import TransactionalVault
+        raw,m=pack({'a.txt':b'hello'},[]);root=m['logical_root']
+        vault=TransactionalVault.create(tmp_path/'vault.db');vault.put_artifact(raw)
+        original=(tmp_path/'vault.db').read_bytes()
+        r=read_collection(tmp_path/'vault.db','resolve_exact',{'logical_root':root},kind='vault')
+>       assert r['native_result']['logical_root']==root
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'logical_root'
+
+tests/test_j_interfaces.py:76: KeyError
+_____________________ test_native_namespace_and_lifecycle ______________________
+
+    def test_native_namespace_and_lifecycle():
+        from dkn_v02 import declare_genesis
+        from dkn_v02.lifecycle import lifecycle_policy,policy_reference
+        k=demo.fixture_key(20)
+        gen=declare_genesis(semantic_name='example.j',purpose='test',nonce='one',key=k)
+        r=native_dispatch({'operation':'namespace','arguments':{'genesis':gen,'transitions':[]}})
+>       assert r['native_result']['namespace_root']==gen['namespace_root']
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       KeyError: 'namespace_root'
+
+tests/test_j_interfaces.py:92: KeyError
+_______________ test_native_sam_ds_and_lifecycle_reference_cases _______________
+
+    def test_native_sam_ds_and_lifecycle_reference_cases():
+        # Replay selected exact native requests from already frozen corpora, not substitute reports.
+        import json
+        native=Path(os.environ['DKN_TEST_ROOT'])
+        corpora=[('lifecycle',native/'interop/lifecycle-f1-conformance.json'),('distributed',native/'interop/distributed-g1-conformance.json')]
+        ran=[]
+        for family,path in corpora:
+            corpus=json.loads(path.read_text())
+            for case in corpus['cases']:
+                req=case.get('request',{})
+                if req.get('schema') in ('dkn.lifecycle-request.v0.2-f1','dkn.distributed-request.v0.2-g1'):
+                    try:r=native_dispatch({'operation':family,'arguments':{'request':req}})
+                    except Refusal:continue
+                    assert r['authority_effect']=='NONE';ran.append(family);break
+>       assert set(ran)=={'lifecycle','distributed'}
+E       AssertionError: assert set() == {'distributed', 'lifecycle'}
+E         
+E         Extra items in the right set:
+E         'distributed'
+E         'lifecycle'
+E         
+E         Full diff:
+E         + set()
+E         - {
+E         -     'distributed',
+E         -     'lifecycle',
+E         - }
+
+tests/test_j_interfaces.py:110: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_j_interfaces.py::test_real_native_vault_and_index_read - KeyError: 'logical_root'
+FAILED tests/test_j_interfaces.py::test_native_namespace_and_lifecycle - KeyError: 'namespace_root'
+FAILED tests/test_j_interfaces.py::test_native_sam_ds_and_lifecycle_reference_cases - AssertionError: assert set() == {'distributed', 'lifecycle'}
+  
+  Extra items in the right set:
+  'distributed'
+  'lifecycle'
+  
+  Full diff:
+  + set()
+  - {
+  -     'distributed',
+  -     'lifecycle',
+  - }
+3 failed, 231 passed in 5.67s

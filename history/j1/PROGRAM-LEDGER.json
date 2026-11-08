@@ -1,0 +1,57 @@
+{
+  "schema": "cmba.work-program.i1",
+  "program": "CMBA Core and native Workbench I-L",
+  "current_batch": "J",
+  "build_turns_target": 4,
+  "batches": [
+    {
+      "id": "I",
+      "name": "Foundation, source inventory, compatibility and executable vertical slice",
+      "status": "IMPLEMENTED_BOUNDED",
+      "evidence": "evidence/batch-i/final-local/LOCAL-RUN.json",
+      "final_transport_evidence": "EXTERNAL_RELEASE_RECEIPT"
+    },
+    {
+      "id": "J",
+      "name": "Bounded application-family evaluators and explicit domain templates",
+      "status": "IMPLEMENTED_BOUNDED",
+      "evidence": "evidence/batch-j/final-local/LOCAL-RUN.json",
+      "final_transport_evidence": "EXTERNAL_RELEASE_RECEIPT"
+    },
+    {
+      "id": "K",
+      "name": "Integrated native workbench and controlled local workflows",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    },
+    {
+      "id": "L",
+      "name": "Consolidated qualification and independent-review handoff",
+      "status": "PLANNED_NOT_IMPLEMENTED"
+    }
+  ],
+  "catalogue_scope": {
+    "recovered_whitepaper_table_rows": 52,
+    "actual_table_sections": 8,
+    "family_mapping_records": 19,
+    "total_records": 71,
+    "implemented_built_in_profiles": 4,
+    "catalogue_presence_is_implementation": false,
+    "implemented_j1_application_profiles": 13
+  },
+  "external_gates": [
+    "target-platform replay",
+    "legacy BLAKE3 replay",
+    "fresh optional dependency resolution",
+    "independent security review",
+    "deployment-specific custody, clocks, authority and approval"
+  ],
+  "authority_effect": "NONE",
+  "public_release_gate": "NOT_CLEARED",
+  "j1_scope": {
+    "original_i1_unchanged": true,
+    "native_gui_integration": "BATCH_K_NOT_IMPLEMENTED",
+    "domain_engines": "NOT_IMPLEMENTED",
+    "endorsement_dependency": "OPTIONAL_CRYPTOGRAPHY",
+    "signing_effect": "EXPLICIT_PYTHON_ONLY_NO_KEY_PERSISTENCE"
+  }
+}

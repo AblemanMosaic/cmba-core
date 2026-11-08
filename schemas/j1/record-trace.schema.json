@@ -1,0 +1,151 @@
+{
+  "$defs": {
+    "record-session": {
+      "additionalProperties": false,
+      "properties": {
+        "events": {
+          "items": {
+            "$ref": "#/$defs/session-event"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array"
+        },
+        "source": {
+          "additionalProperties": false,
+          "properties": {
+            "coverage": {
+              "const": "SUPPLIED_RECORD_ONLY"
+            },
+            "sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "text": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "text",
+            "sha256",
+            "coverage"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "source",
+        "events"
+      ],
+      "type": "object"
+    },
+    "record-trace": {
+      "additionalProperties": false,
+      "properties": {
+        "claims": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "event_refs": {
+                "items": {
+                  "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                  "type": "string"
+                },
+                "maxItems": 64,
+                "minItems": 1,
+                "type": "array"
+              },
+              "id": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "event_refs"
+            ],
+            "type": "object"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array"
+        },
+        "session": {
+          "$ref": "#/$defs/record-session"
+        }
+      },
+      "required": [
+        "session",
+        "claims"
+      ],
+      "type": "object"
+    },
+    "session-event": {
+      "additionalProperties": false,
+      "properties": {
+        "attributed_to": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "end_byte": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "interpretation": {
+          "type": "string"
+        },
+        "quote": {
+          "type": "string"
+        },
+        "references": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        },
+        "start_byte": {
+          "maximum": 9223372036854775807,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "type": {
+          "enum": [
+            "requirement",
+            "decision",
+            "alternative",
+            "uncertainty",
+            "trigger",
+            "output",
+            "claim"
+          ]
+        }
+      },
+      "required": [
+        "id",
+        "type",
+        "attributed_to",
+        "start_byte",
+        "end_byte",
+        "quote",
+        "interpretation",
+        "references"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-trace",
+  "$ref": "#/$defs/record-trace",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,82 @@
+{
+  "$defs": {
+    "record-observation": {
+      "additionalProperties": false,
+      "properties": {
+        "calibration": {
+          "$ref": "#/$defs/reference"
+        },
+        "instrument": {
+          "$ref": "#/$defs/reference"
+        },
+        "jurisdiction": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "measured_digest": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "measured_size": {
+          "maximum": 65536,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "measurement_type": {
+          "const": "SUPPLIED_BYTES_RECOMPUTED"
+        },
+        "method": {
+          "$ref": "#/$defs/reference"
+        },
+        "raw_hex": {
+          "maxLength": 131072,
+          "pattern": "^(?:[0-9a-f]{2})*$",
+          "type": "string"
+        },
+        "subject": {
+          "$ref": "#/$defs/reference"
+        }
+      },
+      "required": [
+        "subject",
+        "raw_hex",
+        "measured_digest",
+        "measured_size",
+        "instrument",
+        "method",
+        "calibration",
+        "jurisdiction",
+        "measurement_type"
+      ],
+      "type": "object"
+    },
+    "reference": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "enum": [
+            "SHA-256",
+            "BLAKE3-256"
+          ]
+        },
+        "digest_hex": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "scheme": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scheme",
+        "algorithm",
+        "digest_hex"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-observation",
+  "$ref": "#/$defs/record-observation",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

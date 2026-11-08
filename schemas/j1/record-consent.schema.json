@@ -1,0 +1,67 @@
+{
+  "$defs": {
+    "record-consent": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "actor": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "facts": {
+          "type": "object"
+        },
+        "jurisdiction": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "renewal_context": {
+          "type": "object"
+        },
+        "subject": {
+          "$ref": "#/$defs/reference"
+        }
+      },
+      "required": [
+        "subject",
+        "actor",
+        "action",
+        "jurisdiction",
+        "facts",
+        "renewal_context"
+      ],
+      "type": "object"
+    },
+    "reference": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "enum": [
+            "SHA-256",
+            "BLAKE3-256"
+          ]
+        },
+        "digest_hex": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "scheme": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scheme",
+        "algorithm",
+        "digest_hex"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-consent",
+  "$ref": "#/$defs/record-consent",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

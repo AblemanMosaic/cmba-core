@@ -1,0 +1,73 @@
+{
+  "$defs": {
+    "record-reconciliation": {
+      "additionalProperties": false,
+      "properties": {
+        "proposed": {
+          "additionalProperties": false,
+          "properties": {
+            "conflicts": {
+              "type": "object"
+            },
+            "merged": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "merged",
+            "conflicts"
+          ],
+          "type": "object"
+        },
+        "rule": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "const": "equal-or-conflict"
+            },
+            "version": {
+              "const": 1
+            }
+          },
+          "required": [
+            "id",
+            "version"
+          ],
+          "type": "object"
+        },
+        "snapshots": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "values": {
+                "maxProperties": 64,
+                "type": "object"
+              }
+            },
+            "required": [
+              "id",
+              "values"
+            ],
+            "type": "object"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "snapshots",
+        "rule",
+        "proposed"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-reconciliation",
+  "$ref": "#/$defs/record-reconciliation",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

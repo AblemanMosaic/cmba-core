@@ -1,0 +1,123 @@
+{
+  "authority_effect": "NONE",
+  "batches": [
+    {
+      "evidence": "evidence/batch-i/final-local/LOCAL-RUN.json",
+      "final_transport_evidence": "EXTERNAL_RELEASE_RECEIPT",
+      "id": "I",
+      "name": "Foundation, source inventory, compatibility and executable vertical slice",
+      "status": "IMPLEMENTED_BOUNDED"
+    },
+    {
+      "evidence": "evidence/batch-j/final-local/LOCAL-RUN.json",
+      "final_transport_evidence": "EXTERNAL_RELEASE_RECEIPT",
+      "id": "J",
+      "name": "Bounded application-family evaluators and explicit domain templates",
+      "status": "IMPLEMENTED_BOUNDED"
+    },
+    {
+      "evidence": "evidence/batch-k/final-local/LOCAL-RUN.json",
+      "final_transport_evidence": "EXTERNAL_RELEASE_RECEIPT",
+      "id": "K",
+      "name": "Integrated native workbench and controlled local workflows",
+      "status": "IMPLEMENTED_BOUNDED"
+    },
+    {
+      "evidence": "evidence/batch-l/final-local/LOCAL-RUN.json",
+      "final_transport_evidence": "EXTERNAL_RELEASE_ENVELOPE",
+      "id": "L",
+      "name": "Consolidated qualification and independent-review handoff",
+      "status": "QUALIFICATION_CANDIDATE"
+    }
+  ],
+  "build_turns_target": 4,
+  "catalogue_scope": {
+    "actual_table_sections": 8,
+    "catalogue_presence_is_implementation": false,
+    "family_mapping_records": 19,
+    "implemented_built_in_profiles": 4,
+    "implemented_j1_application_profiles": 13,
+    "recovered_whitepaper_table_rows": 52,
+    "total_records": 71
+  },
+  "current_batch": "L",
+  "external_gates": [
+    "WSL/macOS replay",
+    "independent security review",
+    "deployment-specific custody, clocks, authority and approval",
+    "native P/PPI admission and host enforcement"
+  ],
+  "j1_scope": {
+    "domain_engines": "NOT_IMPLEMENTED",
+    "endorsement_dependency": "OPTIONAL_CRYPTOGRAPHY",
+    "native_gui_integration": "WB-K1_INTEGRATED_EXPLICIT_SELECTION",
+    "original_i1_unchanged": true,
+    "signing_effect": "EXPLICIT_PYTHON_ONLY_NO_KEY_PERSISTENCE"
+  },
+  "k1_scope": {
+    "arbitrary_executable_runner": false,
+    "dependency_on_gui_for_core": false,
+    "effect_class": "EXPLICIT_CREATE_ONLY_LOCAL_JSON",
+    "gui_pages": 10,
+    "live_host_authorization": "SEPARATE_FROM_ASSESSMENT",
+    "private_data_scrubbing": false,
+    "profile": "WB-K1"
+  },
+  "l_scope": {
+    "external_review_submission": false,
+    "node_small_core": "SIX_OPERATIONS_NOT_FULL_PORT",
+    "runtime_features_added": false,
+    "source_archive_verifier": "STRICT_PORTABLE_REGULAR_MEMBERS_EXACT_TYPES"
+  },
+  "post_build_review": {
+    "feature_expansion": false,
+    "findings": "docs/audit-r001/FINDINGS.md",
+    "id": "AUDIT-r001",
+    "native_pippi": "NOT_ESTABLISHED",
+    "process_posture": "PROCESS-POSTURE.json",
+    "type": "SAME_AUTHOR_PROCESS_AND_QUALIFICATION_REVIEW"
+  },
+  "successor_review": {
+    "id": "WINQUAL-r003",
+    "version": "0.1.0a6",
+    "predecessor_source_sha256": "0967d945170407d141bfb4e0102950f35f5c74c8366e0410c20d6c43227e070b",
+    "runtime_change": "EVIDENCE_WITNESS_AND_TERMINAL_CLOSURE_NO_RUNTIME_FEATURES",
+    "runtime_changes": [
+      "NONE_A6_RETAINS_A5_RUNTIME"
+    ],
+    "semantic_transition": "I1_J1_EXACT_K1_COMMITMENT_RENEWED_FOR_PLATFORM_AMENDMENT",
+    "semantic_obligations": "18_I1_EXACT_28_J1_AND_26_K1_COUNTS_STABLE_J01_K01_REVISED",
+    "predecessor_semantic_commitments": {
+      "I1": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+      "J1": "9f8808f3e3f2862f2403355d5484e39475472cc8ad1d4011c0c9a53c32f9e8d3",
+      "K1": "456c8ddd1480e0ee92982162bf245c0418738640b33a73469464a37a68092ef8"
+    },
+    "successor_semantic_commitments": {
+      "I1": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+      "J1": "9f8808f3e3f2862f2403355d5484e39475472cc8ad1d4011c0c9a53c32f9e8d3",
+      "K1": "5df7a5b7230843bba99b93115c08a97d457b82366225d700cb3bb5f7313e9a7b"
+    },
+    "native_pippi": "NOT_ESTABLISHED",
+    "independent_review": "NOT_PERFORMED",
+    "predecessor_independent_review": "WINQUAL_R002_CHANGES_REQUESTED_TARGETED_EVIDENCE_CLOSURE",
+    "type": "SAME_AUTHOR_QUALIFICATION_AND_CONTRACT_REPAIR"
+  },
+  "qualification_gate_evidence": {
+    "fresh_optional_dependency_resolution": "REQUIRES_HASH_BOUND_OUTER_DELIVERY_RECEIPT",
+    "genuine_legacy_blake3_replay": "REQUIRES_HASH_BOUND_OUTER_DELIVERY_RECEIPT",
+    "native_dkn_platform_coverage": "REQUIRES_EXACT_IDENTITY_DISPOSITIONS_IN_OUTER_DELIVERY",
+    "unrestricted_windows_reparse_point_replay": "REQUIRES_HASH_BOUND_OUTER_DELIVERY_RECEIPT"
+  },
+  "publication_successor": {
+    "agent_protocol": "v1",
+    "distribution_version": "0.1.0a7",
+    "independent_review": "NOT_PERFORMED",
+    "predecessor_source_sha256": "1eff3fd4038fdd0955d30d0bb36079e01d9579393339ff23be2b8f43296e451f",
+    "public_release_scope": "LABELED_ALPHA_RESEARCH_PREVIEW",
+    "runtime_change": "ADDITIVE_AGENT_WRAPPER_AND_PUBLICATION_LAYER",
+    "status": "PUBLICATION_CLOSURE_CANDIDATE"
+  },
+  "program": "CMBA Core and native Workbench I-L",
+  "public_release_gate": "CLEARED_FOR_LABELED_RESEARCH_PREVIEW",
+  "schema": "cmba.work-program.i1"
+}

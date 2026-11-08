@@ -1,0 +1,49 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cmba-core"
+version = "0.1.0a7"
+description = "Typed multidimensional bindings, explicit profile evaluation, and a local inspection workbench"
+readme = "README.md"
+requires-python = ">=3.12"
+license = "Apache-2.0"
+license-files = ["LICENSE", "NOTICE"]
+keywords = ["cryptography", "content-addressing", "provenance", "agents", "reproducibility"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Programming Language :: Python :: 3.13",
+  "Topic :: Security :: Cryptography",
+  "Typing :: Typed",
+]
+dependencies = []
+
+[project.optional-dependencies]
+signing = ["cryptography>=46,<47"]
+dkn = ["dkn-core==0.2.0rc5"]
+test = ["pytest>=9,<10", "jsonschema>=4.23,<5", "pillow>=11,<13"]
+dev = ["pytest>=9,<10", "jsonschema>=4.23,<5", "pillow>=11,<13", "build>=1.2,<2"]
+
+[project.scripts]
+cmba-app = "cmba_core.j1.cli:main"
+cmba = "cmba_core.cli:main"
+cmba-workbench = "cmba_workbench.k1.app:main"
+cmba-workbench-i1 = "cmba_workbench.app:main"
+cmba-wb = "cmba_workbench.k1.cli:main"
+cmba-export = "cmba_workbench.k1.cli:export_main"
+cmba-agent = "cmba_agent.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+cmba_core = ["data/*.json"]
+"cmba_workbench.k1" = ["data/*.json"]
+cmba_agent = ["data/*.json"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

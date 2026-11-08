@@ -1,0 +1,1055 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "oneOf": [
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "bundle": {
+              "additionalProperties": false,
+              "properties": {
+                "binding": {
+                  "type": "object"
+                },
+                "context": {
+                  "type": "object"
+                },
+                "schema": {
+                  "enum": [
+                    "cmba.workbench-bundle.v0.1-i1",
+                    "cmba.workbench-bundle.j1"
+                  ]
+                },
+                "values": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "schema",
+                "binding",
+                "values",
+                "context"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "bundle"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "inspect"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "now": {
+              "minimum": 0,
+              "type": "integer"
+            },
+            "parameters": {
+              "type": "object"
+            },
+            "profile_id": {
+              "type": "string"
+            },
+            "record": {
+              "type": "object"
+            },
+            "relations": {
+              "items": {
+                "type": "object"
+              },
+              "maxItems": 256,
+              "type": "array"
+            }
+          },
+          "required": [
+            "profile_id",
+            "record",
+            "now",
+            "parameters",
+            "relations"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "author"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "bundle": {
+              "additionalProperties": false,
+              "properties": {
+                "binding": {
+                  "type": "object"
+                },
+                "context": {
+                  "type": "object"
+                },
+                "schema": {
+                  "enum": [
+                    "cmba.workbench-bundle.v0.1-i1",
+                    "cmba.workbench-bundle.j1"
+                  ]
+                },
+                "values": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "schema",
+                "binding",
+                "values",
+                "context"
+              ],
+              "type": "object"
+            },
+            "reader_context": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "bundle",
+            "reader_context"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "evaluate"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "packet": {
+              "additionalProperties": false,
+              "properties": {
+                "bundle": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "binding": {
+                      "type": "object"
+                    },
+                    "context": {
+                      "type": "object"
+                    },
+                    "schema": {
+                      "enum": [
+                        "cmba.workbench-bundle.v0.1-i1",
+                        "cmba.workbench-bundle.j1"
+                      ]
+                    },
+                    "values": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "schema",
+                    "binding",
+                    "values",
+                    "context"
+                  ],
+                  "type": "object"
+                },
+                "context": {
+                  "type": "object"
+                },
+                "context_source": {
+                  "enum": [
+                    "READER_SELECTED",
+                    "DOCUMENT_DEMO_UNTRUSTED"
+                  ]
+                },
+                "document_id": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "receipt": {
+                  "type": "object"
+                },
+                "schema": {
+                  "const": "cmba.receipt-packet.k1"
+                }
+              },
+              "required": [
+                "schema",
+                "document_id",
+                "bundle",
+                "context",
+                "context_source",
+                "receipt"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "packet"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "replay"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "left": {
+              "additionalProperties": false,
+              "properties": {
+                "binding": {
+                  "type": "object"
+                },
+                "context": {
+                  "type": "object"
+                },
+                "schema": {
+                  "enum": [
+                    "cmba.workbench-bundle.v0.1-i1",
+                    "cmba.workbench-bundle.j1"
+                  ]
+                },
+                "values": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "schema",
+                "binding",
+                "values",
+                "context"
+              ],
+              "type": "object"
+            },
+            "right": {
+              "additionalProperties": false,
+              "properties": {
+                "binding": {
+                  "type": "object"
+                },
+                "context": {
+                  "type": "object"
+                },
+                "schema": {
+                  "enum": [
+                    "cmba.workbench-bundle.v0.1-i1",
+                    "cmba.workbench-bundle.j1"
+                  ]
+                },
+                "values": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "schema",
+                "binding",
+                "values",
+                "context"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "left",
+            "right"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "compare"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "left": {
+              "additionalProperties": false,
+              "properties": {
+                "bundle": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "binding": {
+                      "type": "object"
+                    },
+                    "context": {
+                      "type": "object"
+                    },
+                    "schema": {
+                      "enum": [
+                        "cmba.workbench-bundle.v0.1-i1",
+                        "cmba.workbench-bundle.j1"
+                      ]
+                    },
+                    "values": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "schema",
+                    "binding",
+                    "values",
+                    "context"
+                  ],
+                  "type": "object"
+                },
+                "context": {
+                  "type": "object"
+                },
+                "context_source": {
+                  "enum": [
+                    "READER_SELECTED",
+                    "DOCUMENT_DEMO_UNTRUSTED"
+                  ]
+                },
+                "document_id": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "receipt": {
+                  "type": "object"
+                },
+                "schema": {
+                  "const": "cmba.receipt-packet.k1"
+                }
+              },
+              "required": [
+                "schema",
+                "document_id",
+                "bundle",
+                "context",
+                "context_source",
+                "receipt"
+              ],
+              "type": "object"
+            },
+            "right": {
+              "additionalProperties": false,
+              "properties": {
+                "bundle": {
+                  "additionalProperties": false,
+                  "properties": {
+                    "binding": {
+                      "type": "object"
+                    },
+                    "context": {
+                      "type": "object"
+                    },
+                    "schema": {
+                      "enum": [
+                        "cmba.workbench-bundle.v0.1-i1",
+                        "cmba.workbench-bundle.j1"
+                      ]
+                    },
+                    "values": {
+                      "type": "object"
+                    }
+                  },
+                  "required": [
+                    "schema",
+                    "binding",
+                    "values",
+                    "context"
+                  ],
+                  "type": "object"
+                },
+                "context": {
+                  "type": "object"
+                },
+                "context_source": {
+                  "enum": [
+                    "READER_SELECTED",
+                    "DOCUMENT_DEMO_UNTRUSTED"
+                  ]
+                },
+                "document_id": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "receipt": {
+                  "type": "object"
+                },
+                "schema": {
+                  "const": "cmba.receipt-packet.k1"
+                }
+              },
+              "required": [
+                "schema",
+                "document_id",
+                "bundle",
+                "context",
+                "context_source",
+                "receipt"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "left",
+            "right"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "compare-receipts"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "max_edges": {
+              "maximum": 256,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "max_nodes": {
+              "maximum": 64,
+              "minimum": 1,
+              "type": "integer"
+            },
+            "workspace": {
+              "additionalProperties": false,
+              "properties": {
+                "authority_effect": {
+                  "const": "NONE"
+                },
+                "documents": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "bundle": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "binding": {
+                            "type": "object"
+                          },
+                          "context": {
+                            "type": "object"
+                          },
+                          "schema": {
+                            "enum": [
+                              "cmba.workbench-bundle.v0.1-i1",
+                              "cmba.workbench-bundle.j1"
+                            ]
+                          },
+                          "values": {
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "schema",
+                          "binding",
+                          "values",
+                          "context"
+                        ],
+                        "type": "object"
+                      },
+                      "document_id": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      },
+                      "label": {
+                        "maxLength": 128,
+                        "minLength": 1,
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "document_id",
+                      "label",
+                      "bundle"
+                    ],
+                    "type": "object"
+                  },
+                  "maxItems": 64,
+                  "type": "array"
+                },
+                "history": {
+                  "items": {
+                    "additionalProperties": false,
+                    "properties": {
+                      "bundle": {
+                        "additionalProperties": false,
+                        "properties": {
+                          "binding": {
+                            "type": "object"
+                          },
+                          "context": {
+                            "type": "object"
+                          },
+                          "schema": {
+                            "enum": [
+                              "cmba.workbench-bundle.v0.1-i1",
+                              "cmba.workbench-bundle.j1"
+                            ]
+                          },
+                          "values": {
+                            "type": "object"
+                          }
+                        },
+                        "required": [
+                          "schema",
+                          "binding",
+                          "values",
+                          "context"
+                        ],
+                        "type": "object"
+                      },
+                      "context": {
+                        "type": "object"
+                      },
+                      "context_source": {
+                        "enum": [
+                          "READER_SELECTED",
+                          "DOCUMENT_DEMO_UNTRUSTED"
+                        ]
+                      },
+                      "document_id": {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      },
+                      "receipt": {
+                        "type": "object"
+                      }
+                    },
+                    "required": [
+                      "document_id",
+                      "bundle",
+                      "context",
+                      "context_source",
+                      "receipt"
+                    ],
+                    "type": "object"
+                  },
+                  "maxItems": 128,
+                  "type": "array"
+                },
+                "schema": {
+                  "const": "cmba.workspace.k1"
+                },
+                "trust_state": {
+                  "const": "NOT_SERIALIZED"
+                }
+              },
+              "required": [
+                "schema",
+                "documents",
+                "history",
+                "trust_state",
+                "authority_effect"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "workspace",
+            "max_nodes",
+            "max_edges"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "navigate"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "expected_root": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            },
+            "labels": {
+              "items": {
+                "type": "string"
+              },
+              "maxItems": 64,
+              "type": "array"
+            },
+            "private": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "private",
+            "labels",
+            "expected_root"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "disclosure-preview"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "configuration": {
+              "additionalProperties": false,
+              "properties": {
+                "amendment": {
+                  "enum": [
+                    "new-root",
+                    "lifecycle-f1",
+                    "silent-rewrite"
+                  ]
+                },
+                "anchor": {
+                  "enum": [
+                    "reader-pin",
+                    "recognized-endorsements",
+                    "popularity"
+                  ]
+                },
+                "disclosure": {
+                  "enum": [
+                    "full",
+                    "salted-inclusion",
+                    "encrypted-private"
+                  ]
+                },
+                "granularity": {
+                  "enum": [
+                    "object",
+                    "bounded-records",
+                    "unbounded-stream"
+                  ]
+                },
+                "time": {
+                  "enum": [
+                    "supplied-snapshot",
+                    "finite-validity",
+                    "globally-current"
+                  ]
+                },
+                "topology": {
+                  "enum": [
+                    "object",
+                    "acyclic-graph",
+                    "cyclic-consensus"
+                  ]
+                }
+              },
+              "required": [
+                "topology",
+                "granularity",
+                "disclosure",
+                "anchor",
+                "time",
+                "amendment"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "configuration"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "design"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "left": {
+              "additionalProperties": false,
+              "properties": {
+                "claimed_results": {
+                  "type": "object"
+                },
+                "corpus_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "realization_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "semantic_commitment": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "semantic_commitment",
+                "realization_sha256",
+                "corpus_sha256",
+                "claimed_results"
+              ],
+              "type": "object"
+            },
+            "right": {
+              "additionalProperties": false,
+              "properties": {
+                "claimed_results": {
+                  "type": "object"
+                },
+                "corpus_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "realization_sha256": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                },
+                "semantic_commitment": {
+                  "pattern": "^[0-9a-f]{64}$",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "semantic_commitment",
+                "realization_sha256",
+                "corpus_sha256",
+                "claimed_results"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "left",
+            "right"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "qualification"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {
+            "bundle": {
+              "additionalProperties": false,
+              "properties": {
+                "binding": {
+                  "type": "object"
+                },
+                "context": {
+                  "type": "object"
+                },
+                "schema": {
+                  "enum": [
+                    "cmba.workbench-bundle.v0.1-i1",
+                    "cmba.workbench-bundle.j1"
+                  ]
+                },
+                "values": {
+                  "type": "object"
+                }
+              },
+              "required": [
+                "schema",
+                "binding",
+                "values",
+                "context"
+              ],
+              "type": "object"
+            },
+            "receipt_packet": {
+              "anyOf": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "bundle": {
+                      "additionalProperties": false,
+                      "properties": {
+                        "binding": {
+                          "type": "object"
+                        },
+                        "context": {
+                          "type": "object"
+                        },
+                        "schema": {
+                          "enum": [
+                            "cmba.workbench-bundle.v0.1-i1",
+                            "cmba.workbench-bundle.j1"
+                          ]
+                        },
+                        "values": {
+                          "type": "object"
+                        }
+                      },
+                      "required": [
+                        "schema",
+                        "binding",
+                        "values",
+                        "context"
+                      ],
+                      "type": "object"
+                    },
+                    "context": {
+                      "type": "object"
+                    },
+                    "context_source": {
+                      "enum": [
+                        "READER_SELECTED",
+                        "DOCUMENT_DEMO_UNTRUSTED"
+                      ]
+                    },
+                    "document_id": {
+                      "pattern": "^[0-9a-f]{64}$",
+                      "type": "string"
+                    },
+                    "receipt": {
+                      "type": "object"
+                    },
+                    "schema": {
+                      "const": "cmba.receipt-packet.k1"
+                    }
+                  },
+                  "required": [
+                    "schema",
+                    "document_id",
+                    "bundle",
+                    "context",
+                    "context_source",
+                    "receipt"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "target": {
+              "enum": [
+                "dkn",
+                "ccp",
+                "ucm",
+                "pippi",
+                "courthouse"
+              ]
+            }
+          },
+          "required": [
+            "target",
+            "bundle",
+            "receipt_packet"
+          ],
+          "type": "object"
+        },
+        "operation": {
+          "const": "handoff"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {},
+          "required": [],
+          "type": "object"
+        },
+        "operation": {
+          "const": "capabilities"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {},
+          "required": [],
+          "type": "object"
+        },
+        "operation": {
+          "const": "catalogue"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "additionalProperties": false,
+          "properties": {},
+          "required": [],
+          "type": "object"
+        },
+        "operation": {
+          "const": "installed-qualification"
+        },
+        "schema": {
+          "const": "cmba.workbench-request.k1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    }
+  ]
+}

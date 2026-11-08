@@ -1,0 +1,35 @@
+........................................................................ [  9%]
+........................................................................ [ 18%]
+........................................................................ [ 28%]
+........................................................................ [ 37%]
+........................................................................ [ 47%]
+........................................................................ [ 56%]
+........................................................................ [ 66%]
+........................................................................ [ 75%]
+........................................................................ [ 85%]
+............F........................................................... [ 94%]
+......................................                                   [100%]
+=================================== FAILURES ===================================
+______________________ test_actual_integrated_native_gui _______________________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-3/test_actual_integrated_native_0')
+
+    def test_actual_integrated_native_gui(tmp_path):
+        command=[sys.executable,str(ROOT/'tools/smoke_workbench_k.py'),'--out',str(tmp_path/'gui.json')]
+        if not os.environ.get('DISPLAY'):
+            assert shutil.which('xvfb-run'), 'A real display or Xvfb is required; this leg is NOT optional.'
+            command=['xvfb-run','-a','-s','-screen 0 1600x1100x24']+command
+        p=subprocess.run(command,cwd=ROOT,capture_output=True,timeout=90)
+>       assert p.returncode==0,(p.stdout,p.stderr)
+E       AssertionError: (b'{"status": "FAIL", "error": "TclError:couldn\'t connect to display \\":0\\"", "authority_effect": "NONE"}
+E         ', b'')
+E       assert 2 == 0
+E        +  where 2 = CompletedProcess(args=['/opt/pyvenv/bin/python', '/mnt/data/cmba_batch_k_work/tools/smoke_workbench_k.py', '--out', '/...status": "FAIL", "error": "TclError:couldn\'t connect to display \\":0\\"", "authority_effect": "NONE"}\n', stderr=b'').returncode
+
+tests/test_k_gui_contract.py:13: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_k_gui_contract.py::test_actual_integrated_native_gui - AssertionError: (b'{"status": "FAIL", "error": "TclError:couldn\'t connect to display \\":0\\"", "authority_effect": "NONE"}
+  ', b'')
+assert 2 == 0
+ +  where 2 = CompletedProcess(args=['/opt/pyvenv/bin/python', '/mnt/data/cmba_batch_k_work/tools/smoke_workbench_k.py', '--out', '/...status": "FAIL", "error": "TclError:couldn\'t connect to display \\":0\\"", "authority_effect": "NONE"}\n', stderr=b'').returncode
+1 failed, 757 passed in 21.86s

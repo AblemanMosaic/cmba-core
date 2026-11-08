@@ -1,0 +1,217 @@
+{
+  "artifacts": [
+    {
+      "bytes": 35185078,
+      "path": "CMBA-Core-0.1.0a3-BATCH-K-WORKBENCH-CANDIDATE.zip",
+      "sha256": "e2fd92eddb6fd5138665c016b4dc94f54196b8dc7de9995c4370cdbd01c911da"
+    },
+    {
+      "bytes": 110507,
+      "path": "cmba_core-0.1.0a3-py3-none-any.whl",
+      "sha256": "4ad2cceeb6edff17ae45622f2b6a1708111551cfa3ab65da9bcfb2bbaa6df95a"
+    },
+    {
+      "bytes": 347487,
+      "path": "CMBA-BATCH-K-CLEAN-REPLAY-EVIDENCE.zip",
+      "sha256": "853fe15a32a1e1bdc9f09a18bc4d8783f484a3cacb0be2a70196a85a235cdbb2"
+    },
+    {
+      "bytes": 6403,
+      "path": "CMBA-BATCH-K-CLEAN-REPLAY.json",
+      "sha256": "c8e8ae31ac26b014d7dc49f59cb4e00c1102edc6e44c8874e7ba8963e56542ff"
+    },
+    {
+      "bytes": 5630,
+      "path": "CMBA-BATCH-K-HANDOFF.md",
+      "sha256": "08bf4b0a1cc6eca0702e11b38cde72d3dcc3d4ca09f4c60f276da203eae227fa"
+    },
+    {
+      "bytes": 145102,
+      "path": "CMBA-BATCH-K-WORKBENCH.png",
+      "sha256": "1ad120ffae2a4935e0e3369a1b7ab0232949735083883593692d5b8c10ed281b"
+    }
+  ],
+  "authority_effect": "NONE",
+  "claim_boundary": {
+    "authorizes_execution": false,
+    "hostile_OS_sandbox": false,
+    "live_integration": false,
+    "local_effect": "EXPLICIT_CREATE_ONLY_FILE_EXPORT",
+    "secret_scrubbing": false,
+    "whole_program_equivalence_proof": false
+  },
+  "conformance": {
+    "I1": 33,
+    "J1": 53,
+    "K1": 42,
+    "comparison": "EXACT_CANONICAL_RESPONSES",
+    "included_in_suite": true,
+    "independent_second_implementation": false
+  },
+  "context": {
+    "dependencies": {
+      "Pillow": "12.3.0",
+      "cryptography": "46.0.4",
+      "jsonschema": "4.26.0",
+      "pytest": "9.0.2"
+    },
+    "executable": "/opt/pyvenv/bin/python",
+    "machine": "x86_64",
+    "native": {
+      "runtime_files": 43,
+      "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+      "status": "PASS"
+    },
+    "prefix": "/opt/pyvenv",
+    "pytest_plugin_autoload": "DISABLED",
+    "python": "3.13.5",
+    "source_fingerprint": "94004ff09eaede6711a6aa23ba585341acca8bc8050b2ee290f21c20b9f12884",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "distribution": "cmba-core",
+  "distribution_version": "0.1.0a3",
+  "gui": {
+    "checks": 48,
+    "clean_extraction": "PASS",
+    "environment": "ACTUAL_TK_UNDER_XVFB",
+    "human_approval": "SIMULATED_GUI_OPERATOR_DECISION_IN_TESTS",
+    "installed": "PASS",
+    "source": "PASS"
+  },
+  "independent_review": "NOT_PERFORMED",
+  "installation": {
+    "core_only": "PASS",
+    "core_runtime_dependencies": "STDLIB_ONLY",
+    "fresh_dependency_resolution": "NOT_ESTABLISHED",
+    "optional": "PASS",
+    "optional_dependency_source": "INVENTORIED_COPIES_OF_GENUINE_PREINSTALLED_DISTRIBUTIONS",
+    "payload_files_compared": 52,
+    "pip_check": "PASS"
+  },
+  "material_repairs": [
+    "expiry rechecked immediately before final installation",
+    "explicit test display",
+    "native collection verbosity",
+    "probe API correction"
+  ],
+  "models": {
+    "I1": {
+      "authority_effect": "NONE",
+      "bound_files": 172,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 18,
+      "reference_files": 17,
+      "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "J1": {
+      "authority_effect": "NONE",
+      "bound_files": 172,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 28,
+      "semantic_commitment": "8734691fb74b3697a09c4eb67b57860fb3c95b2050a0185cd1c651db64dc97a8",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "K1": {
+      "authority_effect": "NONE",
+      "bound_files": 172,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 26,
+      "semantic_commitment": "d248731d2654095abd1de21f0d7bcb09fc146f603c44dc16c9bbd5e1e9936431",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    }
+  },
+  "native_crypto": {
+    "authority_effect": "NONE",
+    "backend": "libsodium.so.23",
+    "backend_version": "1.0.18",
+    "independent_review": "NOT_PERFORMED",
+    "mutated_signature_cases": 16,
+    "point_admission_cases": 68,
+    "status": "PASS",
+    "valid_signature_cases": 16
+  },
+  "native_dkn_tests": {
+    "full_historical_release_stages": "NOT_REPLAYED",
+    "groups": 4,
+    "identity_coverage": "EXACT_FULL_COLLECTION",
+    "legacy": "NOT_EXECUTED_GENUINE_BLAKE3_UNAVAILABLE",
+    "passed": 1173
+  },
+  "predecessor_sha256": "91c70d7f9c5bf4af335c45931ee997f873a9664e713e74ca4a0bfb3a75f2fb15",
+  "preservation": {
+    "I1_J1_semantic_bodies_commitments_and_corpora": "BYTE_IDENTICAL",
+    "authority_effect": "NONE",
+    "changes": [
+      {
+        "new_sha256": "5c904cb201b54f05ee85d86ce5183f38d89f3c5ecb91482dcfe9c32220526d6b",
+        "old_sha256": "a2889f28b533fc80879d89c3e85c2ba39bb201cfeeb125cfabfc5af667641e9b",
+        "path": "PROGRAM-LEDGER.json"
+      },
+      {
+        "new_sha256": "c339c4ba428b8d3c25b5d6c9402cde24b0ebd534463569badb618102cb2f0dcd",
+        "old_sha256": "f60bd4c964bf029aeb3032ea7e649614afdb87e42e005416d4db9cf11674713b",
+        "path": "README.md"
+      },
+      {
+        "new_sha256": "fc14bfaa48b74ae1af8ce9102a25be13aad4e4f50f25ed7f7b5d12e0a0a35203",
+        "old_sha256": "d0820b0d6121d7a91ed797293c1c4a6c5fee420f2c791b965b113bb887b3ce75",
+        "path": "model/REALIZATION-BINDING.json"
+      },
+      {
+        "new_sha256": "136ddb962d2a5c944bc4a543bf481b6a1c1a8f8d4f5fd157267bb367df13c623",
+        "old_sha256": "2d926e52d64c6a1601cca971496ecfbbfcf48c4f28be4f0c852e3213dac4934d",
+        "path": "model/j1/REALIZATION-BINDING.json"
+      },
+      {
+        "new_sha256": "f113405c268f37051c463dfa6847004236ab3ba99a9b1304315ddbd362a576a1",
+        "old_sha256": "3c7e02d6a804c1f671d45535578440dbcb8cbfe0224d4e14c520bdcc018a9fa5",
+        "path": "pyproject.toml"
+      }
+    ],
+    "inherited_members": 285,
+    "inventory": "REGENERATED_ON_FREEZE_SEPARATE_FROM_THIS_COMPARISON",
+    "predecessor_sha256": "91c70d7f9c5bf4af335c45931ee997f873a9664e713e74ca4a0bfb3a75f2fb15",
+    "removed": [],
+    "runtime_unchanged": 41,
+    "schema": "cmba.k-preservation",
+    "unchanged": 279
+  },
+  "profile": "WB-K1",
+  "public_release_gate": "NOT_CLEARED",
+  "publication": "NOT_PERFORMED",
+  "remaining_gates": [
+    "Batch L consolidated qualification",
+    "native target-platform replay",
+    "genuine legacy BLAKE3 replay",
+    "fresh optional dependency resolution",
+    "independent security review",
+    "real custody/clock/recognition/enforcement validation"
+  ],
+  "reproducibility": {
+    "regenerated_timed_dossier": "NOT_CLAIMED",
+    "source_zip": "BYTE_IDENTICAL",
+    "wheel": "BYTE_IDENTICAL"
+  },
+  "schema": "cmba.batch-k-release-verification",
+  "signature": "NOT_SIGNED",
+  "source_fingerprint": "94004ff09eaede6711a6aa23ba585341acca8bc8050b2ee290f21c20b9f12884",
+  "source_member_count": 480,
+  "status": "PASS_SCOPED_ENGINEERING_EXTERNAL_GATES_OPEN",
+  "tests": {
+    "errors": 0,
+    "failed": 0,
+    "inherited": 561,
+    "new": 198,
+    "passed": 759,
+    "skipped": 0
+  },
+  "workflows": 6
+}

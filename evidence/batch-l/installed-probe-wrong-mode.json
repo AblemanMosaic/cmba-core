@@ -1,0 +1,15 @@
+{
+  "status": "FAILED_INVOCATION_MODE",
+  "exit_code": 1,
+  "command": [
+    "/mnt/data/cmba_l_optional_env/bin/python",
+    "/mnt/data/cmba_batch_l_work/tools/probe_installed_j.py",
+    "--wheel",
+    "/mnt/data/cmba_core-0.1.0a4-py3-none-any.whl",
+    "--out",
+    "/mnt/data/cmba_l_runs/unused-probe.json"
+  ],
+  "reason": "Core-only probe selected in a deliberately optional-dependency environment; --with-optional was omitted.",
+  "runtime_defect": false,
+  "record": "REEXECUTED_TO_RETAIN_RAW_FAILURE"
+}

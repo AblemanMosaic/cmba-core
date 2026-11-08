@@ -1,0 +1,38 @@
+{
+  "authority_effect": "NONE",
+  "context": {
+    "native": {
+      "all_source_members": 668,
+      "runtime_files": 43,
+      "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+      "status": "PASS"
+    },
+    "plugins": "DISABLED",
+    "pytest": "9.0.2",
+    "python": "3.13.5",
+    "runner_sha256": "4814bfdd60d8c90d398d8c9c084feddad13e3c5f07c2f65be5b484aa97004979",
+    "system": "Linux"
+  },
+  "legs": [
+    {
+      "exit_code": 0,
+      "name": "group0"
+    }
+  ],
+  "outputs": {
+    "group0.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "group0.stdout": "878d5c6256968b7eba8ddbccd44ad7d165f61c4a7521d05198d615d5b5289e83",
+    "tests.xml": "0659b5b82fa2975d64bcf7cd7637476a42a9e980446b3e58af71e13002c25f89"
+  },
+  "phase": "group0",
+  "results": {
+    "tests": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 324,
+      "skipped": 0
+    }
+  },
+  "schema": "cmba.native-stage.l1",
+  "status": "PASS"
+}

@@ -1,0 +1,799 @@
+{
+  "$defs": {
+    "binding": {
+      "additionalProperties": false,
+      "properties": {
+        "binding_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "body": {
+          "$ref": "#/$defs/binding-body"
+        },
+        "schema": {
+          "const": "cmba.binding.v0.1-i1"
+        }
+      },
+      "required": [
+        "schema",
+        "body",
+        "binding_root"
+      ],
+      "type": "object"
+    },
+    "binding-body": {
+      "additionalProperties": false,
+      "properties": {
+        "dimensions": {
+          "items": {
+            "$ref": "#/$defs/dimension"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array"
+        },
+        "profile": {
+          "$ref": "#/$defs/profile-reference"
+        },
+        "relations": {
+          "items": {
+            "$ref": "#/$defs/relation"
+          },
+          "maxItems": 256,
+          "minItems": 0,
+          "type": "array"
+        },
+        "schema": {
+          "const": "cmba.binding-body.v0.1-i1"
+        }
+      },
+      "required": [
+        "schema",
+        "profile",
+        "dimensions",
+        "relations"
+      ],
+      "type": "object"
+    },
+    "bundle": {
+      "additionalProperties": false,
+      "properties": {
+        "binding": {
+          "$ref": "#/$defs/binding"
+        },
+        "context": {
+          "$ref": "#/$defs/context"
+        },
+        "schema": {
+          "const": "cmba.workbench-bundle.v0.1-i1"
+        },
+        "values": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "schema",
+        "binding",
+        "values",
+        "context"
+      ],
+      "type": "object"
+    },
+    "capability": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_effect": {
+          "const": "NONE"
+        },
+        "auto_install": {
+          "const": false
+        },
+        "capability_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "claim_ceiling": {
+          "type": "string"
+        },
+        "effect_class": {
+          "const": "PURE_READ"
+        },
+        "inputs": {
+          "type": "string"
+        },
+        "network": {
+          "const": false
+        },
+        "profile": {
+          "$ref": "#/$defs/profile-reference"
+        },
+        "requires_host_selection": {
+          "const": true
+        },
+        "schema": {
+          "const": "cmba.capability.v0.1-i1"
+        },
+        "subprocess": {
+          "const": false
+        }
+      },
+      "required": [
+        "schema",
+        "capability_id",
+        "profile",
+        "inputs",
+        "effect_class",
+        "requires_host_selection",
+        "network",
+        "subprocess",
+        "auto_install",
+        "authority_effect",
+        "claim_ceiling"
+      ],
+      "type": "object"
+    },
+    "context": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_snapshot": {
+          "type": "object"
+        },
+        "evidence_snapshot": {
+          "items": {},
+          "maxItems": 1024,
+          "minItems": 0,
+          "type": "array"
+        },
+        "expected_binding_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "policy": {
+          "additionalProperties": false,
+          "properties": {
+            "profile": {
+              "$ref": "#/$defs/profile-reference"
+            },
+            "required_checks": {
+              "items": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "maxItems": 64,
+              "minItems": 0,
+              "type": "array"
+            }
+          },
+          "required": [
+            "profile",
+            "required_checks"
+          ],
+          "type": "object"
+        },
+        "schema": {
+          "const": "cmba.evaluation-context.v0.1-i1"
+        },
+        "time": {
+          "additionalProperties": false,
+          "properties": {
+            "clock_source": {
+              "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+              "type": "string"
+            },
+            "epoch": {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "epoch",
+            "clock_source"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "schema",
+        "expected_binding_root",
+        "policy",
+        "authority_snapshot",
+        "evidence_snapshot",
+        "time"
+      ],
+      "type": "object"
+    },
+    "dimension": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "const": "SHA-256"
+        },
+        "codec": {
+          "const": "cmba-cjson-i1"
+        },
+        "critical": {
+          "type": "boolean"
+        },
+        "dimension_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "role": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "schema_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "value_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dimension_id",
+        "role",
+        "schema_id",
+        "codec",
+        "algorithm",
+        "critical",
+        "value_hash"
+      ],
+      "type": "object"
+    },
+    "profile-contract": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_effect": {
+          "const": "NONE"
+        },
+        "claim_ceiling": {
+          "type": "string"
+        },
+        "predicates": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array"
+        },
+        "profile_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "profile_version": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "required_dimensions": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "dimension_id": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "role": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "schema_id": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "dimension_id",
+              "role",
+              "schema_id"
+            ],
+            "type": "object"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        },
+        "schema": {
+          "const": "cmba.profile-contract.v0.1-i1"
+        },
+        "title": {
+          "type": "string"
+        },
+        "unknown_critical": {
+          "const": "UNSUPPORTED"
+        },
+        "unknown_noncritical": {
+          "const": "PRESERVE_WITHOUT_INTERPRETATION"
+        }
+      },
+      "required": [
+        "schema",
+        "profile_id",
+        "profile_version",
+        "title",
+        "required_dimensions",
+        "predicates",
+        "unknown_critical",
+        "unknown_noncritical",
+        "authority_effect",
+        "claim_ceiling"
+      ],
+      "type": "object"
+    },
+    "profile-reference": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "profile_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "profile_version": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "profile_id",
+        "profile_version",
+        "contract_hash"
+      ],
+      "type": "object"
+    },
+    "receipt": {
+      "additionalProperties": false,
+      "properties": {
+        "body": {
+          "$ref": "#/$defs/receipt-body"
+        },
+        "receipt_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.evaluation-receipt.v0.1-i1"
+        }
+      },
+      "required": [
+        "schema",
+        "body",
+        "receipt_hash"
+      ],
+      "type": "object"
+    },
+    "receipt-body": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_snapshot_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "binding_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "evaluator": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "const": "cmba.builtin-evaluator.i1"
+            },
+            "realization_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "realization_sha256"
+          ],
+          "type": "object"
+        },
+        "evidence_snapshot_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "expected_binding_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "policy_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "profile": {
+          "$ref": "#/$defs/profile-reference"
+        },
+        "result": {
+          "$ref": "#/$defs/result"
+        },
+        "schema": {
+          "const": "cmba.evaluation-receipt-body.v0.1-i1"
+        },
+        "signature": {
+          "const": "NOT_SIGNED"
+        },
+        "supplied_values_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "time_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema",
+        "binding_root",
+        "profile",
+        "supplied_values_hash",
+        "policy_hash",
+        "authority_snapshot_hash",
+        "evidence_snapshot_hash",
+        "time_hash",
+        "expected_binding_root",
+        "evaluator",
+        "result",
+        "signature"
+      ],
+      "type": "object"
+    },
+    "reference": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "enum": [
+            "SHA-256",
+            "BLAKE3-256"
+          ]
+        },
+        "digest_hex": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "scheme": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scheme",
+        "algorithm",
+        "digest_hex"
+      ],
+      "type": "object"
+    },
+    "relation": {
+      "additionalProperties": false,
+      "properties": {
+        "predicate": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "relation_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "target": {
+          "$ref": "#/$defs/reference"
+        }
+      },
+      "required": [
+        "relation_id",
+        "predicate",
+        "target"
+      ],
+      "type": "object"
+    },
+    "request": {
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "inspect"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "arguments": {
+                "additionalProperties": false,
+                "properties": {
+                  "binding": {
+                    "$ref": "#/$defs/binding"
+                  },
+                  "expected_root": {
+                    "anyOf": [
+                      {
+                        "pattern": "^[0-9a-f]{64}$",
+                        "type": "string"
+                      },
+                      {
+                        "type": "null"
+                      }
+                    ]
+                  },
+                  "values": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "binding",
+                  "values",
+                  "expected_root"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "compare"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "arguments": {
+                "additionalProperties": false,
+                "properties": {
+                  "left": {
+                    "$ref": "#/$defs/binding"
+                  },
+                  "right": {
+                    "$ref": "#/$defs/binding"
+                  }
+                },
+                "required": [
+                  "left",
+                  "right"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "evaluate"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "arguments": {
+                "additionalProperties": false,
+                "properties": {
+                  "binding": {
+                    "$ref": "#/$defs/binding"
+                  },
+                  "context": {
+                    "$ref": "#/$defs/context"
+                  },
+                  "values": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "binding",
+                  "values",
+                  "context"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "replay"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "arguments": {
+                "additionalProperties": false,
+                "properties": {
+                  "binding": {
+                    "$ref": "#/$defs/binding"
+                  },
+                  "context": {
+                    "$ref": "#/$defs/context"
+                  },
+                  "receipt": {
+                    "$ref": "#/$defs/receipt"
+                  },
+                  "values": {
+                    "type": "object"
+                  }
+                },
+                "required": [
+                  "receipt",
+                  "binding",
+                  "values",
+                  "context"
+                ],
+                "type": "object"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "catalogue"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "arguments": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "operation": {
+                "const": "capabilities"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "arguments": {
+                "additionalProperties": false,
+                "properties": {},
+                "required": [],
+                "type": "object"
+              }
+            }
+          }
+        }
+      ],
+      "properties": {
+        "arguments": {
+          "type": "object"
+        },
+        "operation": {
+          "enum": [
+            "inspect",
+            "compare",
+            "evaluate",
+            "replay",
+            "catalogue",
+            "capabilities"
+          ]
+        },
+        "schema": {
+          "const": "cmba.request.v0.1-i1"
+        }
+      },
+      "required": [
+        "schema",
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    },
+    "result": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_effect": {
+          "const": "NONE"
+        },
+        "authority_interpretation": {
+          "const": "NOT_EVALUATED"
+        },
+        "authorization": {
+          "const": "EXTERNAL_DECISION_REQUIRED"
+        },
+        "checks": {
+          "additionalProperties": {
+            "enum": [
+              "MATCH",
+              "CONTRADICTED",
+              "UNSUPPORTED",
+              "NOT_CHECKED"
+            ]
+          },
+          "type": "object"
+        },
+        "claim_ceiling": {
+          "type": "string"
+        },
+        "evidence_interpretation": {
+          "const": "NOT_EVALUATED"
+        },
+        "missing_dimensions": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        },
+        "missing_values": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        },
+        "schema": {
+          "const": "cmba.evaluation-result.v0.1-i1"
+        },
+        "status": {
+          "enum": [
+            "MATCH_FOR_SUPPLIED_EVIDENCE",
+            "CONTRADICTED",
+            "INSUFFICIENT",
+            "UNSUPPORTED"
+          ]
+        },
+        "uninterpreted_dimensions": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        },
+        "unsupported_critical_dimensions": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema",
+        "status",
+        "checks",
+        "missing_dimensions",
+        "missing_values",
+        "unsupported_critical_dimensions",
+        "uninterpreted_dimensions",
+        "authority_effect",
+        "authority_interpretation",
+        "evidence_interpretation",
+        "authorization",
+        "claim_ceiling"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:i1:request",
+  "$ref": "#/$defs/request",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

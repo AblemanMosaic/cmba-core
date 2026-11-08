@@ -1,0 +1,74 @@
+{
+  "authority_effect": "NONE",
+  "external_primary_references": [
+    {
+      "role": "TYPED_ENVELOPE_COMPARISON_ONLY_NOT_IMPLEMENTED",
+      "url": "https://github.com/secure-systems-lab/dsse/blob/master/protocol.md"
+    },
+    {
+      "role": "TYPED_STATEMENT_COMPARISON_ONLY_NOT_IMPLEMENTED",
+      "url": "https://github.com/in-toto/attestation/blob/main/spec/v1/statement.md"
+    },
+    {
+      "role": "GUI_API_REFERENCE_NOT_PLATFORM_VALIDATION",
+      "url": "https://docs.python.org/3/library/tkinter.html"
+    }
+  ],
+  "missing_primary_titles": [
+    "CMBA_VOTE.md",
+    "CMBA_VOTE (outline).md",
+    "CRYPTOGRAPHIC_DIMENSIONALITY.md",
+    "CMBA_BLOCKCHAIN_COMPARISON.md",
+    "CMBA_ROADMAP_11_27_2025.md"
+  ],
+  "missing_status": "NOT_LOCATED_IN_THIS_RETRIEVAL; SECONDARY_ASSESSMENT_RETAINED",
+  "older_edition_status": "SELECTED_EXACT_NAME_ADMISSIBILITY_LIBRARY_FILE; OTHER_SEARCH_HITS_NOT_MERGED",
+  "records": [
+    {
+      "bytes": 117503,
+      "complete_source_bytes_retained": true,
+      "file_id": "file_00000000daa071fda176d38325f41ec9",
+      "origin": "USER_LIBRARY",
+      "path": "sources/CMBA_Framework_Whitepaper.md",
+      "sha256": "23e5538056a062cdb7d3c1f2ecfc98192e72fbe026e5f40d28a71945f5c01a6f",
+      "standing": "SOURCE_MATERIAL_NOT_RUNTIME_GUARANTEE"
+    },
+    {
+      "bytes": 76629,
+      "complete_source_bytes_retained": true,
+      "file_id": "file_000000001a0071fdb59da9541925122c",
+      "origin": "USER_LIBRARY",
+      "path": "sources/CMBA_Mathematical_Framework.md",
+      "sha256": "17333f9d1cfdc9fadf9de5edccf48cc4f6cbf89027928278a762ae188d70f882",
+      "standing": "SOURCE_MATERIAL_NOT_RUNTIME_GUARANTEE"
+    },
+    {
+      "bytes": 76625,
+      "complete_source_bytes_retained": true,
+      "file_id": "file_00000000869c71fd98275bdd3163bbd2",
+      "origin": "USER_LIBRARY",
+      "path": "sources/Cryptographic Admissibility and Jurisdiction.md",
+      "sha256": "3982b6e1b935aa03e8a078992fd1a57ed148eb66998f8b5aa28bb939775699f0",
+      "standing": "SOURCE_MATERIAL_NOT_RUNTIME_GUARANTEE"
+    },
+    {
+      "bytes": 79895,
+      "complete_source_bytes_retained": true,
+      "file_id": "file_00000000a06481fd96c03fe7881fe125",
+      "origin": "CONVERSATION",
+      "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md",
+      "sha256": "696a65fe14a6596de59cee7ef2cb288e6312bb55152ba4a7bdff5482647cd424",
+      "standing": "SOURCE_MATERIAL_NOT_RUNTIME_GUARANTEE"
+    },
+    {
+      "bytes": 12325,
+      "complete_source_bytes_retained": true,
+      "file_id": "file_00000000eea881fd9a810c71fa572fc1",
+      "origin": "CONVERSATION",
+      "path": "sources/Pasted text(20261108-015154).txt",
+      "sha256": "73d2411470cbbe89e31d867d152a973fbd4e950c42e0e0fbb692e66815ca0a3f",
+      "standing": "SOURCE_MATERIAL_NOT_RUNTIME_GUARANTEE"
+    }
+  ],
+  "schema": "cmba.source-register.i1"
+}

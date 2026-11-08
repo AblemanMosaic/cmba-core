@@ -1,0 +1,57 @@
+{
+  "authority_effect": "NONE",
+  "context": {
+    "dependencies": {
+      "Pillow": "12.3.0",
+      "blake3": "UNAVAILABLE",
+      "cryptography": "46.0.4",
+      "jsonschema": "4.26.0",
+      "pytest": "9.0.2",
+      "setuptools": "82.0.1"
+    },
+    "executable": "/opt/pyvenv/bin/python",
+    "machine": "x86_64",
+    "native": {
+      "all_source_members": 668,
+      "runtime_files": 43,
+      "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+      "status": "PASS"
+    },
+    "node": "v22.16.0",
+    "prefix": "/opt/pyvenv",
+    "pytest_plugin_autoload": "DISABLED",
+    "python": "3.13.5",
+    "require_legacy": false,
+    "source_fingerprint": "bffd3fdb097b8d6ebec7158efef2386559c21ed6c4376a9df0410da7291078ed",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "legs": [
+    {
+      "exit_code": 0,
+      "name": "collect"
+    },
+    {
+      "exit_code": 0,
+      "name": "tests"
+    }
+  ],
+  "outputs": {
+    "collect.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "collect.stdout": "20f69e0c186b523d62e158b6bde42daeb1343d370739976e920fe6b3eb117844",
+    "tests.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "tests.stdout": "765c804bf0c853637c89dca846884a61498f6f8ce8f9783c197ec27e46572555",
+    "tests.xml": "4cb289260d48273619eb7de58052b8fdcccf4d88176166809b0e3b78dc365535"
+  },
+  "phase": "tests",
+  "results": {
+    "tests": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 970,
+      "skipped": 0
+    }
+  },
+  "schema": "cmba.qualification-stage.l1",
+  "status": "PASS"
+}

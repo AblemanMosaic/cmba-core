@@ -1,0 +1,76 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "body": {
+      "additionalProperties": false,
+      "properties": {
+        "bundle": {
+          "additionalProperties": false,
+          "properties": {
+            "binding": {
+              "type": "object"
+            },
+            "context": {
+              "type": "object"
+            },
+            "schema": {
+              "enum": [
+                "cmba.workbench-bundle.v0.1-i1",
+                "cmba.workbench-bundle.j1"
+              ]
+            },
+            "values": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "schema",
+            "binding",
+            "values",
+            "context"
+          ],
+          "type": "object"
+        },
+        "context_source": {
+          "enum": [
+            "READER_SELECTED",
+            "DOCUMENT_DEMO_UNTRUSTED"
+          ]
+        },
+        "document_id": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "generation": {
+          "minimum": 0,
+          "type": "integer"
+        },
+        "reader_context": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "generation",
+        "document_id",
+        "bundle",
+        "reader_context",
+        "context_source"
+      ],
+      "type": "object"
+    },
+    "schema": {
+      "const": "cmba.workbench-task.k1"
+    },
+    "task_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    }
+  },
+  "required": [
+    "schema",
+    "task_hash",
+    "body"
+  ],
+  "type": "object"
+}

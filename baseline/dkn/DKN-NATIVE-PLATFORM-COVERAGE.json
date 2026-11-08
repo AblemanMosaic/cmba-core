@@ -1,0 +1,107 @@
+{
+  "authority_effect": "NONE",
+  "collected_tests": 1173,
+  "default_skip_disposition": "BLOCKED",
+  "schema": "cmba.dkn-native-platform-coverage.l1",
+  "skip_rules": [
+    {
+      "classname": "tests_v02.test_batch_d_storage_abi",
+      "disposition": "NOT_APPLICABLE",
+      "name": "test_nonregular_file_refused",
+      "reason": "POSIX FIFO test",
+      "when": "MKFIFO_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_e_integration",
+      "disposition": "NOT_APPLICABLE",
+      "name": "test_optional_legacy_dependency_explicit",
+      "reason": "missing-dependency branch only",
+      "when": "BLAKE3_AVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_f_vault",
+      "disposition": "NOT_APPLICABLE",
+      "name": "test_group_writable_database_refused",
+      "reason": "POSIX permission semantics unavailable",
+      "when": "OS_NOT_POSIX"
+    },
+    {
+      "classname": "tests_v02.test_review_rc2",
+      "disposition": "BLOCKED",
+      "name": "test_empty_source_symlink_ancestor_refused",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_c",
+      "disposition": "BLOCKED",
+      "name": "test_symlink_attack",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_d_storage_abi",
+      "disposition": "BLOCKED",
+      "name": "test_source_symlink_refused",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_d_storage_abi",
+      "disposition": "BLOCKED",
+      "name": "test_nested_symlink_refused",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_d_storage_abi",
+      "disposition": "BLOCKED",
+      "name": "test_leaf_symlink_refused",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_e_hardening",
+      "disposition": "BLOCKED",
+      "name": "test_index_ancestor_symlink[root]",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_e_hardening",
+      "disposition": "BLOCKED",
+      "name": "test_index_ancestor_symlink[objects]",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_e_hardening",
+      "disposition": "BLOCKED",
+      "name": "test_index_ancestor_symlink[evidence]",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_f_vault",
+      "disposition": "BLOCKED",
+      "name": "test_static_alias_refused[db_symlink]",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_f_vault",
+      "disposition": "BLOCKED",
+      "name": "test_static_alias_refused[parent_symlink]",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    },
+    {
+      "classname": "tests_v02.test_batch_f_vault",
+      "disposition": "BLOCKED",
+      "name": "test_static_alias_refused[sidecar_symlink]",
+      "reason": "OSError: [WinError 1314] A required privilege is not held by the client",
+      "when": "WINDOWS_SYMLINK_PRIVILEGE_UNAVAILABLE"
+    }
+  ],
+  "source_archive_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3"
+}

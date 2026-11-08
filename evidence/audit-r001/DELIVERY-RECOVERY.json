@@ -1,0 +1,9 @@
+{
+  "source_archive": "CMBA-BATCH-L-CLEAN-REPLAY-EVIDENCE.zip",
+  "source_member": "clean-replay/audit/workbench.png",
+  "target": "CMBA-BATCH-L-WORKBENCH.png",
+  "sha256": "1ad120ffae2a4935e0e3369a1b7ab0232949735083883593692d5b8c10ed281b",
+  "bytes": 145102,
+  "method": "EXACT_BYTE_RECOVERY_NO_NEW_SCREENSHOT",
+  "original_release_envelope_changed": false
+}

@@ -1,0 +1,22 @@
+{
+  "authority_effect": "NONE",
+  "distribution": "cmba-core",
+  "full_semantic_equivalence": "NOT_ESTABLISHED",
+  "independent_review": "NOT_PERFORMED",
+  "licensing": "SEE_LICENSE_AND_NOTICE",
+  "local_effects": "EXPLICIT_CREATE_ONLY_JSON_EXPORTS",
+  "predecessor_source_sha256": "e2fd92eddb6fd5138665c016b4dc94f54196b8dc7de9995c4370cdbd01c911da",
+  "profile_versions": [
+    "I1",
+    "AP-J1",
+    "SE-J1",
+    "SD-J1",
+    "WB-K1"
+  ],
+  "public_release_gate": "NOT_CLEARED",
+  "publication": "NOT_PERFORMED",
+  "schema": "cmba.release-boundary.l1",
+  "scope": "FINITE_OFFLINE_LIBRARY_AND_OPERATOR_OWNED_LOCAL_WORKBENCH",
+  "status": "SAME_AUTHOR_ENGINEERING_REVIEW_CANDIDATE",
+  "version": "0.1.0a4"
+}

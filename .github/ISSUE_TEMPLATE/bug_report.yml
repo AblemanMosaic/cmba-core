@@ -1,0 +1,30 @@
+name: Bug report
+description: Report a reproducible CMBA implementation defect
+title: "[bug] "
+labels: [bug]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Exact version or artifact hash
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Minimal reproduction
+    validations:
+      required: true
+  - type: textarea
+    id: observed
+    attributes:
+      label: Observed and expected result
+    validations:
+      required: true
+  - type: checkboxes
+    id: security
+    attributes:
+      label: Security boundary
+      options:
+        - label: This report does not contain a private vulnerability or secret.
+          required: true

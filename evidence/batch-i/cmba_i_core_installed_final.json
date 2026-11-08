@@ -1,0 +1,35 @@
+{
+  "authority_effect": "NONE",
+  "checks": [
+    {
+      "name": "chc-match",
+      "result": "MATCH_FOR_SUPPLIED_EVIDENCE"
+    },
+    {
+      "name": "chc-incorrect",
+      "result": "CONTRADICTED"
+    },
+    {
+      "name": "session",
+      "result": "MATCH_FOR_SUPPLIED_EVIDENCE"
+    },
+    {
+      "name": "installed-cli",
+      "result": "PASS"
+    },
+    {
+      "name": "stdlib-only-core-without-dkn",
+      "result": "PASS"
+    }
+  ],
+  "dependency_source": "STDLIB_ONLY_CORE",
+  "fresh_dependency_resolution": "NO_THIRD_PARTY_RUNTIME_DEPENDENCIES",
+  "gui_launch": "TESTED_SEPARATELY",
+  "installed_source": "/mnt/data/cmba_i_core_env/lib/python3.13/site-packages/cmba_core/__init__.py",
+  "package_files_compared": 19,
+  "prefix": "/mnt/data/cmba_i_core_env",
+  "python": "3.13.5",
+  "schema": "cmba.installed-probe.i1",
+  "status": "PASS_OUTSIDE_SOURCE_TREE",
+  "wheel_sha256": "c0f97fdf44ba1b2cb62a82c1be88303018c6cfc509d032a15a27feda1fd1b35e"
+}

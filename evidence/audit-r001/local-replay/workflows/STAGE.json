@@ -1,0 +1,82 @@
+{
+  "authority_effect": "NONE",
+  "context": {
+    "dependencies": {
+      "Pillow": "12.3.0",
+      "blake3": "UNAVAILABLE",
+      "cryptography": "46.0.4",
+      "jsonschema": "4.26.0",
+      "pytest": "9.0.2",
+      "setuptools": "82.0.1"
+    },
+    "executable": "/opt/pyvenv/bin/python",
+    "machine": "x86_64",
+    "native": {
+      "all_source_members": 668,
+      "runtime_files": 43,
+      "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+      "status": "PASS"
+    },
+    "node": "v22.16.0",
+    "prefix": "/opt/pyvenv",
+    "pytest_plugin_autoload": "DISABLED",
+    "python": "3.13.5",
+    "require_legacy": false,
+    "source_fingerprint": "bffd3fdb097b8d6ebec7158efef2386559c21ed6c4376a9df0410da7291078ed",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "legs": [
+    {
+      "exit_code": 0,
+      "name": "first_binding"
+    },
+    {
+      "exit_code": 0,
+      "name": "dkn_bridge"
+    },
+    {
+      "exit_code": 0,
+      "name": "j1_profiles"
+    },
+    {
+      "exit_code": 0,
+      "name": "joint_applications"
+    },
+    {
+      "exit_code": 0,
+      "name": "workbench_k"
+    },
+    {
+      "exit_code": 0,
+      "name": "workbench_k_receipts"
+    }
+  ],
+  "outputs": {
+    "dkn_bridge.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "dkn_bridge.stdout": "b342660e071e91a67606953573eaa3ea5abf7d5515741f646a2dde357208d908",
+    "first_binding.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "first_binding.stdout": "b133024c2ee6ab0259c5f67ebfb00e71fa914809ab7182aca9ec945d4587ecf4",
+    "j1_profiles.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "j1_profiles.stdout": "e6bc7eeb6392fff3336809b3ada7fc8478abc2bf5538dd05580ec663ec74fa5e",
+    "joint_applications.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "joint_applications.stdout": "c6f81a16337601e8bb3b4cf8250efaecb468811a404f922b727c8a26690225ce",
+    "workbench_k.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "workbench_k.stdout": "ceb6602b5a52fc8800274aed8e38741695aa3274e2a6fe663c0d6c12f225e6fe",
+    "workbench_k_receipts.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "workbench_k_receipts.stdout": "2f259a54d7208069b9de37b6ed75c8ff324b7f5ef25731096f4b7db35abea6d8"
+  },
+  "phase": "workflows",
+  "results": {
+    "completed": [
+      "first_binding",
+      "dkn_bridge",
+      "j1_profiles",
+      "joint_applications",
+      "workbench_k",
+      "workbench_k_receipts"
+    ]
+  },
+  "schema": "cmba.qualification-stage.l1",
+  "status": "PASS"
+}

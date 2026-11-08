@@ -1,0 +1,329 @@
+{
+  "artifacts": [
+    {
+      "bytes": 43400971,
+      "name": "CMBA-Core-0.1.0a4-BATCH-L-REVIEW-CANDIDATE.zip",
+      "sha256": "f6c17012e986e83cbb8bdba81dc8eedada335d32c55f02ea8c2b848ddde1213e"
+    },
+    {
+      "bytes": 110550,
+      "name": "cmba_core-0.1.0a4-py3-none-any.whl",
+      "sha256": "2a595c06ac64371647eeb9586defde9d3238dbe16271a788ea231de2e15831ce"
+    },
+    {
+      "bytes": 113,
+      "name": "CMBA-Core-0.1.0a4-BATCH-L-REVIEW-CANDIDATE.zip.sha256",
+      "sha256": "7329f130318b25af06c3d8e2e6de4044429e104ecf3ba28246a4b2dd3d519c60"
+    },
+    {
+      "bytes": 6295,
+      "name": "CMBA-BATCH-L-CLEAN-REPLAY.json",
+      "sha256": "d3651f4141d91e221e3cf80849ed4502d51f060caaaad15a9ab75da149afe020"
+    },
+    {
+      "bytes": 4523240,
+      "name": "CMBA-BATCH-L-CLEAN-REPLAY-EVIDENCE.zip",
+      "sha256": "fd000cf4e50d0c652cad3e5c6050cd773e285b3d49df19298c1e84062b0e245f"
+    }
+  ],
+  "authority_effect": "NONE",
+  "clean_extraction": "PASS_911_TESTS_6_WORKFLOWS",
+  "conformance": {
+    "i1": {
+      "alternative_realization": false,
+      "authority_effect": "NONE",
+      "cases": 33,
+      "oracle": "EXACT_CANONICAL_RESPONSE_BYTES",
+      "status": "PASS",
+      "whole_program_equivalence": "NOT_ESTABLISHED"
+    },
+    "j1": {
+      "alternative_command_selected": false,
+      "authority_effect": "NONE",
+      "cases": 53,
+      "corpus_sha256": "3db64753a8f07bd370d4621ce7f3bfd552c0dd83a38edc6a7d2f22485f840fc6",
+      "oracle": "EXACT_CANONICAL_TYPED_RESULTS",
+      "process_groups": 4,
+      "status": "PASS",
+      "whole_program_equivalence": "NOT_ESTABLISHED"
+    },
+    "k1": {
+      "alternative_command_selected": false,
+      "authority_effect": "NONE",
+      "cases": 42,
+      "corpus_sha256": "55be79bc94f1f32645733ff2fcacca7bd456b175d52f1df824880b5a2284d037",
+      "oracle": "EXACT_CANONICAL_TYPED_RESULTS",
+      "process_groups": 3,
+      "status": "PASS",
+      "whole_program_equivalence": "NOT_ESTABLISHED"
+    }
+  },
+  "context": {
+    "dependencies": {
+      "Pillow": "12.3.0",
+      "blake3": "UNAVAILABLE",
+      "cryptography": "46.0.4",
+      "jsonschema": "4.26.0",
+      "pytest": "9.0.2",
+      "setuptools": "82.0.1"
+    },
+    "executable": "/opt/pyvenv/bin/python",
+    "machine": "x86_64",
+    "native": {
+      "all_source_members": 668,
+      "runtime_files": 43,
+      "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+      "status": "PASS"
+    },
+    "node": "v22.16.0",
+    "prefix": "/opt/pyvenv",
+    "pytest_plugin_autoload": "DISABLED",
+    "python": "3.13.5",
+    "require_legacy": false,
+    "source_fingerprint": "f6583f876142965ee200c1694ae33d0b30bba9512d2bc0067dce834e15a32907",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "distribution": "cmba-core",
+  "external_review_submission": "NOT_PERFORMED",
+  "findings": [
+    {
+      "id": "L-001",
+      "scope": "SOURCE_ARCHIVE_PATH_ALIASES",
+      "status": "REPAIRED_AND_REGRESSION_TESTED"
+    },
+    {
+      "id": "L-002",
+      "scope": "SOURCE_ARCHIVE_NONREGULAR_MEMBERS",
+      "status": "REPAIRED_AND_REGRESSION_TESTED"
+    },
+    {
+      "id": "L-003",
+      "scope": "SOURCE_MANIFEST_BOOLEAN_SIZE",
+      "status": "REPAIRED_AND_REGRESSION_TESTED"
+    },
+    {
+      "id": "L-004",
+      "scope": "QUALIFICATION_EVIDENCE_INTEGRITY",
+      "status": "HARDENED_AND_REGRESSION_TESTED"
+    }
+  ],
+  "full_semantic_equivalence": "NOT_ESTABLISHED",
+  "gui": {
+    "clean_extraction_checks": 48,
+    "display": "Xvfb",
+    "frozen_ui_header": "K1 / 0.1.0a3 implementation marker retained; installed distribution is 0.1.0a4",
+    "human_confirmation": "SIMULATED_EXPLICIT_CONFIRMATION_IN_TEMPORARY_DIRECTORY",
+    "installed_checks": 48,
+    "source_checks": 48,
+    "tk": "8.6.16"
+  },
+  "independent_review": "NOT_PERFORMED",
+  "inheritance": {
+    "changed": [
+      "FILE-MANIFEST.json",
+      "PROGRAM-LEDGER.json",
+      "README.md",
+      "model/REALIZATION-BINDING.json",
+      "model/j1/REALIZATION-BINDING.json",
+      "model/k1/REALIZATION-BINDING.json",
+      "pyproject.toml",
+      "tools/package.py"
+    ],
+    "corpora_unchanged": [
+      "interop/core-i1.json",
+      "interop/applications-j1.json",
+      "interop/workbench-k1.json"
+    ],
+    "inherited_files": 480,
+    "removed": [],
+    "runtime_files": 52,
+    "runtime_unchanged": true,
+    "semantic_files_unchanged": [
+      "model/CONTRACT.json",
+      "model/COMMITMENT.json",
+      "model/j1/CONTRACT.json",
+      "model/j1/COMMITMENT.json",
+      "model/k1/CONTRACT.json",
+      "model/k1/COMMITMENT.json"
+    ],
+    "unchanged": 472
+  },
+  "installation": {
+    "core_runtime_dependencies": "STANDARD_LIBRARY_ONLY",
+    "fresh_optional_dependency_resolution": "NOT_ESTABLISHED",
+    "optional_dependency_source": "EXACT_COPIES_OF_GENUINE_PREINSTALLED_DISTRIBUTIONS",
+    "payload_files_compared": 52,
+    "pip_check": "PASS",
+    "probe_receipts": {
+      "installed-core-workbench.json": "01f2c6c8550ade155063fec6288323f688accf6cff7ccc7b123538b98798a28e",
+      "installed-core.json": "0a1066482a21d3c398f5e2583aacdb6389a0a1b690052a02eb482982494d01be",
+      "installed-gui.json": "ee94c52ec30a09e780be98b687018d9f903bae8821256ea8ff34713b14af881d",
+      "installed-j1.json": "b51bb501103305267911a9f84b22030528bd3e05c2149c3750247ea8ffa9587a",
+      "installed-optional.json": "28a99534408add63b127695d1068922d43383b0e00239c6dade6aef2353a1b53"
+    },
+    "status": "PASS_OUTSIDE_SOURCE_TREE"
+  },
+  "legacy_runtime": {
+    "dependency": "GENUINE_BLAKE3_UNAVAILABLE",
+    "mandatory_error": "L_REQUIRED_LEGACY_BLAKE3_UNAVAILABLE",
+    "mandatory_gate_observed_exit": 2,
+    "status": "BLOCKED"
+  },
+  "local_effects": "EXPLICIT_TEMPORARY_TEST_EXPORTS",
+  "model_obligations": 72,
+  "models": {
+    "I1": {
+      "authority_effect": "NONE",
+      "bound_files": 187,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "MATCHED_CALLER_EXPECTATION",
+      "obligations": 18,
+      "reference_files": 17,
+      "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "J1": {
+      "authority_effect": "NONE",
+      "bound_files": 187,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "MATCHED",
+      "obligations": 28,
+      "semantic_commitment": "8734691fb74b3697a09c4eb67b57860fb3c95b2050a0185cd1c651db64dc97a8",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "K1": {
+      "authority_effect": "NONE",
+      "bound_files": 187,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "MATCHED",
+      "obligations": 26,
+      "semantic_commitment": "d248731d2654095abd1de21f0d7bcb09fc146f603c44dc16c9bbd5e1e9936431",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    }
+  },
+  "native_crypto": {
+    "authority_effect": "NONE",
+    "backend": "libsodium.so.23",
+    "backend_version": "1.0.18",
+    "independent_review": "NOT_PERFORMED",
+    "mutated_signature_cases": 16,
+    "point_admission_cases": 68,
+    "status": "PASS",
+    "valid_signature_cases": 16
+  },
+  "native_dkn": {
+    "all_historical_release_stages": "NOT_REPLAYED",
+    "authority_effect": "NONE",
+    "context": {
+      "native": {
+        "all_source_members": 668,
+        "runtime_files": 43,
+        "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+        "status": "PASS"
+      },
+      "plugins": "DISABLED",
+      "pytest": "9.0.2",
+      "python": "3.13.5",
+      "runner_sha256": "4814bfdd60d8c90d398d8c9c084feddad13e3c5f07c2f65be5b484aa97004979",
+      "system": "Linux"
+    },
+    "groups": [
+      {
+        "errors": 0,
+        "failed": 0,
+        "passed": 324,
+        "skipped": 0
+      },
+      {
+        "errors": 0,
+        "failed": 0,
+        "passed": 260,
+        "skipped": 0
+      },
+      {
+        "errors": 0,
+        "failed": 0,
+        "passed": 307,
+        "skipped": 0
+      },
+      {
+        "errors": 0,
+        "failed": 0,
+        "passed": 282,
+        "skipped": 0
+      }
+    ],
+    "legacy_blake3": "NOT_EXECUTED",
+    "passed": 1173,
+    "schema": "cmba.native-replay.l1",
+    "stages": {
+      "collect": "f8136e902938498a30315a50f4002b233785bb070af4d53bc104eeac77c673e1",
+      "group0": "2fa3c7a7b909292c53867d1f407ffaa889fdff443028f5c79405cb56128b359e",
+      "group1": "1ec1330bfa27b9d6d8f40f4237d5bb1414291af9cf80ad8d399f3e50962824d8",
+      "group2": "0f93cb237fe92b7787bc536ebe635a39758f7fcedba6f1c884022dc5b0cb3185",
+      "group3": "074ee9e7c518963016b7916276ca69732187d783a2149e3e668ba89351f14ece"
+    },
+    "status": "PASS_SCOPED_NATIVE_V02"
+  },
+  "node_small_core": {
+    "additional_boundary_differential_tests": 60,
+    "authority_effect": "NONE",
+    "cases": 33,
+    "checker_sha256": "b34c895d6f669bf83c8de3abadb3b6558540d60fb5d05f97653da709efa05eb6",
+    "comparison": "EXACT_CANONICAL_RESPONSE_BYTES",
+    "corpus_sha256": "6e9e8e00a5f6c28bdbbba6c1b42e3beab727fabf0d6f6affff19772d509213ef",
+    "full_alternative_realization": false,
+    "independent_security_review": false,
+    "node": "v22.16.0",
+    "operations": [
+      "canonical",
+      "decode",
+      "dimension",
+      "bind",
+      "inspect",
+      "compare"
+    ],
+    "request_sha256": "fd18965706fd35070ebceab33a87974a847d9053716d426f87a9eea51749df29",
+    "response_sha256": "e6120a93ff63853d8e99e6c74028a2f0050d7eccb584aa93b8bb1a5913964a9e",
+    "schema": "cmba.small-core-comparison.l1",
+    "status": "PASS",
+    "total_pytest_cases": 93
+  },
+  "predecessor_source_sha256": "e2fd92eddb6fd5138665c016b4dc94f54196b8dc7de9995c4370cdbd01c911da",
+  "public_release_gate": "NOT_CLEARED",
+  "publication": "NOT_PERFORMED",
+  "release_envelope": "CMBA-BATCH-L-RELEASE-ENVELOPE.json (created after this receipt to avoid cycles)",
+  "remaining_gates": [
+    "genuine BLAKE3-dependent legacy execution",
+    "native Windows/WSL/macOS qualification",
+    "fresh optional dependency resolution",
+    "full alternative-language application/workbench realization",
+    "independent security review",
+    "production key/clock/floor custody and recognition",
+    "domain and deployment-specific validation/approval"
+  ],
+  "runtime_changes": false,
+  "same_author_review": true,
+  "schema": "cmba.batch-l-release-verification.v0.1-a4",
+  "signature": "NOT_SIGNED",
+  "source_and_wheel_rebuild": "BYTE_IDENTICAL",
+  "source_fingerprint": "f6583f876142965ee200c1694ae33d0b30bba9512d2bc0067dce834e15a32907",
+  "source_member_count": 641,
+  "standing": "INFORMATION_ONLY",
+  "status": "PASS_SCOPED_ENGINEERING_EXTERNAL_GATES_OPEN",
+  "test_accounting": "CORPORA_GUI_AND_NODE_CASES_INCLUDED_NOT_ADDED_AGAIN",
+  "test_results": {
+    "errors": 0,
+    "failed": 0,
+    "inherited": 759,
+    "new": 152,
+    "passed": 911,
+    "skipped": 0
+  },
+  "version": "0.1.0a4",
+  "workflows_passed": 6
+}

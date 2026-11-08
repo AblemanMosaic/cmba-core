@@ -1,0 +1,70 @@
+{
+  "$defs": {
+    "signed-statement": {
+      "additionalProperties": false,
+      "properties": {
+        "body": {
+          "$ref": "#/$defs/statement-body"
+        },
+        "record_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.signed-statement.j1"
+        },
+        "signature_hex": {
+          "pattern": "^[0-9a-f]{128}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema",
+        "body",
+        "signature_hex",
+        "record_hash"
+      ],
+      "type": "object"
+    },
+    "statement-body": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "const": "Ed25519"
+        },
+        "kind": {
+          "enum": [
+            "endorsement",
+            "approval",
+            "consent-grant",
+            "consent-withdrawal",
+            "coordination",
+            "observation",
+            "execution-observation"
+          ]
+        },
+        "payload": {
+          "type": "object"
+        },
+        "public_key": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.statement-body.j1"
+        }
+      },
+      "required": [
+        "schema",
+        "kind",
+        "payload",
+        "algorithm",
+        "public_key"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:signed-statement",
+  "$ref": "#/$defs/signed-statement",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

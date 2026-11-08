@@ -1,0 +1,66 @@
+{
+  "authority_effect": "NONE",
+  "changed": [
+    {
+      "after_sha256": "BOUND_BY_EXTERNAL_RELEASE_ENVELOPE",
+      "before_sha256": "8f7bedcd4a97f913bdc7cc8f2c0722144d4867f1dc7e5a04c91e537789e333ae",
+      "path": "FILE-MANIFEST.json"
+    },
+    {
+      "after_sha256": "d5c38e37cd9ecc7a3413e2c053644edfb24d7643cfbea1106b99ed1bfc7c21ee",
+      "before_sha256": "5c904cb201b54f05ee85d86ce5183f38d89f3c5ecb91482dcfe9c32220526d6b",
+      "path": "PROGRAM-LEDGER.json"
+    },
+    {
+      "after_sha256": "ec45af283911b3223a5a5ac298981cab0e6f405c84b5a45153185868cb01687c",
+      "before_sha256": "c339c4ba428b8d3c25b5d6c9402cde24b0ebd534463569badb618102cb2f0dcd",
+      "path": "README.md"
+    },
+    {
+      "after_sha256": "a3ecb0c148e6fbf49a3719563a6d92cea42086eb424f4e9d92dd1901eed1c7e3",
+      "before_sha256": "fc14bfaa48b74ae1af8ce9102a25be13aad4e4f50f25ed7f7b5d12e0a0a35203",
+      "path": "model/REALIZATION-BINDING.json"
+    },
+    {
+      "after_sha256": "7987d98ed090717135f22f6502bae6634dbd4471036b4225c03ada298df0430a",
+      "before_sha256": "136ddb962d2a5c944bc4a543bf481b6a1c1a8f8d4f5fd157267bb367df13c623",
+      "path": "model/j1/REALIZATION-BINDING.json"
+    },
+    {
+      "after_sha256": "75fa17baeb47eb5bb9957d1eb049ab2da272b80fa723aa6b7ca31b67c5719573",
+      "before_sha256": "aa3d7793f466a01fe283d6e5fece4392e5861b954db0c6818a9c0db69f30e693",
+      "path": "model/k1/REALIZATION-BINDING.json"
+    },
+    {
+      "after_sha256": "f38cac3b1b29cf70d3c17d0b1e32e77502b59f8b148e4704b1fa86418d8466c3",
+      "before_sha256": "f113405c268f37051c463dfa6847004236ab3ba99a9b1304315ddbd362a576a1",
+      "path": "pyproject.toml"
+    },
+    {
+      "after_sha256": "2a248861a4a4334392044078dc0e9cc5aa0b88fc97bf7db8d74d8f520ee670b3",
+      "before_sha256": "db99de1a5a9460cd8dfc1ca79a1fb4cfd9a11f406e5bbda38955a4cf16a81f12",
+      "path": "tools/package.py"
+    }
+  ],
+  "corpora_unchanged": [
+    "interop/core-i1.json",
+    "interop/applications-j1.json",
+    "interop/workbench-k1.json"
+  ],
+  "inherited_files": 480,
+  "note": "FILE-MANIFEST.json changes during packaging; its provisional after-hash is not a final self-commitment. The external archive receipt binds the actual inventory.",
+  "predecessor_sha256": "e2fd92eddb6fd5138665c016b4dc94f54196b8dc7de9995c4370cdbd01c911da",
+  "removed": [],
+  "runtime_files": 52,
+  "runtime_unchanged": true,
+  "schema": "cmba.inheritance.l1",
+  "semantic_files_unchanged": [
+    "model/COMMITMENT.json",
+    "model/CONTRACT.json",
+    "model/j1/COMMITMENT.json",
+    "model/j1/CONTRACT.json",
+    "model/k1/COMMITMENT.json",
+    "model/k1/CONTRACT.json"
+  ],
+  "unchanged": 472
+}

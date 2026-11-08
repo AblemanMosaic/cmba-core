@@ -1,0 +1,129 @@
+{
+  "$defs": {
+    "disclosure-header": {
+      "additionalProperties": false,
+      "properties": {
+        "disclosure_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "leaf_count": {
+          "maximum": 64,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "merkle_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.disclosure-header.j1"
+        }
+      },
+      "required": [
+        "schema",
+        "leaf_count",
+        "merkle_root",
+        "disclosure_root"
+      ],
+      "type": "object"
+    },
+    "disclosure-leaf": {
+      "additionalProperties": false,
+      "properties": {
+        "index": {
+          "maximum": 63,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "label": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "salt_hex": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.disclosure-leaf.j1"
+        },
+        "schema_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "value": {}
+      },
+      "required": [
+        "schema",
+        "index",
+        "label",
+        "schema_id",
+        "value",
+        "salt_hex"
+      ],
+      "type": "object"
+    },
+    "disclosure-opening": {
+      "additionalProperties": false,
+      "properties": {
+        "leaf": {
+          "$ref": "#/$defs/disclosure-leaf"
+        },
+        "path": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "hash": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "side": {
+                "enum": [
+                  "left",
+                  "right"
+                ]
+              }
+            },
+            "required": [
+              "side",
+              "hash"
+            ],
+            "type": "object"
+          },
+          "maxItems": 6,
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "required": [
+        "leaf",
+        "path"
+      ],
+      "type": "object"
+    },
+    "record-disclosure": {
+      "additionalProperties": false,
+      "properties": {
+        "header": {
+          "$ref": "#/$defs/disclosure-header"
+        },
+        "openings": {
+          "items": {
+            "$ref": "#/$defs/disclosure-opening"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "required": [
+        "header",
+        "openings"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-disclosure",
+  "$ref": "#/$defs/record-disclosure",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

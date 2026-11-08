@@ -1,0 +1,128 @@
+{
+  "archive": {
+    "bytes": 14998036,
+    "path": "CMBA-Core-0.1.0a1-BATCH-I-FOUNDATION-CANDIDATE.zip",
+    "sha256": "429c4317088e91ba0ef29c678665db01da07b7823cb12b182f769c78b549a2d5"
+  },
+  "authority_effect": "NONE",
+  "conformance": {
+    "alternative_realization": false,
+    "authority_effect": "NONE",
+    "cases": 33,
+    "oracle": "EXACT_CANONICAL_RESPONSE_BYTES",
+    "status": "PASS",
+    "whole_program_equivalence": "NOT_ESTABLISHED"
+  },
+  "gui": {
+    "authority_effect": "NONE",
+    "checks": 8,
+    "display": "Xvfb Linux",
+    "native_windows": "NOT_RUN",
+    "scope": "creation,render,explicit-context gate,positive/negative evaluation,replay,session,catalogue",
+    "status": "PASS",
+    "tk": "8.6.16"
+  },
+  "independent_review": "NOT_PERFORMED",
+  "logs": [
+    {
+      "bytes": 1336889,
+      "path": "LOCAL-RUN.json",
+      "sha256": "1660ee1c28b2ce9ea23f8d9318943b3894687e5d3d04ba86909b1e78145bda25"
+    },
+    {
+      "bytes": 0,
+      "path": "dkn_bridge.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 259,
+      "path": "dkn_bridge.stdout",
+      "sha256": "b342660e071e91a67606953573eaa3ea5abf7d5515741f646a2dde357208d908"
+    },
+    {
+      "bytes": 0,
+      "path": "first_binding.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 479,
+      "path": "first_binding.stdout",
+      "sha256": "b133024c2ee6ab0259c5f67ebfb00e71fa914809ab7182aca9ec945d4587ecf4"
+    },
+    {
+      "bytes": 250,
+      "path": "gui.json",
+      "sha256": "a5912e9f330d4999d58b61ab84decf87ad132c1e376ed2c5190392083a5e66e2"
+    },
+    {
+      "bytes": 160,
+      "path": "package-rebuild.json",
+      "sha256": "e10e752610b4613a5e2df6e68b95dcfa3201152616e0490ba882fe3dd0aa27dd"
+    },
+    {
+      "bytes": 0,
+      "path": "tests.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 260,
+      "path": "tests.stdout",
+      "sha256": "ce8153af588b703b974de540976a7ac230258590fcad234b1a294a7a7df8a30b"
+    },
+    {
+      "bytes": 1333676,
+      "path": "tests.xml",
+      "sha256": "c9492301c0d7c34a63a4600bdadb9b23f77018ccab8652f582b57de841b5c5e2"
+    },
+    {
+      "bytes": 907,
+      "path": "wheel-build.log",
+      "sha256": "00f259ab35beb0dc050f8f15ce4a34f5b3fb5498b3931eeaf4f6644ace854812"
+    },
+    {
+      "bytes": 82544,
+      "path": "workbench.png",
+      "sha256": "36dc7101f42134ab5101024ad938bd0e4ac6d004da9986cf6c1598c0c79c51af"
+    }
+  ],
+  "model": {
+    "authority_effect": "NONE",
+    "bound_files": 56,
+    "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+    "executed_test_binding": "CHECKED",
+    "external_anchor": "NOT_PROVIDED",
+    "obligations": 18,
+    "reference_files": 17,
+    "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+    "status": "PASS_REFERENCE_INTEGRITY"
+  },
+  "platform": {
+    "machine": "x86_64",
+    "python": "3.13.5",
+    "system": "Linux"
+  },
+  "public_release_gate": "NOT_CLEARED",
+  "reproducibility": {
+    "scope": "SERIALIZATION_OF_FROZEN_TREE_NOT_REGENERATION_OF_TIMED_LOGS",
+    "source_date_epoch": 1794009600,
+    "source_zip_byte_identical": true,
+    "wheel_byte_identical": true
+  },
+  "schema": "cmba.clean-replay.i1",
+  "signature": "NOT_SIGNED",
+  "source_fingerprint": "638f2d489bb9bdac2f10faec38b95b22f4e93571cabf5a178197cd3f7471b1e2",
+  "status": "PASS_SCOPED_ENGINEERING",
+  "test_identity_match": true,
+  "tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 213,
+    "skipped": 0
+  },
+  "wheel": {
+    "bytes": 35215,
+    "path": "cmba_core-0.1.0a1-py3-none-any.whl",
+    "sha256": "c0f97fdf44ba1b2cb62a82c1be88303018c6cfc509d032a15a27feda1fd1b35e"
+  },
+  "workflows": 2
+}

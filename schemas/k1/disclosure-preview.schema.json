@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority_effect": {
+      "const": "NONE"
+    },
+    "export_contains_only_selected_openings": {
+      "const": true
+    },
+    "private_source_included": {
+      "const": false
+    },
+    "report": {
+      "type": "object"
+    },
+    "schema": {
+      "const": "cmba.disclosure-preview.k1"
+    },
+    "view": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "view",
+    "report",
+    "export_contains_only_selected_openings",
+    "private_source_included",
+    "authority_effect"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,10 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/cmba_batch_j_work
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Building wheels for collected packages: cmba-core
+  Building wheel for cmba-core (pyproject.toml): started
+  Building wheel for cmba-core (pyproject.toml): finished with status 'done'
+  Created wheel for cmba-core: filename=cmba_core-0.1.0a2-py3-none-any.whl size=82043 sha256=a1614789d65a93199ac1399bd27ce870be4c744a3172522b3141b00fe0651920
+  Stored in directory: /tmp/pip-ephem-wheel-cache-jzi3aumm/wheels/4a/33/4e/a401dcecec91c4ed53d79e1f27d536b7e2b8235cf86d9bbc91
+Successfully built cmba-core

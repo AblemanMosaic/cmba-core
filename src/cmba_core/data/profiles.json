@@ -1,0 +1,107 @@
+[
+  {
+    "authority_effect": "NONE",
+    "claim_ceiling": "Commitments only; no application semantics or authentication.",
+    "predicates": [
+      "binding.structure"
+    ],
+    "profile_id": "cmba.generic",
+    "profile_version": "i1",
+    "required_dimensions": [],
+    "schema": "cmba.profile-contract.v0.1-i1",
+    "title": "Generic binding inspection",
+    "unknown_critical": "UNSUPPORTED",
+    "unknown_noncritical": "PRESERVE_WITHOUT_INTERPRETATION"
+  },
+  {
+    "authority_effect": "NONE",
+    "claim_ceiling": "Native manifest structure/root only in evaluator; use explicit archive adapter for payload checking. No namespace authority.",
+    "predicates": [
+      "binding.structure",
+      "dkn.native-manifest",
+      "dkn.transport-description"
+    ],
+    "profile_id": "cmba.dkn.artifact",
+    "profile_version": "i1",
+    "required_dimensions": [
+      {
+        "dimension_id": "manifest",
+        "role": "artifact-state",
+        "schema_id": "dkn.logical-artifact.v0.2-candidate"
+      },
+      {
+        "dimension_id": "transport",
+        "role": "transport",
+        "schema_id": "cmba.transport-description.i1"
+      }
+    ],
+    "schema": "cmba.profile-contract.v0.1-i1",
+    "title": "DKN frozen native-manifest adapter",
+    "unknown_critical": "UNSUPPORTED",
+    "unknown_noncritical": "PRESERVE_WITHOUT_INTERPRETATION"
+  },
+  {
+    "authority_effect": "NONE",
+    "claim_ceiling": "Exact output of this finite JSON transform only, not arbitrary compiler correctness or a homology theorem.",
+    "predicates": [
+      "binding.structure",
+      "chc.supported-rule",
+      "chc.recomputed-output"
+    ],
+    "profile_id": "cmba.chc.transform",
+    "profile_version": "i1",
+    "required_dimensions": [
+      {
+        "dimension_id": "input",
+        "role": "source",
+        "schema_id": "cmba.text.i1"
+      },
+      {
+        "dimension_id": "rule",
+        "role": "transformation-rule",
+        "schema_id": "cmba.chc-rule.i1"
+      },
+      {
+        "dimension_id": "toolchain",
+        "role": "toolchain",
+        "schema_id": "cmba.toolchain.i1"
+      },
+      {
+        "dimension_id": "output",
+        "role": "result",
+        "schema_id": "cmba.text.i1"
+      }
+    ],
+    "schema": "cmba.profile-contract.v0.1-i1",
+    "title": "CHC bounded canonical-JSON transformation",
+    "unknown_critical": "UNSUPPORTED",
+    "unknown_noncritical": "PRESERVE_WITHOUT_INTERPRETATION"
+  },
+  {
+    "authority_effect": "NONE",
+    "claim_ceiling": "Quoted byte spans and explicit attribution only. Interpretation truth, source authorship and complete session capture not established.",
+    "predicates": [
+      "binding.structure",
+      "session.source-spans",
+      "session.attribution"
+    ],
+    "profile_id": "cmba.gendev.session",
+    "profile_version": "i1",
+    "required_dimensions": [
+      {
+        "dimension_id": "source",
+        "role": "recorded-source",
+        "schema_id": "cmba.text.i1"
+      },
+      {
+        "dimension_id": "events",
+        "role": "attributed-interpretations",
+        "schema_id": "cmba.session-events.i1"
+      }
+    ],
+    "schema": "cmba.profile-contract.v0.1-i1",
+    "title": "GenDev source-span provenance",
+    "unknown_critical": "UNSUPPORTED",
+    "unknown_noncritical": "PRESERVE_WITHOUT_INTERPRETATION"
+  }
+]

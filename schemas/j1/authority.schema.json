@@ -1,0 +1,64 @@
+{
+  "$defs": {
+    "authority": {
+      "additionalProperties": false,
+      "properties": {
+        "members": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "jurisdictions": {
+                "items": {
+                  "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                  "type": "string"
+                },
+                "maxItems": 64,
+                "minItems": 0,
+                "type": "array"
+              },
+              "public_key": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "roles": {
+                "items": {
+                  "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                  "type": "string"
+                },
+                "maxItems": 64,
+                "minItems": 0,
+                "type": "array"
+              }
+            },
+            "required": [
+              "public_key",
+              "roles",
+              "jurisdictions"
+            ],
+            "type": "object"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        },
+        "revoked_keys": {
+          "items": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "required": [
+        "members",
+        "revoked_keys"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:authority",
+  "$ref": "#/$defs/authority",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,17 @@
+[
+  {
+    "probe": "boolean-size",
+    "after_status": "REFUSED",
+    "error": "ARCHIVE_MEMBER_KIND_OR_ENCODING"
+  },
+  {
+    "probe": "path-alias",
+    "after_status": "REFUSED",
+    "error": "ARCHIVE_PATH"
+  },
+  {
+    "probe": "symlink-member",
+    "after_status": "REFUSED",
+    "error": "ARCHIVE_MEMBER_KIND_OR_ENCODING"
+  }
+]

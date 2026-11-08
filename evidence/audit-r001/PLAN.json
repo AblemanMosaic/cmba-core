@@ -1,0 +1,27 @@
+{
+  "schema": "cmba.audit-plan.r001",
+  "subject": {
+    "archive": "CMBA-Core-0.1.0a4-BATCH-L-REVIEW-CANDIDATE.zip",
+    "sha256": "f6c17012e986e83cbb8bdba81dc8eedada335d32c55f02ea8c2b848ddde1213e"
+  },
+  "basis": "USER_REQUESTED_POST_L_SELF_AUDIT",
+  "not_native_pippi_program": true,
+  "historical_enforcement": "NOT_ESTABLISHED",
+  "goals": [
+    "A01 exact-artifact custody and closed release delivery",
+    "A02 P/PPI process evidence versus actual host enforcement",
+    "A03 full local CMBA and preserved DKN replay",
+    "A04 pipeline negative checks and phase integrity",
+    "A05 docs-code-schema and claims correspondence",
+    "A06 preservation and rebuild",
+    "A07 consolidated findings and explicit open gates"
+  ],
+  "out_of_scope": [
+    "external submission or publication",
+    "native host registration",
+    "fabricated retrospective receipts",
+    "protocol feature expansion",
+    "independent approval"
+  ],
+  "authority_effect": "NONE"
+}

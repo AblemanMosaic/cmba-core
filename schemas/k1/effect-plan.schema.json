@@ -1,0 +1,106 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "body": {
+      "additionalProperties": false,
+      "properties": {
+        "approval": {
+          "const": "HOST_CONFIRMATION_REQUIRED"
+        },
+        "authority_effect": {
+          "const": "NONE"
+        },
+        "host_effect": {
+          "const": "CREATE_LOCAL_FILE"
+        },
+        "input_state": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "kind": {
+          "enum": [
+            "bundle",
+            "receipt",
+            "workspace",
+            "disclosure",
+            "handoff",
+            "design"
+          ]
+        },
+        "nonce": {
+          "pattern": "^[0-9a-f]{32}$",
+          "type": "string"
+        },
+        "operation": {
+          "const": "CREATE_ONLY_JSON"
+        },
+        "output_bytes": {
+          "maximum": 1048576,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "output_sha256": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "overwrite": {
+          "const": false
+        },
+        "schema": {
+          "const": "cmba.local-effect-plan-body.k1"
+        },
+        "target_name": {
+          "type": "string"
+        },
+        "ttl_seconds": {
+          "maximum": 300,
+          "minimum": 1,
+          "type": "integer"
+        },
+        "workspace": {
+          "type": "string"
+        },
+        "workspace_identity": {
+          "items": {
+            "type": "string"
+          },
+          "maxItems": 2,
+          "minItems": 2,
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema",
+        "kind",
+        "operation",
+        "workspace",
+        "target_name",
+        "workspace_identity",
+        "input_state",
+        "output_sha256",
+        "output_bytes",
+        "ttl_seconds",
+        "nonce",
+        "overwrite",
+        "authority_effect",
+        "host_effect",
+        "approval"
+      ],
+      "type": "object"
+    },
+    "plan_hash": {
+      "pattern": "^[0-9a-f]{64}$",
+      "type": "string"
+    },
+    "schema": {
+      "const": "cmba.local-effect-plan.k1"
+    }
+  },
+  "required": [
+    "schema",
+    "body",
+    "plan_hash"
+  ],
+  "type": "object"
+}

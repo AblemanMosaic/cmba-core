@@ -1,0 +1,28 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "binding": {
+      "type": "object"
+    },
+    "context": {
+      "type": "object"
+    },
+    "schema": {
+      "enum": [
+        "cmba.workbench-bundle.v0.1-i1",
+        "cmba.workbench-bundle.j1"
+      ]
+    },
+    "values": {
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "binding",
+    "values",
+    "context"
+  ],
+  "type": "object"
+}

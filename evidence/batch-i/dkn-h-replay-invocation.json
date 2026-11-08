@@ -1,0 +1,10 @@
+{
+  "command": [
+    "bash",
+    "-c",
+    "python -m pytest tests_v02 -q --junitxml=/mnt/data/cmba_batch_i_work/evidence/batch-i/dkn-h-replay.xml; echo $? > /mnt/data/cmba_batch_i_work/evidence/batch-i/dkn-h-replay.exit"
+  ],
+  "pid": 852,
+  "scope": "tests_v02",
+  "purpose": "same-session baseline replay, not independent review"
+}

@@ -1,0 +1,6 @@
+WARNING: The directory '/home/oai/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.
+Processing /mnt/data/cmba_core-0.1.0a4-py3-none-any.whl
+Processing /mnt/data/cmba_batch_l_work/baseline/dkn/dkn_core-0.2.0rc5-py3-none-any.whl
+Installing collected packages: dkn-core, cmba-core
+
+Successfully installed cmba-core-0.1.0a4 dkn-core-0.2.0rc5

@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "amendment": {
+      "enum": [
+        "new-root",
+        "lifecycle-f1",
+        "silent-rewrite"
+      ]
+    },
+    "anchor": {
+      "enum": [
+        "reader-pin",
+        "recognized-endorsements",
+        "popularity"
+      ]
+    },
+    "disclosure": {
+      "enum": [
+        "full",
+        "salted-inclusion",
+        "encrypted-private"
+      ]
+    },
+    "granularity": {
+      "enum": [
+        "object",
+        "bounded-records",
+        "unbounded-stream"
+      ]
+    },
+    "time": {
+      "enum": [
+        "supplied-snapshot",
+        "finite-validity",
+        "globally-current"
+      ]
+    },
+    "topology": {
+      "enum": [
+        "object",
+        "acyclic-graph",
+        "cyclic-consensus"
+      ]
+    }
+  },
+  "required": [
+    "topology",
+    "granularity",
+    "disclosure",
+    "anchor",
+    "time",
+    "amendment"
+  ],
+  "type": "object"
+}

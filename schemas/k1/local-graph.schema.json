@@ -1,0 +1,71 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority_effect": {
+      "const": "NONE"
+    },
+    "completeness": {
+      "const": "NOT_GLOBAL"
+    },
+    "edge_limited": {
+      "type": "boolean"
+    },
+    "edges": {
+      "items": {
+        "type": "object"
+      },
+      "maxItems": 256,
+      "type": "array"
+    },
+    "node_limited": {
+      "type": "boolean"
+    },
+    "nodes": {
+      "items": {
+        "type": "object"
+      },
+      "maxItems": 64,
+      "type": "array"
+    },
+    "schema": {
+      "const": "cmba.local-graph.k1"
+    },
+    "scope": {
+      "const": "ADMITTED_LOCAL_COLLECTION_ONLY"
+    },
+    "total_declared_edges": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "total_local_documents": {
+      "minimum": 0,
+      "type": "integer"
+    },
+    "truncated": {
+      "type": "boolean"
+    },
+    "unresolved": {
+      "items": {
+        "type": "object"
+      },
+      "maxItems": 256,
+      "type": "array"
+    }
+  },
+  "required": [
+    "schema",
+    "nodes",
+    "edges",
+    "unresolved",
+    "total_local_documents",
+    "total_declared_edges",
+    "node_limited",
+    "edge_limited",
+    "truncated",
+    "scope",
+    "completeness",
+    "authority_effect"
+  ],
+  "type": "object"
+}

@@ -1,0 +1,5 @@
+First optional environment used --system-site-packages. Probe executed but pip check failed:
+dkn-core 0.2.0rc5 requires jsonschema, which is not installed.
+supervisor 4.2.5 requires setuptools, which is not installed.
+dkn-core 0.2.0rc5 requires cryptography>=46,<47 but inherited cryptography was 43.0.0.
+The nested venv inherited base system packages, not the active host virtual environment. Its initial probe is not accepted as dependency-qualified evidence. A new non-system environment receives exact copies of the genuine active-host required distributions and is rechecked.

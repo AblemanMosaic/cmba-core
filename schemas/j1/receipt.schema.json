@@ -1,0 +1,199 @@
+{
+  "$defs": {
+    "profile-reference": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "profile_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "profile_version": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "profile_id",
+        "profile_version",
+        "contract_hash"
+      ],
+      "type": "object"
+    },
+    "receipt": {
+      "additionalProperties": false,
+      "properties": {
+        "body": {
+          "$ref": "#/$defs/receipt-body"
+        },
+        "receipt_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.application-receipt.j1"
+        }
+      },
+      "required": [
+        "schema",
+        "body",
+        "receipt_hash"
+      ],
+      "type": "object"
+    },
+    "receipt-body": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_snapshot_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "binding_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "context_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "evaluator": {
+          "additionalProperties": false,
+          "properties": {
+            "id": {
+              "const": "cmba.applications.j1"
+            },
+            "realization_sha256": {
+              "pattern": "^[0-9a-f]{64}$",
+              "type": "string"
+            }
+          },
+          "required": [
+            "id",
+            "realization_sha256"
+          ],
+          "type": "object"
+        },
+        "evidence_snapshot_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "policy_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "profile": {
+          "$ref": "#/$defs/profile-reference"
+        },
+        "result": {
+          "$ref": "#/$defs/result"
+        },
+        "schema": {
+          "const": "cmba.application-receipt-body.j1"
+        },
+        "signature": {
+          "const": "NOT_SIGNED"
+        },
+        "supplied_values_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "time_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema",
+        "binding_root",
+        "profile",
+        "supplied_values_hash",
+        "context_hash",
+        "policy_hash",
+        "authority_snapshot_hash",
+        "evidence_snapshot_hash",
+        "time_hash",
+        "evaluator",
+        "result",
+        "signature"
+      ],
+      "type": "object"
+    },
+    "result": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_effect": {
+          "const": "NONE"
+        },
+        "authorization": {
+          "const": "EXTERNAL_DECISION_REQUIRED"
+        },
+        "checks": {
+          "additionalProperties": {
+            "enum": [
+              "MATCH",
+              "CONTRADICTED",
+              "UNSUPPORTED",
+              "INSUFFICIENT",
+              "NO_MATCH",
+              "NATIVE_REPORT_COMPUTED"
+            ]
+          },
+          "minProperties": 1,
+          "type": "object"
+        },
+        "claim_ceiling": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        },
+        "freshness": {
+          "const": "SUPPLIED_VIEW_ONLY"
+        },
+        "schema": {
+          "const": "cmba.application-result.j1"
+        },
+        "semantic_truth": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "status": {
+          "enum": [
+            "MATCH_FOR_SUPPLIED_EVIDENCE",
+            "CONTRADICTED",
+            "UNSUPPORTED",
+            "INSUFFICIENT",
+            "NO_MATCH",
+            "NATIVE_REPORT_COMPUTED"
+          ]
+        },
+        "uninterpreted_dimensions": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema",
+        "status",
+        "checks",
+        "details",
+        "claim_ceiling",
+        "authority_effect",
+        "authorization",
+        "freshness",
+        "semantic_truth"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:receipt",
+  "$ref": "#/$defs/receipt",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

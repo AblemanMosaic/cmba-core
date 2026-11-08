@@ -1,0 +1,21 @@
+F                                                                        [100%]
+=================================== FAILURES ===================================
+_______________ test_expiry_during_staging_refuses_final_install _______________
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-9/test_expiry_during_staging_ref0')
+monkeypatch = <_pytest.monkeypatch.MonkeyPatch object at 0x7f50e6f40770>
+
+    def test_expiry_during_staging_refuses_final_install(tmp_path,monkeypatch):
+        now=[0];original=os.fsync
+        with host(tmp_path,clock=lambda:now[0]) as h:
+            p=h.prepare('bundle',payload(),name='out.json',ttl=2);a=h.approve(p['plan_hash'])
+            def expire(fd):original(fd);now[0]=2
+            monkeypatch.setattr(os,'fsync',expire)
+>           with pytest.raises(Refusal,match='EXPIRED'):h.commit(a)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E           Failed: DID NOT RAISE <class 'cmba_core.errors.Refusal'>
+
+tests/test_k_effects.py:177: Failed
+=========================== short test summary info ============================
+FAILED tests/test_k_effects.py::test_expiry_during_staging_refuses_final_install - Failed: DID NOT RAISE <class 'cmba_core.errors.Refusal'>
+1 failed in 0.06s

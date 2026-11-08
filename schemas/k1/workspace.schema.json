@@ -1,0 +1,134 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "properties": {
+    "authority_effect": {
+      "const": "NONE"
+    },
+    "documents": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bundle": {
+            "additionalProperties": false,
+            "properties": {
+              "binding": {
+                "type": "object"
+              },
+              "context": {
+                "type": "object"
+              },
+              "schema": {
+                "enum": [
+                  "cmba.workbench-bundle.v0.1-i1",
+                  "cmba.workbench-bundle.j1"
+                ]
+              },
+              "values": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "schema",
+              "binding",
+              "values",
+              "context"
+            ],
+            "type": "object"
+          },
+          "document_id": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "label": {
+            "maxLength": 128,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "required": [
+          "document_id",
+          "label",
+          "bundle"
+        ],
+        "type": "object"
+      },
+      "maxItems": 64,
+      "type": "array"
+    },
+    "history": {
+      "items": {
+        "additionalProperties": false,
+        "properties": {
+          "bundle": {
+            "additionalProperties": false,
+            "properties": {
+              "binding": {
+                "type": "object"
+              },
+              "context": {
+                "type": "object"
+              },
+              "schema": {
+                "enum": [
+                  "cmba.workbench-bundle.v0.1-i1",
+                  "cmba.workbench-bundle.j1"
+                ]
+              },
+              "values": {
+                "type": "object"
+              }
+            },
+            "required": [
+              "schema",
+              "binding",
+              "values",
+              "context"
+            ],
+            "type": "object"
+          },
+          "context": {
+            "type": "object"
+          },
+          "context_source": {
+            "enum": [
+              "READER_SELECTED",
+              "DOCUMENT_DEMO_UNTRUSTED"
+            ]
+          },
+          "document_id": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "receipt": {
+            "type": "object"
+          }
+        },
+        "required": [
+          "document_id",
+          "bundle",
+          "context",
+          "context_source",
+          "receipt"
+        ],
+        "type": "object"
+      },
+      "maxItems": 128,
+      "type": "array"
+    },
+    "schema": {
+      "const": "cmba.workspace.k1"
+    },
+    "trust_state": {
+      "const": "NOT_SERIALIZED"
+    }
+  },
+  "required": [
+    "schema",
+    "documents",
+    "history",
+    "trust_state",
+    "authority_effect"
+  ],
+  "type": "object"
+}

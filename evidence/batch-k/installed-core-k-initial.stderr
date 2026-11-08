@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/mnt/data/cmba_batch_k_work/tools/probe_installed_k.py", line 49, in <module>
+    if __name__=='__main__':main()
+                            ~~~~^^
+  File "/mnt/data/cmba_batch_k_work/tools/probe_installed_k.py", line 17, in main
+    assert w.replay_packet(w.receipt_packet())['status']=='MATCH_EXACT_EVALUATION_REPLAY'
+           ^^^^^^^^^^^^^^^
+AttributeError: 'Workspace' object has no attribute 'replay_packet'. Did you mean: 'receipt_packet'?

@@ -1,0 +1,7 @@
+{
+  "status": "PASS_INSTALLED_NATIVE_WORKBENCH",
+  "environment": "/mnt/data/cmba_i_core_env",
+  "checks": 5,
+  "display": "Linux Xvfb",
+  "authority_effect": "NONE"
+}

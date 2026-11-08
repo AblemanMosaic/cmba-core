@@ -1,0 +1,11 @@
+{
+  "core_environment": "ISOLATED_VENV_NO_THIRD_PARTY_RUNTIME_DEPS",
+  "optional_environment": "VENV_WITH_SYSTEM_SITE_PACKAGES_GENUINE_PREINSTALLED_HOST_DEPENDENCIES",
+  "local_wheels_only": true,
+  "pip_flags": [
+    "--no-index",
+    "--no-deps"
+  ],
+  "fresh_optional_dependency_resolution": "NOT_ESTABLISHED",
+  "user_machine_installation": "NOT_PERFORMED"
+}

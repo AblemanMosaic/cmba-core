@@ -1,0 +1,23 @@
+[
+  {
+    "probe": "path-alias",
+    "before_status": "PASS",
+    "archive_sha256": "75061642fef4fe822ae88f1318b7364807fe691f58bd183637ebd9c8c38e18f2",
+    "after_status": "REFUSED",
+    "error": "ARCHIVE_PATH"
+  },
+  {
+    "probe": "symlink-member",
+    "before_status": "PASS",
+    "archive_sha256": "edbe801a7c335bd8af325d0add7471aef803a7d11a0a5bafbe450df9e65179fe",
+    "after_status": "REFUSED",
+    "error": "ARCHIVE_MEMBER_KIND_OR_ENCODING"
+  },
+  {
+    "probe": "boolean-size",
+    "before_status": "PASS",
+    "archive_sha256": "1a123f80211f101d8fbf3f4685a9d1aed73776222f3bc4a3d5b5116bdd01e852",
+    "after_status": "REFUSED",
+    "error": "MANIFEST_SIZE_TYPE"
+  }
+]

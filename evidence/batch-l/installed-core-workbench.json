@@ -1,0 +1,20 @@
+{
+  "authority_effect": "NONE",
+  "checks": [
+    "installed-workspace-evaluate-replay",
+    "preview-no-write",
+    "explicit-create-only-export",
+    "restore-no-trust",
+    "installed-export-cli",
+    "installed-readonly-cli-byte-parity"
+  ],
+  "distribution_version": "0.1.0a4",
+  "local_effects": "EXPLICIT_TEST_EXPORT_IN_TEMPORARY_DIRECTORY",
+  "module": "/mnt/data/cmba_l_core_env/lib/python3.13/site-packages/cmba_workbench/k1/session.py",
+  "payload_files_compared": 52,
+  "prefix": "/mnt/data/cmba_l_core_env",
+  "python": "3.13.5",
+  "schema": "cmba.installed-k-probe",
+  "status": "PASS_OUTSIDE_SOURCE_TREE",
+  "wheel_sha256": "2a595c06ac64371647eeb9586defde9d3238dbe16271a788ea231de2e15831ce"
+}

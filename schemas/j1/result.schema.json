@@ -1,0 +1,78 @@
+{
+  "$defs": {
+    "result": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_effect": {
+          "const": "NONE"
+        },
+        "authorization": {
+          "const": "EXTERNAL_DECISION_REQUIRED"
+        },
+        "checks": {
+          "additionalProperties": {
+            "enum": [
+              "MATCH",
+              "CONTRADICTED",
+              "UNSUPPORTED",
+              "INSUFFICIENT",
+              "NO_MATCH",
+              "NATIVE_REPORT_COMPUTED"
+            ]
+          },
+          "minProperties": 1,
+          "type": "object"
+        },
+        "claim_ceiling": {
+          "type": "string"
+        },
+        "details": {
+          "type": "object"
+        },
+        "freshness": {
+          "const": "SUPPLIED_VIEW_ONLY"
+        },
+        "schema": {
+          "const": "cmba.application-result.j1"
+        },
+        "semantic_truth": {
+          "const": "NOT_ESTABLISHED"
+        },
+        "status": {
+          "enum": [
+            "MATCH_FOR_SUPPLIED_EVIDENCE",
+            "CONTRADICTED",
+            "UNSUPPORTED",
+            "INSUFFICIENT",
+            "NO_MATCH",
+            "NATIVE_REPORT_COMPUTED"
+          ]
+        },
+        "uninterpreted_dimensions": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "required": [
+        "schema",
+        "status",
+        "checks",
+        "details",
+        "claim_ceiling",
+        "authority_effect",
+        "authorization",
+        "freshness",
+        "semantic_truth"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:result",
+  "$ref": "#/$defs/result",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,232 @@
+{
+  "archive_members": 121,
+  "artifacts": [
+    {
+      "bytes": 14998036,
+      "path": "CMBA-Core-0.1.0a1-BATCH-I-FOUNDATION-CANDIDATE.zip",
+      "sha256": "429c4317088e91ba0ef29c678665db01da07b7823cb12b182f769c78b549a2d5"
+    },
+    {
+      "bytes": 35215,
+      "path": "cmba_core-0.1.0a1-py3-none-any.whl",
+      "sha256": "c0f97fdf44ba1b2cb62a82c1be88303018c6cfc509d032a15a27feda1fd1b35e"
+    },
+    {
+      "bytes": 3823,
+      "path": "CMBA-BATCH-I-CLEAN-REPLAY.json",
+      "sha256": "b37f9e309688ab5c67cc3120b34106ecc419a40c7dce631a27e0487e548f7464"
+    },
+    {
+      "bytes": 90465,
+      "path": "CMBA-BATCH-I-CLEAN-REPLAY-EVIDENCE.zip",
+      "sha256": "c28934fc882eafdda6b4bbf119b2089abdb4e9b10e6e854405b78aa7515a50c0"
+    },
+    {
+      "bytes": 82544,
+      "path": "CMBA-BATCH-I-WORKBENCH.png",
+      "sha256": "36dc7101f42134ab5101024ad938bd0e4ac6d004da9986cf6c1598c0c79c51af"
+    }
+  ],
+  "authority_effect": "NONE",
+  "baseline": {
+    "all_baseline_bytes_preserved": true,
+    "archive_members_verified": 668,
+    "dkn_version": "0.2.0rc5",
+    "legacy_blake3": "NOT_EXECUTED_NOT_INSTALLED",
+    "scope": "V02_PYTEST_SUITE_AND_STATIC_ARCHIVE_CLOSURE_NOT_ALL_OLD_RELEASE_STAGES",
+    "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+    "v02_tests": {
+      "failed": 0,
+      "passed": 1173,
+      "skipped": 0
+    }
+  },
+  "catalogue": {
+    "actual_table_sections": 8,
+    "catalogue_is_not_domain_implementation": true,
+    "family_mapping_records": 19,
+    "historical_heading_claim": {
+      "applications": 51,
+      "sectors": 10
+    },
+    "historical_table_rows": 52,
+    "implemented_profile_contracts": 4,
+    "total_records": 71
+  },
+  "distribution": "cmba-core",
+  "fresh_extraction_tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 213,
+    "skipped": 0
+  },
+  "gui_source_smoke": {
+    "authority_effect": "NONE",
+    "checks": 8,
+    "display": "Xvfb Linux",
+    "native_windows": "NOT_RUN",
+    "scope": "creation,render,explicit-context gate,positive/negative evaluation,replay,session,catalogue",
+    "status": "PASS",
+    "tk": "8.6.16"
+  },
+  "independent_review": "NOT_PERFORMED",
+  "installation": {
+    "core": {
+      "authority_effect": "NONE",
+      "checks": [
+        {
+          "name": "chc-match",
+          "result": "MATCH_FOR_SUPPLIED_EVIDENCE"
+        },
+        {
+          "name": "chc-incorrect",
+          "result": "CONTRADICTED"
+        },
+        {
+          "name": "session",
+          "result": "MATCH_FOR_SUPPLIED_EVIDENCE"
+        },
+        {
+          "name": "installed-cli",
+          "result": "PASS"
+        },
+        {
+          "name": "stdlib-only-core-without-dkn",
+          "result": "PASS"
+        }
+      ],
+      "dependency_source": "STDLIB_ONLY_CORE",
+      "fresh_dependency_resolution": "NO_THIRD_PARTY_RUNTIME_DEPENDENCIES",
+      "gui_launch": "TESTED_SEPARATELY",
+      "installed_source": "/mnt/data/cmba_i_core_env/lib/python3.13/site-packages/cmba_core/__init__.py",
+      "package_files_compared": 19,
+      "prefix": "/mnt/data/cmba_i_core_env",
+      "python": "3.13.5",
+      "schema": "cmba.installed-probe.i1",
+      "status": "PASS_OUTSIDE_SOURCE_TREE",
+      "wheel_sha256": "c0f97fdf44ba1b2cb62a82c1be88303018c6cfc509d032a15a27feda1fd1b35e"
+    },
+    "core_pip_check": "PASS",
+    "failed_initial_optional_environment": "PRESERVED_NOT_ACCEPTED",
+    "installed_gui": {
+      "authority_effect": "NONE",
+      "checks": 5,
+      "display": "Linux Xvfb",
+      "environment": "/mnt/data/cmba_i_core_env",
+      "status": "PASS_INSTALLED_NATIVE_WORKBENCH"
+    },
+    "optional_dependency_inventory": {
+      "path": "evidence/batch-i/cmba_i_optional_dependencies.json",
+      "sha256": "944c44fad5ec15ac2b06b06d73c15055da184c580611c2bfaa884ac9dabb0d1f"
+    },
+    "optional_dkn": {
+      "authority_effect": "NONE",
+      "checks": [
+        {
+          "name": "chc-match",
+          "result": "MATCH_FOR_SUPPLIED_EVIDENCE"
+        },
+        {
+          "name": "chc-incorrect",
+          "result": "CONTRADICTED"
+        },
+        {
+          "name": "session",
+          "result": "MATCH_FOR_SUPPLIED_EVIDENCE"
+        },
+        {
+          "name": "installed-cli",
+          "result": "PASS"
+        },
+        {
+          "name": "installed-dkn-certificate-and-wrapper",
+          "result": "PASS"
+        }
+      ],
+      "dependency_source": "HOST_PREINSTALLED_OPTIONAL_DEPENDENCIES",
+      "fresh_dependency_resolution": "NOT_ESTABLISHED",
+      "gui_launch": "TESTED_SEPARATELY",
+      "installed_source": "/mnt/data/cmba_i_optional_env/lib/python3.13/site-packages/cmba_core/__init__.py",
+      "package_files_compared": 19,
+      "prefix": "/mnt/data/cmba_i_optional_env",
+      "python": "3.13.5",
+      "schema": "cmba.installed-probe.i1",
+      "status": "PASS_OUTSIDE_SOURCE_TREE",
+      "wheel_sha256": "c0f97fdf44ba1b2cb62a82c1be88303018c6cfc509d032a15a27feda1fd1b35e"
+    },
+    "optional_dkn_pip_check": "PASS"
+  },
+  "model": {
+    "authority_effect": "NONE",
+    "bound_files": 56,
+    "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+    "executed_test_binding": "CHECKED",
+    "external_anchor": "NOT_PROVIDED",
+    "obligations": 18,
+    "reference_files": 17,
+    "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+    "status": "PASS_REFERENCE_INTEGRITY"
+  },
+  "new_conformance": {
+    "alternative_realization": false,
+    "authority_effect": "NONE",
+    "cases": 33,
+    "oracle": "EXACT_CANONICAL_RESPONSE_BYTES",
+    "status": "PASS",
+    "whole_program_equivalence": "NOT_ESTABLISHED"
+  },
+  "new_tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 213,
+    "skipped": 0
+  },
+  "new_workflows": 2,
+  "not_delivered_in_i": [
+    "native CMBA signing profile",
+    "full compiler/translation validation",
+    "general jurisdiction or consent evaluator",
+    "selective disclosure proof protocol",
+    "live P2P/network services",
+    "workbench authoring/export/effect-enforcement host",
+    "clinical, election or weapon-control domain engines",
+    "full second-language realization",
+    "complete semantic-equivalence proof"
+  ],
+  "platform": {
+    "machine": "x86_64",
+    "python": "3.13.5",
+    "system": "Linux"
+  },
+  "profile": "I1",
+  "program": {
+    "batch_i": "COMPLETE_FOR_DECLARED_SCOPE",
+    "batch_j": "PLANNED",
+    "batch_k": "PLANNED",
+    "batch_l": "PLANNED",
+    "build_turn_target": 4
+  },
+  "public_release_gate": "NOT_CLEARED",
+  "publication": "NOT_PERFORMED",
+  "remaining_gates": [
+    "J-L construction",
+    "genuine legacy BLAKE3 replay",
+    "native Windows/WSL/macOS execution",
+    "fresh optional dependency resolution",
+    "independent security review",
+    "deployment-specific validation and approval"
+  ],
+  "reproducibility": {
+    "scope": "SERIALIZATION_OF_FROZEN_TREE_NOT_REGENERATION_OF_TIMED_LOGS",
+    "source_date_epoch": 1794009600,
+    "source_zip_byte_identical": true,
+    "wheel_byte_identical": true
+  },
+  "runtime_schemas": 10,
+  "schema": "cmba.batch-i-release-verification",
+  "signature": "NOT_SIGNED",
+  "source_documents": 5,
+  "source_fingerprint": "638f2d489bb9bdac2f10faec38b95b22f4e93571cabf5a178197cd3f7471b1e2",
+  "status": "PASS_BOUNDED_FOUNDATION_EXTERNAL_GATES_OPEN",
+  "version": "0.1.0a1"
+}

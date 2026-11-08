@@ -1,0 +1,69 @@
+........................................................................ [ 47%]
+........................................................................ [ 94%]
+.....F..                                                                 [100%]
+=================================== FAILURES ===================================
+______________ test_cli_cannot_turn_nonregular_file_into_payload _______________
+
+path = '/tmp/pytest-of-root/pytest-1/test_cli_cannot_turn_nonregula0'
+
+    def read_local(path: str) -> bytes:
+        p=Path(os.path.abspath(path))
+        for node in (p,*p.parents):require(not node.is_symlink(),'CMBA_INPUT_SYMLINK')
+        flags=os.O_RDONLY|getattr(os,'O_BINARY',0)|getattr(os,'O_NOFOLLOW',0)|getattr(os,'O_NONBLOCK',0)
+        try:
+            fd=os.open(p,flags)
+>           with os.fdopen(fd,'rb') as f:
+                 ^^^^^^^^^^^^^^^^^^
+E           IsADirectoryError: [Errno 21] Is a directory: 11
+
+src/cmba_core/cli.py:18: IsADirectoryError
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_cli_cannot_turn_nonregula0')
+
+    def test_cli_cannot_turn_nonregular_file_into_payload(tmp_path):
+>       with pytest.raises(Refusal,match='CMBA_INPUT_KIND'):read_local(str(tmp_path))
+                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_interfaces.py:100: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = '/tmp/pytest-of-root/pytest-1/test_cli_cannot_turn_nonregula0'
+
+    def read_local(path: str) -> bytes:
+        p=Path(os.path.abspath(path))
+        for node in (p,*p.parents):require(not node.is_symlink(),'CMBA_INPUT_SYMLINK')
+        flags=os.O_RDONLY|getattr(os,'O_BINARY',0)|getattr(os,'O_NOFOLLOW',0)|getattr(os,'O_NONBLOCK',0)
+        try:
+            fd=os.open(p,flags)
+            with os.fdopen(fd,'rb') as f:
+                before=os.fstat(f.fileno());require(stat.S_ISREG(before.st_mode),'CMBA_INPUT_KIND')
+                require(before.st_size<=MAX_BYTES,'CMBA_BYTE_LIMIT')
+                data=f.read(MAX_BYTES+1);after=os.fstat(f.fileno())
+                require(len(data)<=MAX_BYTES,'CMBA_BYTE_LIMIT')
+                require(before.st_size==after.st_size==len(data) and before.st_mtime_ns==after.st_mtime_ns,'CMBA_INPUT_CHANGED')
+                return data
+>       except OSError as exc:raise Refusal('CMBA_INPUT_IO') from exc
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       cmba_core.errors.Refusal: CMBA_INPUT_IO
+
+src/cmba_core/cli.py:25: Refusal
+
+During handling of the above exception, another exception occurred:
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-1/test_cli_cannot_turn_nonregula0')
+
+    def test_cli_cannot_turn_nonregular_file_into_payload(tmp_path):
+>       with pytest.raises(Refusal,match='CMBA_INPUT_KIND'):read_local(str(tmp_path))
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       AssertionError: Regex pattern did not match.
+E         Expected regex: 'CMBA_INPUT_KIND'
+E         Actual message: 'CMBA_INPUT_IO'
+
+tests/test_interfaces.py:100: AssertionError
+=========================== short test summary info ============================
+FAILED tests/test_interfaces.py::test_cli_cannot_turn_nonregular_file_into_payload - AssertionError: Regex pattern did not match.
+  Expected regex: 'CMBA_INPUT_KIND'
+  Actual message: 'CMBA_INPUT_IO'
+1 failed, 151 passed in 3.11s

@@ -1,0 +1,32 @@
+{
+  "authority_effect": "NONE",
+  "context": {
+    "native": {
+      "all_source_members": 668,
+      "runtime_files": 43,
+      "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+      "status": "PASS"
+    },
+    "plugins": "DISABLED",
+    "pytest": "9.0.2",
+    "python": "3.13.5",
+    "runner_sha256": "4814bfdd60d8c90d398d8c9c084feddad13e3c5f07c2f65be5b484aa97004979",
+    "system": "Linux"
+  },
+  "legs": [
+    {
+      "exit_code": 0,
+      "name": "collect"
+    }
+  ],
+  "outputs": {
+    "collect.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "collect.stdout": "31826aad3a9cdfaf34f080d6e7099c373ff85ae34031db02b59b580db917c256"
+  },
+  "phase": "collect",
+  "results": {
+    "tests": null
+  },
+  "schema": "cmba.native-stage.l1",
+  "status": "PASS"
+}

@@ -1,0 +1,1627 @@
+{
+  "claim_ceiling": "Catalogue presence and reusable record shape are not a domain implementation, approval or security guarantee.",
+  "coverage": "RECOVERED_PRIMARY_SOURCES_AND_SUPPLIED_SESSION_ONLY",
+  "entries": [
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.vote",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Vote",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 915,
+        "line_start": 915,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Intent",
+        "Custody"
+      ],
+      "source_use_case": "Verifiable election integrity"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.court",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Court",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 916,
+        "line_start": 916,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics",
+        "Custody"
+      ],
+      "source_use_case": "Judicial decision provenance"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.identity",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Identity",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 917,
+        "line_start": 917,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody"
+      ],
+      "source_use_case": "Digital identity with credential lineage"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.immigration",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Immigration",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 918,
+        "line_start": 918,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Visa/passport chain of custody"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.legislation",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Legislation",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 919,
+        "line_start": 919,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics"
+      ],
+      "source_use_case": "Bill amendment history"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.permit",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Permit",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 920,
+        "line_start": 920,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context"
+      ],
+      "source_use_case": "Construction/business permit compliance"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.taxation",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Taxation",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 921,
+        "line_start": 921,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Semantics",
+        "Custody",
+        "Resources"
+      ],
+      "source_use_case": "Tax return audit trails"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.compliance",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Compliance",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 922,
+        "line_start": 922,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics"
+      ],
+      "source_use_case": "Regulatory compliance verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.procurement",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Procurement",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Government Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 923,
+        "line_start": 923,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody",
+        "Resources"
+      ],
+      "source_use_case": "Government contract transparency"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.audit",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Audit",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 929,
+        "line_start": 929,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics",
+        "Custody",
+        "Resources"
+      ],
+      "source_use_case": "Financial statement verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.insurance",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Insurance",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 930,
+        "line_start": 930,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Claims processing with fraud detection"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.tradefinance",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-TradeFinance",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 931,
+        "line_start": 931,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody",
+        "Resources"
+      ],
+      "source_use_case": "Letter of credit verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.supplychain",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-SupplyChain",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 932,
+        "line_start": 932,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody",
+        "Resources"
+      ],
+      "source_use_case": "End-to-end product provenance"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.logistics",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Logistics",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 933,
+        "line_start": 933,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Shipping chain of custody"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.warranty",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Warranty",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 934,
+        "line_start": 934,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context"
+      ],
+      "source_use_case": "Product warranty validation"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.recall",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Recall",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 935,
+        "line_start": 935,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context"
+      ],
+      "source_use_case": "Product recall traceability"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.quality",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Quality",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 936,
+        "line_start": 936,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics"
+      ],
+      "source_use_case": "Manufacturing quality assurance"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.licensing",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Licensing",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 937,
+        "line_start": 937,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Intent"
+      ],
+      "source_use_case": "Software licensing enforcement"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.franchise",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Franchise",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 938,
+        "line_start": 938,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Franchise compliance verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.merger",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Merger",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 939,
+        "line_start": 939,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody",
+        "Resources"
+      ],
+      "source_use_case": "Corporate M&A documentation"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.bankruptcy",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Bankruptcy",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Business Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 940,
+        "line_start": 940,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody",
+        "Resources"
+      ],
+      "source_use_case": "Asset liquidation tracking"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.credential",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Credential",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Education Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 946,
+        "line_start": 946,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context"
+      ],
+      "source_use_case": "Academic degree verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.transcript",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Transcript",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Education Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 947,
+        "line_start": 947,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody"
+      ],
+      "source_use_case": "Grade history with anti-fraud"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.accreditation",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Accreditation",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Education Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 948,
+        "line_start": 948,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics"
+      ],
+      "source_use_case": "Institution accreditation lineage"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.research",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Research",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Education Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 949,
+        "line_start": 949,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics",
+        "Custody"
+      ],
+      "source_use_case": "Research data provenance"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.thesis",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Thesis",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Education Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 950,
+        "line_start": 950,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics",
+        "Custody"
+      ],
+      "source_use_case": "Dissertation plagiarism prevention"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.medical",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Medical",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Health Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 956,
+        "line_start": 956,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Intent",
+        "Authority",
+        "Context",
+        "Semantics",
+        "Custody"
+      ],
+      "source_use_case": "Clinical decision verification (detailed above)"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.pharma",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Pharma",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Health Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 957,
+        "line_start": 957,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Semantics"
+      ],
+      "source_use_case": "Drug approval and tracking"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.clinicaltrial",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-ClinicalTrial",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Health Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 958,
+        "line_start": 958,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics",
+        "Custody"
+      ],
+      "source_use_case": "Trial data integrity"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.prescription",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Prescription",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Health Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 959,
+        "line_start": 959,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Prescription fraud prevention"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.medicaldevice",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-MedicalDevice",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Health Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 960,
+        "line_start": 960,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Semantics"
+      ],
+      "source_use_case": "Device certification tracking"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.genomics",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Genomics",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Health Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 961,
+        "line_start": 961,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Genetic data provenance"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.publichealth",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-PublicHealth",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Health Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 962,
+        "line_start": 962,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Resources"
+      ],
+      "source_use_case": "Epidemic response coordination"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.title",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Title",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Infrastructure Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 968,
+        "line_start": 968,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody"
+      ],
+      "source_use_case": "Real estate ownership history"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.energy",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Energy",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Infrastructure Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 969,
+        "line_start": 969,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Resources"
+      ],
+      "source_use_case": "Renewable energy certificate verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.carbon",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Carbon",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Infrastructure Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 970,
+        "line_start": 970,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Resources"
+      ],
+      "source_use_case": "Carbon credit anti-greenwashing"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.water",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Water",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Infrastructure Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 971,
+        "line_start": 971,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context"
+      ],
+      "source_use_case": "Water rights and usage tracking"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.domain",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Domain",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Infrastructure Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 972,
+        "line_start": 972,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody"
+      ],
+      "source_use_case": "Internet domain registration"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.spectrum",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Spectrum",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Infrastructure Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 973,
+        "line_start": 973,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context"
+      ],
+      "source_use_case": "Radio frequency allocation"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.safety",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Safety",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Public Safety Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 979,
+        "line_start": 979,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Semantics"
+      ],
+      "source_use_case": "Safety equipment certification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.emergency",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Emergency",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Public Safety Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 980,
+        "line_start": 980,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context"
+      ],
+      "source_use_case": "Emergency response coordination"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.evacuation",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Evacuation",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Public Safety Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 981,
+        "line_start": 981,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Disaster evacuation tracking"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.incident",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Incident",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Public Safety Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 982,
+        "line_start": 982,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Incident report chain of custody"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.evidence",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Evidence",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Public Safety Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 983,
+        "line_start": 983,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Custody"
+      ],
+      "source_use_case": "Criminal evidence provenance"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.forensics",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Forensics",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Public Safety Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 984,
+        "line_start": 984,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Semantics",
+        "Custody"
+      ],
+      "source_use_case": "Digital forensics verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.military",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Military",
+      "planned_scope": "DESCRIPTIVE_RECORD_ONLY_NO_OPERATIONAL_CONTROL",
+      "sector": "Military/Defense Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 990,
+        "line_start": 990,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Rules of engagement verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.weapons",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Weapons",
+      "planned_scope": "DESCRIPTIVE_RECORD_ONLY_NO_OPERATIONAL_CONTROL",
+      "sector": "Military/Defense Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 991,
+        "line_start": 991,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Weapon authorization chains"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.nuclear",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Nuclear",
+      "planned_scope": "DESCRIPTIVE_RECORD_ONLY_NO_OPERATIONAL_CONTROL",
+      "sector": "Military/Defense Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 992,
+        "line_start": 992,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Custody"
+      ],
+      "source_use_case": "Nuclear command and control"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.model",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Model",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Technology Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 998,
+        "line_start": 998,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Intent",
+        "Authority",
+        "Semantics",
+        "Resources"
+      ],
+      "source_use_case": "AI model training provenance"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.compiler",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Compiler",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Technology Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 999,
+        "line_start": 999,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Intent",
+        "Authority",
+        "Context",
+        "Semantics"
+      ],
+      "source_use_case": "Software compilation verification (detailed above)"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.container",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Container",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Technology Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 1000,
+        "line_start": 1000,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context"
+      ],
+      "source_use_case": "Docker/container image verification"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "research.firmware",
+      "implementation": "CATALOGUE_ONLY",
+      "kind": "SOURCE_DOMAIN_INVENTORY",
+      "label": "CMBA-Firmware",
+      "planned_scope": "DECLARATIVE_DOMAIN_TEMPLATE_WITH_EXPLICIT_UNIMPLEMENTED_PREDICATES",
+      "sector": "Technology Applications",
+      "semantic_assurance": "NOT_ESTABLISHED",
+      "source": {
+        "line_end": 1001,
+        "line_start": 1001,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "source_claim_status": "HISTORICAL_ASSERTION_NOT_IMPLEMENTATION_EVIDENCE",
+      "source_dimensions": [
+        "Object",
+        "Causal",
+        "Authority",
+        "Context",
+        "Semantics"
+      ],
+      "source_use_case": "IoT firmware update security"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": true,
+      "catalogue_id": "family.dkn",
+      "implementation": "ADAPTER_IMPLEMENTED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "DKN",
+      "profile_id": "cmba.dkn.artifact",
+      "purpose": "Existing frozen library; optional native-identity adapter",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 944,
+        "line_start": 944,
+        "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md"
+      },
+      "target_batch": "I"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": true,
+      "catalogue_id": "family.chc-compilation",
+      "implementation": "BOUNDED_EVALUATOR_IMPLEMENTED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "CHC — Cryptographic Homological Compilation",
+      "profile_id": "cmba.chc.transform",
+      "purpose": "Transformation records and actual finite validation",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 933,
+        "line_start": 933,
+        "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md"
+      },
+      "target_batch": "I"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": true,
+      "catalogue_id": "family.gendev",
+      "implementation": "BOUNDED_EVALUATOR_IMPLEMENTED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "CMBA-GenDev",
+      "profile_id": "cmba.gendev.session",
+      "purpose": "Recorded sessions, attributed decisions, reconsideration triggers",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 2091,
+        "line_start": 2091,
+        "path": "sources/CMBA_Mathematical_Framework.md"
+      },
+      "target_batch": "I"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.kasd",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "KASD — Key-Anchored Semantic Dimensioning",
+      "profile_id": null,
+      "purpose": "Overlapping jurisdiction requirements and approvals",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 774,
+        "line_start": 774,
+        "path": "sources/CMBA_Mathematical_Framework.md"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.consent",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Conditional renewable consent",
+      "profile_id": null,
+      "purpose": "Exact subject/resource/action grants, withdrawal, expiry, renewal",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 30,
+        "line_start": 30,
+        "path": "sources/Pasted text(20261108-015154).txt"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.admissibility",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "CHC — state/claims/admissibility profile",
+      "profile_id": null,
+      "purpose": "Separate current assessments from historical bindings",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 19,
+        "line_start": 19,
+        "path": "sources/Cryptographic Admissibility and Jurisdiction.md"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.disclosure",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Selective disclosure",
+      "profile_id": null,
+      "purpose": "Commitment inclusion and explicit disclosure limits",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 38,
+        "line_start": 38,
+        "path": "sources/Pasted text(20261108-015154).txt"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.observation",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Measurement and observation",
+      "profile_id": null,
+      "purpose": "Observed bytes, method, instrument/calibration references",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 1045,
+        "line_start": 1045,
+        "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.coordination",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Multiparty coordination",
+      "profile_id": null,
+      "purpose": "Exact terms, required signers, conflicts and completion observations",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 1046,
+        "line_start": 1046,
+        "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.reconciliation",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Federated state reconciliation",
+      "profile_id": null,
+      "purpose": "Bounded merge rules, explicit conflicts, supplied snapshots",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 1047,
+        "line_start": 1047,
+        "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.execution",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Governed execution/deployment records",
+      "profile_id": null,
+      "purpose": "Compare declared request with supplied observations; no deployment authority",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 1044,
+        "line_start": 1044,
+        "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.pcse",
+      "implementation": "RESEARCH_REFERENCE",
+      "kind": "APPLICATION_FAMILY",
+      "label": "PCSE / CMBA-AI",
+      "profile_id": null,
+      "purpose": "Evidence/knowledge-source references; no reasoning or truth guarantee",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 37,
+        "line_start": 37,
+        "path": "sources/CMBA_Framework_Whitepaper.md"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.cara",
+      "implementation": "RESEARCH_REFERENCE",
+      "kind": "APPLICATION_FAMILY",
+      "label": "CARA — Clinical Accountable Reasoning Architecture",
+      "profile_id": null,
+      "purpose": "Domain research reference, not a clinical decision engine",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 714,
+        "line_start": 714,
+        "path": "sources/CMBA_Mathematical_Framework.md"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.vote",
+      "implementation": "RESEARCH_REFERENCE",
+      "kind": "APPLICATION_FAMILY",
+      "label": "CMBA-Vote",
+      "profile_id": null,
+      "purpose": "Historical voting architecture; general consent is separate",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 64,
+        "line_start": 64,
+        "path": "sources/Pasted text(20261108-015154).txt"
+      },
+      "target_batch": "J"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.design-space",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "CMBA design-space explorer",
+      "profile_id": null,
+      "purpose": "Finite supported combinations and generated obligations, not a security theorem",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 40,
+        "line_start": 40,
+        "path": "sources/Pasted text(20261108-015154).txt"
+      },
+      "target_batch": "K"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.ccp",
+      "implementation": "INTEGRATION_CONTRACT",
+      "kind": "APPLICATION_FAMILY",
+      "label": "CCP curation integration",
+      "profile_id": null,
+      "purpose": "Exact curated stack references and reader-specific recognition",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 1475,
+        "line_start": 1475,
+        "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md"
+      },
+      "target_batch": "K"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.model-realization",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Constitutional model / realization binding",
+      "profile_id": null,
+      "purpose": "Contract, code, conformance and review evidence kept separate",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 1485,
+        "line_start": 1485,
+        "path": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md"
+      },
+      "target_batch": "L"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.runtime-enforcement",
+      "implementation": "PLANNED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Runtime measurement/enforcement adapter boundary",
+      "profile_id": null,
+      "purpose": "Host-selected mechanisms; no ambient effects from documents",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 18,
+        "line_start": 18,
+        "path": "sources/Pasted text(20261108-015154).txt"
+      },
+      "target_batch": "K"
+    },
+    {
+      "authority_effect": "NONE",
+      "callable": false,
+      "catalogue_id": "family.evaluation",
+      "implementation": "IMPLEMENTED",
+      "kind": "APPLICATION_FAMILY",
+      "label": "Policy evaluation receipts",
+      "profile_id": null,
+      "purpose": "Exact object, values, policy, authorities, evidence, evaluator and supplied time",
+      "scope_authorship": "ENGINEERING_MAPPING_PROPOSED_IN_BATCH_I; SOURCE_TERMINOLOGY_RETAINED",
+      "source": {
+        "line_end": 86,
+        "line_start": 86,
+        "path": "sources/Pasted text(20261108-015154).txt"
+      },
+      "target_batch": "I"
+    }
+  ],
+  "missing_primary_documents": [
+    "CMBA_VOTE.md",
+    "CMBA_VOTE (outline).md",
+    "CRYPTOGRAPHIC_DIMENSIONALITY.md",
+    "CMBA_BLOCKCHAIN_COMPARISON.md",
+    "CMBA_ROADMAP_11_27_2025.md"
+  ],
+  "missing_source_policy": "SECONDARY_ASSESSMENT_ONLY; NOT_TREATED_AS_RECONSTRUCTED_OR_REVIEWED_ORIGINALS",
+  "schema": "cmba.application-catalogue.v0.1-i1",
+  "source_count_discrepancy": {
+    "observed_table_rows": 52,
+    "observed_table_sections": 8,
+    "source_claimed_applications": 51,
+    "source_claimed_sectors": 10
+  }
+}

@@ -1,0 +1,58 @@
+[
+  {
+    "bytes": 4523240,
+    "name": "CMBA-BATCH-L-CLEAN-REPLAY-EVIDENCE.zip",
+    "sha256": "fd000cf4e50d0c652cad3e5c6050cd773e285b3d49df19298c1e84062b0e245f",
+    "present": true,
+    "hash_match": true
+  },
+  {
+    "bytes": 6295,
+    "name": "CMBA-BATCH-L-CLEAN-REPLAY.json",
+    "sha256": "d3651f4141d91e221e3cf80849ed4502d51f060caaaad15a9ab75da149afe020",
+    "present": true,
+    "hash_match": true
+  },
+  {
+    "bytes": 7079,
+    "name": "CMBA-BATCH-L-HANDOFF.md",
+    "sha256": "c41cc7dd2a5a315103b9e2c01cd9316c5ec5fe27f93178d0f535ee68c5fd9434",
+    "present": true,
+    "hash_match": true
+  },
+  {
+    "bytes": 10998,
+    "name": "CMBA-BATCH-L-VERIFICATION-RECEIPT.json",
+    "sha256": "0933f4e9929d5e8fabc6fda43e1f0e87bb3f1ce84aff6d04ace81f974eabe78b",
+    "present": true,
+    "hash_match": true
+  },
+  {
+    "bytes": 145102,
+    "name": "CMBA-BATCH-L-WORKBENCH.png",
+    "sha256": "1ad120ffae2a4935e0e3369a1b7ab0232949735083883593692d5b8c10ed281b",
+    "present": false,
+    "hash_match": false
+  },
+  {
+    "bytes": 43400971,
+    "name": "CMBA-Core-0.1.0a4-BATCH-L-REVIEW-CANDIDATE.zip",
+    "sha256": "f6c17012e986e83cbb8bdba81dc8eedada335d32c55f02ea8c2b848ddde1213e",
+    "present": true,
+    "hash_match": true
+  },
+  {
+    "bytes": 113,
+    "name": "CMBA-Core-0.1.0a4-BATCH-L-REVIEW-CANDIDATE.zip.sha256",
+    "sha256": "7329f130318b25af06c3d8e2e6de4044429e104ecf3ba28246a4b2dd3d519c60",
+    "present": true,
+    "hash_match": true
+  },
+  {
+    "bytes": 110550,
+    "name": "cmba_core-0.1.0a4-py3-none-any.whl",
+    "sha256": "2a595c06ac64371647eeb9586defde9d3238dbe16271a788ea231de2e15831ce",
+    "present": true,
+    "hash_match": true
+  }
+]

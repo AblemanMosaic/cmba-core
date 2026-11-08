@@ -1,0 +1,23 @@
+{
+  "authority_effect": "NONE",
+  "checks": [
+    "graph",
+    "session",
+    "disclosure",
+    "reconciliation",
+    "trace",
+    "installed-j1-cli",
+    "stdlib-only-core",
+    "missing-signing-dependency-typed-refusal"
+  ],
+  "dependency_source": "NO_THIRD_PARTY_RUNTIME_DEPENDENCIES",
+  "distribution_version": "0.1.0a4",
+  "fresh_dependency_resolution": "NOT_NEEDED_FOR_CORE",
+  "import_path": "/mnt/data/cmba_audit_r001/install-core/lib/python3.13/site-packages/cmba_core/__init__.py",
+  "payload_files_compared": 52,
+  "prefix": "/mnt/data/cmba_audit_r001/install-core",
+  "python": "3.13.5",
+  "schema": "cmba.installed-j1-probe",
+  "status": "PASS_OUTSIDE_SOURCE_TREE",
+  "wheel_sha256": "2a595c06ac64371647eeb9586defde9d3238dbe16271a788ea231de2e15831ce"
+}

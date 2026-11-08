@@ -1,0 +1,7 @@
+{
+  "status": "FAILED_PROBE_ASSERTION",
+  "error": "KeyError: 'status'",
+  "cause": "Probe assumed a generic status field; native DKN certificate report has separate signature/publisher_statement/authorization fields.",
+  "repair": "Probe now asserts signature PASS and authorization NOT_CHECKED; runtime not changed.",
+  "authority_effect": "NONE"
+}

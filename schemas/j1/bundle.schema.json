@@ -1,0 +1,393 @@
+{
+  "$defs": {
+    "authority": {
+      "additionalProperties": false,
+      "properties": {
+        "members": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "jurisdictions": {
+                "items": {
+                  "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                  "type": "string"
+                },
+                "maxItems": 64,
+                "minItems": 0,
+                "type": "array"
+              },
+              "public_key": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "roles": {
+                "items": {
+                  "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                  "type": "string"
+                },
+                "maxItems": 64,
+                "minItems": 0,
+                "type": "array"
+              }
+            },
+            "required": [
+              "public_key",
+              "roles",
+              "jurisdictions"
+            ],
+            "type": "object"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        },
+        "revoked_keys": {
+          "items": {
+            "pattern": "^[0-9a-f]{64}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "required": [
+        "members",
+        "revoked_keys"
+      ],
+      "type": "object"
+    },
+    "binding": {
+      "additionalProperties": false,
+      "properties": {
+        "binding_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "body": {
+          "$ref": "#/$defs/binding-body"
+        },
+        "schema": {
+          "const": "cmba.binding.v0.1-i1"
+        }
+      },
+      "required": [
+        "schema",
+        "body",
+        "binding_root"
+      ],
+      "type": "object"
+    },
+    "binding-body": {
+      "additionalProperties": false,
+      "properties": {
+        "dimensions": {
+          "items": {
+            "$ref": "#/$defs/dimension"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array"
+        },
+        "profile": {
+          "$ref": "#/$defs/profile-reference"
+        },
+        "relations": {
+          "items": {
+            "$ref": "#/$defs/relation"
+          },
+          "maxItems": 256,
+          "minItems": 0,
+          "type": "array"
+        },
+        "schema": {
+          "const": "cmba.binding-body.v0.1-i1"
+        }
+      },
+      "required": [
+        "schema",
+        "profile",
+        "dimensions",
+        "relations"
+      ],
+      "type": "object"
+    },
+    "bundle": {
+      "additionalProperties": false,
+      "properties": {
+        "binding": {
+          "$ref": "#/$defs/binding"
+        },
+        "context": {
+          "$ref": "#/$defs/context"
+        },
+        "schema": {
+          "const": "cmba.workbench-bundle.j1"
+        },
+        "values": {
+          "type": "object"
+        }
+      },
+      "required": [
+        "schema",
+        "binding",
+        "values",
+        "context"
+      ],
+      "type": "object"
+    },
+    "context": {
+      "additionalProperties": false,
+      "properties": {
+        "authority_snapshot": {
+          "$ref": "#/$defs/authority"
+        },
+        "evidence_snapshot": {
+          "items": {
+            "$ref": "#/$defs/signed-statement"
+          },
+          "maxItems": 64,
+          "minItems": 0,
+          "type": "array"
+        },
+        "expected_binding_root": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "policy": {
+          "additionalProperties": false,
+          "properties": {
+            "parameters": {
+              "type": "object"
+            },
+            "profile": {
+              "$ref": "#/$defs/profile-reference"
+            },
+            "required_checks": {
+              "items": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "maxItems": 64,
+              "minItems": 0,
+              "type": "array"
+            }
+          },
+          "required": [
+            "profile",
+            "required_checks",
+            "parameters"
+          ],
+          "type": "object"
+        },
+        "schema": {
+          "const": "cmba.evaluation-context.j1"
+        },
+        "time": {
+          "additionalProperties": false,
+          "properties": {
+            "clock_source": {
+              "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+              "type": "string"
+            },
+            "epoch": {
+              "maximum": 9223372036854775807,
+              "minimum": 0,
+              "type": "integer"
+            }
+          },
+          "required": [
+            "epoch",
+            "clock_source"
+          ],
+          "type": "object"
+        }
+      },
+      "required": [
+        "schema",
+        "expected_binding_root",
+        "policy",
+        "authority_snapshot",
+        "evidence_snapshot",
+        "time"
+      ],
+      "type": "object"
+    },
+    "dimension": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "const": "SHA-256"
+        },
+        "codec": {
+          "const": "cmba-cjson-i1"
+        },
+        "critical": {
+          "type": "boolean"
+        },
+        "dimension_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "role": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "schema_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "value_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "dimension_id",
+        "role",
+        "schema_id",
+        "codec",
+        "algorithm",
+        "critical",
+        "value_hash"
+      ],
+      "type": "object"
+    },
+    "profile-reference": {
+      "additionalProperties": false,
+      "properties": {
+        "contract_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "profile_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "profile_version": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "profile_id",
+        "profile_version",
+        "contract_hash"
+      ],
+      "type": "object"
+    },
+    "reference": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "enum": [
+            "SHA-256",
+            "BLAKE3-256"
+          ]
+        },
+        "digest_hex": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "scheme": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scheme",
+        "algorithm",
+        "digest_hex"
+      ],
+      "type": "object"
+    },
+    "relation": {
+      "additionalProperties": false,
+      "properties": {
+        "predicate": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "relation_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "target": {
+          "$ref": "#/$defs/reference"
+        }
+      },
+      "required": [
+        "relation_id",
+        "predicate",
+        "target"
+      ],
+      "type": "object"
+    },
+    "signed-statement": {
+      "additionalProperties": false,
+      "properties": {
+        "body": {
+          "$ref": "#/$defs/statement-body"
+        },
+        "record_hash": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.signed-statement.j1"
+        },
+        "signature_hex": {
+          "pattern": "^[0-9a-f]{128}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "schema",
+        "body",
+        "signature_hex",
+        "record_hash"
+      ],
+      "type": "object"
+    },
+    "statement-body": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "const": "Ed25519"
+        },
+        "kind": {
+          "enum": [
+            "endorsement",
+            "approval",
+            "consent-grant",
+            "consent-withdrawal",
+            "coordination",
+            "observation",
+            "execution-observation"
+          ]
+        },
+        "payload": {
+          "type": "object"
+        },
+        "public_key": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.statement-body.j1"
+        }
+      },
+      "required": [
+        "schema",
+        "kind",
+        "payload",
+        "algorithm",
+        "public_key"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:bundle",
+  "$ref": "#/$defs/bundle",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

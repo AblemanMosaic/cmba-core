@@ -1,0 +1,247 @@
+{
+  "artifacts": [
+    {
+      "bytes": 6873301,
+      "path": "DKN-core-0.2.0rc5-BATCH-H-REVIEW-CANDIDATE.zip",
+      "sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3"
+    },
+    {
+      "bytes": 95238,
+      "path": "dkn_core-0.2.0rc5-py3-none-any.whl",
+      "sha256": "6cc2d9e21c1c26b9b9104bb84a27b8e873f17c7e52bed15228230775e005ccf8"
+    },
+    {
+      "bytes": 74277,
+      "path": "DKN-BATCH-H-CLEAN-REPLAY-EVIDENCE.zip",
+      "sha256": "60febde68719a6dbb8eaa799d2d1a62eef768d6e127c446259cf7b2c883c2847"
+    },
+    {
+      "bytes": 3266,
+      "path": "DKN-BATCH-H-CLEAN-REPLAY.json",
+      "sha256": "20bd928006f3658b7ebb6ed3997815445d1684482730b83747fc8bdb1df55e43"
+    },
+    {
+      "bytes": 4229,
+      "path": "DKN-BATCH-H-HANDOFF.md",
+      "sha256": "ab38659f4c69a5729c4055da2dc4f9e3afc3e91aed75478d44dd74d41828ab06"
+    }
+  ],
+  "authority_effect": "NONE",
+  "clean_extraction_replay": "PASS",
+  "conformance": {
+    "base": 47,
+    "comparison": "EXACT_CANONICAL_RESPONSE_BYTES",
+    "distributed": 28,
+    "expectations": "FROZEN_REFERENCE_ASSISTED_NOT_EQUIVALENCE_PROOF",
+    "included_in_suite": true,
+    "lifecycle": 24
+  },
+  "context": {
+    "dependencies": {
+      "blake3": "NOT_INSTALLED",
+      "cryptography": "46.0.4",
+      "jsonschema": "4.26.0",
+      "pytest": "9.0.2",
+      "setuptools": "82.0.1"
+    },
+    "machine": "x86_64",
+    "node": "v22.16.0",
+    "prefix": "/opt/pyvenv",
+    "pytest_plugin_autoload": "DISABLED",
+    "python": "3.13.5",
+    "python_executable": "/opt/pyvenv/bin/python",
+    "release": "6.18.57",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "distribution_version": "0.2.0rc5",
+  "findings": [
+    {
+      "id": "H-001",
+      "scope": "CONFORMANCE_BOOL_INT_ORACLE",
+      "status": "REPAIRED_AND_REGRESSION_TESTED"
+    },
+    {
+      "id": "H-002",
+      "scope": "CONFORMANCE_NULL_ENVELOPE",
+      "status": "REPAIRED_AND_REGRESSION_TESTED"
+    },
+    {
+      "id": "H-003",
+      "scope": "CURRENT_RELEASE_POINTERS",
+      "status": "DOCUMENTATION_RECONCILED"
+    },
+    {
+      "id": "H-004",
+      "scope": "SOURCE_CONTEXT_OUTPUT_COMPLETENESS",
+      "status": "REVIEW_GATES_STRENGTHENED"
+    }
+  ],
+  "g0": "CLOSED",
+  "independent_review": "NOT_PERFORMED",
+  "inheritance": {
+    "authority_effect": "NONE",
+    "changed": [
+      {
+        "after_sha256": "27b03df86a84479bd1b31a966907fcd78a750df2855ac59ad163cb10d7bcbddd",
+        "before_sha256": "07334572f4097f349eae79eed66e36f1d0864834c0643a43843cbab7d648ed4a",
+        "path": "META/V02-CANDIDATE-BOUNDARY.json"
+      },
+      {
+        "after_sha256": "9d84c5bcf0207ac9bf80863997b95cfb58966e0dd80dba6dc96effe866fd60fa",
+        "before_sha256": "5f463d6f185396403eb854dee45f01344fa068d6f3a5f84b24bf25131d8cd637",
+        "path": "README.md"
+      },
+      {
+        "after_sha256": "c4e132696fad3e66241c5e5fa1431bd4ffd83e0b773c6243e749da503b26bbf9",
+        "before_sha256": "842640112b7b5e492eefee41dca3e4d56f3a2a96e47afe6a323b304c1a5a571c",
+        "path": "ROADMAP.md"
+      },
+      {
+        "after_sha256": "401d3528edfa996e639168bd3d759c771ae0104738993858b2742ca15ef5523b",
+        "before_sha256": "e673a710545d6c3275d6ffbf1a604f5e0fad02eebaadef5218a2dd20db29ffd0",
+        "path": "SECURITY.md"
+      },
+      {
+        "after_sha256": "5bb790768be49c47ba7131835f0786cabfbb85c2c91103a63230793b1bb56eff",
+        "before_sha256": "16fa10e5cc3fa8f11d79687cbc48598b9d480ea84965840734d86a4d83b3745e",
+        "path": "model/distributed-g1/REALIZATION-BINDING.json"
+      },
+      {
+        "after_sha256": "3aa2d5f6bd386d089bdfe64ad63f05e6f32da1e552212f0819ff89412d906353",
+        "before_sha256": "61c6c6aec85a08c20f1f62024a2e2f145103e452e788f106546e8de951d2370b",
+        "path": "model/lifecycle-f1/REALIZATION-BINDING.json"
+      },
+      {
+        "after_sha256": "a8447ded8d81586676a3de2d13997d6ce6f24af6ac7dedd477814cafb81165d8",
+        "before_sha256": "b9727dd35f8220ce07f08af20d8023cf3fc87737db63099c2009c06b9ab1bca0",
+        "path": "model/v02/REALIZATION-BINDING.json"
+      },
+      {
+        "after_sha256": "0e16eacdb3634e9e89e11e8314e75a72cc82cde28324346bae7b7ab49c6d6de6",
+        "before_sha256": "33bc3e5e2e8de252056d2264be841a8a4fdb474ad904d5407b80e1ed0dd5b48a",
+        "path": "pyproject.toml"
+      },
+      {
+        "after_sha256": "7bdcabf0a382fe543c31d06fb52077a43badcbb9654580d94ae6d90ab7f835d4",
+        "before_sha256": "a1c730a3ae3ff64662309f0824c83f562a60e7d0d37929af40260fe73be2af62",
+        "path": "tests_v02/test_batch_e_integration.py"
+      },
+      {
+        "after_sha256": "a6ba421e098aec75c4f9c2902a9d6f3f5aaa6320683e75c38f5fcc29219ba416",
+        "before_sha256": "60518798658fe12c5d21da346e31a8447940acd3cd9b92feaa0babd8a24ddfc1",
+        "path": "tools/run_conformance.py"
+      },
+      {
+        "after_sha256": "b1152e70b2d87a66f0c0c3da7d33ff2e3bd88fa15424d222b23dc26fdb4ae323",
+        "before_sha256": "ec574047d6152b6314d429503a5bc51427847e09b8630e1d84b6228337090096",
+        "path": "tools/verify_v02_candidate.py"
+      }
+    ],
+    "inherited": 584,
+    "predecessor": "cb659af507734796c8b69602449b7fe93efb31a3c66407b997f6e2d882994e97",
+    "removed": [],
+    "unchanged": 573
+  },
+  "installation": {
+    "dependency_source": "COPIED_PREINSTALLED_DISTRIBUTIONS",
+    "fresh_dependency_resolution": "NOT_ESTABLISHED",
+    "layers": 3,
+    "payload_files_compared": 43,
+    "pip_check": "PASS",
+    "status": "PASS_OUTSIDE_SOURCE_TREE"
+  },
+  "legacy_runtime": {
+    "reason": "BLAKE3_NOT_INSTALLED",
+    "status": "BLOCKED",
+    "tests_passed": null
+  },
+  "mandatory_legacy_gate": {
+    "observed_exit_code": 2,
+    "status": "REFUSES_WHEN_REQUIRED_DEPENDENCY_UNAVAILABLE"
+  },
+  "native_crypto": {
+    "backend": "libsodium.so.23",
+    "backend_version": "1.0.18",
+    "point_comparisons": 89,
+    "signature_negative_cases": 24,
+    "signature_positive_cases": 24,
+    "status": "PASS"
+  },
+  "node_interoperability": {
+    "base": 55,
+    "distributed_trace": 6,
+    "full_second_language_realization": false,
+    "included_in_suite": true,
+    "lifecycle": 7
+  },
+  "original_50_acceptance_rows": {
+    "BLOCKED_DEPENDENCY": 3,
+    "DEFERRED": 1,
+    "NOT_PERFORMED": 2,
+    "NOT_RUN": 1,
+    "PARTIAL": 8,
+    "PASS_SCOPED": 35
+  },
+  "predecessor_archive_sha256": "cb659af507734796c8b69602449b7fe93efb31a3c66407b997f6e2d882994e97",
+  "public_release_gate": "NOT_CLEARED",
+  "publication": "NOT_PERFORMED",
+  "real_a5": false,
+  "remaining_gates": [
+    "genuine BLAKE3 legacy replay",
+    "native Windows/WSL/macOS replay",
+    "fresh dependency resolution",
+    "full alternative-language realization",
+    "independent security review",
+    "deployment-specific validation and approval"
+  ],
+  "review_type": "SAME_AUTHOR_ENGINEERING_CONSOLIDATION",
+  "schema": "dkn.batch-h-release-verification.v0.2-rc5",
+  "semantic_models": {
+    "BASE-MODEL": {
+      "claim_ceiling": "HASH_SYMBOL_AND_RECORDED_TEST_TRACEABILITY_NOT_PROGRAM_EQUIVALENCE_PROOF",
+      "executed_test_binding": "CHECKED",
+      "obligations": 16,
+      "semantic_digest": "0fbd636ce484dd37e4afc4083f5207d86143ec1de0ee031ce76d1e67137497fb",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "DS-MODEL": {
+      "claim_ceiling": "HASH_SYMBOL_AND_RECORDED_TEST_TRACEABILITY_NOT_PROGRAM_EQUIVALENCE_PROOF",
+      "executed_test_binding": "CHECKED",
+      "obligations": 14,
+      "semantic_digest": "5efb09f47bf1dc3fb6e674ad4a74192682a4f2df434df2123c49f86e529ce391",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "LC-MODEL": {
+      "claim_ceiling": "HASH_SYMBOL_AND_RECORDED_TEST_TRACEABILITY_NOT_PROGRAM_EQUIVALENCE_PROOF",
+      "executed_test_binding": "CHECKED",
+      "obligations": 12,
+      "semantic_digest": "cdb44fd68c6e60d5317b889a123837c413aa629c0c77a121c17133b055a63e19",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    }
+  },
+  "signature": "NOT_SIGNED",
+  "source_and_wheel_rebuild": "BYTE_IDENTICAL",
+  "source_fingerprint": "bc8dd48db155b863a1f5b7579697b9b3df81fec8693716ab15aaf8b6c3cf9870",
+  "source_member_count": 668,
+  "standing": "INFORMATION_ONLY",
+  "static_preservation": {
+    "authority_effect": "NONE",
+    "corpora": 3,
+    "findings": [],
+    "runtime_files": 43,
+    "semantic_files": 6,
+    "status": "PASS"
+  },
+  "status": "PASS_SCOPED_ENGINEERING_EXTERNAL_GATES_OPEN",
+  "test_results": {
+    "errors": 0,
+    "failed": 0,
+    "inherited": 1075,
+    "new": 98,
+    "passed": 1173,
+    "skipped": 0,
+    "total": 1173
+  },
+  "workflows_passed": 7
+}

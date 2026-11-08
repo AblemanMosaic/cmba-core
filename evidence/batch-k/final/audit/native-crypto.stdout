@@ -1,0 +1,1 @@
+{"authority_effect":"NONE","backend":"libsodium.so.23","backend_version":"1.0.18","independent_review":"NOT_PERFORMED","mutated_signature_cases":16,"point_admission_cases":68,"status":"PASS","valid_signature_cases":16}

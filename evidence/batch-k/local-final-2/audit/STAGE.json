@@ -1,0 +1,204 @@
+{
+  "authority_effect": "NONE",
+  "context": {
+    "dependencies": {
+      "Pillow": "12.3.0",
+      "cryptography": "46.0.4",
+      "jsonschema": "4.26.0",
+      "pytest": "9.0.2"
+    },
+    "executable": "/opt/pyvenv/bin/python",
+    "machine": "x86_64",
+    "native": {
+      "runtime_files": 43,
+      "source_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+      "status": "PASS"
+    },
+    "prefix": "/opt/pyvenv",
+    "pytest_plugin_autoload": "DISABLED",
+    "python": "3.13.5",
+    "source_fingerprint": "fe1a9b2a5db75397640747f42b5017d911991411a28267bdb4546bc3b9d4da63",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "legs": [
+    {
+      "exit_code": 0,
+      "name": "conformance-i1"
+    },
+    {
+      "exit_code": 0,
+      "name": "conformance-j1"
+    },
+    {
+      "exit_code": 0,
+      "name": "conformance-k1"
+    },
+    {
+      "exit_code": 0,
+      "name": "gui"
+    },
+    {
+      "exit_code": 0,
+      "name": "native-crypto"
+    }
+  ],
+  "outputs": {
+    "conformance-i1.json": "8bae7199216812beb3f3cfa77ccb3616180449a72855530c9ad6f880ed2d1471",
+    "conformance-i1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "conformance-i1.stdout": "8bae7199216812beb3f3cfa77ccb3616180449a72855530c9ad6f880ed2d1471",
+    "conformance-j1.json": "38d52de54c11224dc2c85b6cca1f355301bbdd4d9cbbdbfe9a3a208338ce05c8",
+    "conformance-j1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "conformance-j1.stdout": "38d52de54c11224dc2c85b6cca1f355301bbdd4d9cbbdbfe9a3a208338ce05c8",
+    "conformance-k1.json": "8d84af4441201f25787bea50c335b4e1b67d9f53dd1d4600cb1bcd901caa6977",
+    "conformance-k1.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "conformance-k1.stdout": "8d84af4441201f25787bea50c335b4e1b67d9f53dd1d4600cb1bcd901caa6977",
+    "gui.json": "4b589e47bd3bd9dc636d77ff8ee3827856bfb652ddbfd21cf640b438e9089ab6",
+    "gui.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "gui.stdout": "8c8432bff018e249701563c596ec8fc33ab55011a3f25559721c6bd8e1dcfa83",
+    "models.json": "b423460f821d6da7165c79f51a795bdb7fbccbb5c8262bfbc2249c27ccf294a9",
+    "native-crypto.json": "aa77b635e4e7c44200ba4f7851eeb6870963cd402206742db05d74d77761658a",
+    "native-crypto.stderr": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "native-crypto.stdout": "aa77b635e4e7c44200ba4f7851eeb6870963cd402206742db05d74d77761658a",
+    "workbench.png": "1ad120ffae2a4935e0e3369a1b7ab0232949735083883593692d5b8c10ed281b"
+  },
+  "phase": "audit",
+  "results": {
+    "conformance": {
+      "i1": {
+        "alternative_realization": false,
+        "authority_effect": "NONE",
+        "cases": 33,
+        "oracle": "EXACT_CANONICAL_RESPONSE_BYTES",
+        "status": "PASS",
+        "whole_program_equivalence": "NOT_ESTABLISHED"
+      },
+      "j1": {
+        "alternative_command_selected": false,
+        "authority_effect": "NONE",
+        "cases": 53,
+        "corpus_sha256": "3db64753a8f07bd370d4621ce7f3bfd552c0dd83a38edc6a7d2f22485f840fc6",
+        "oracle": "EXACT_CANONICAL_TYPED_RESULTS",
+        "process_groups": 4,
+        "status": "PASS",
+        "whole_program_equivalence": "NOT_ESTABLISHED"
+      },
+      "k1": {
+        "alternative_command_selected": false,
+        "authority_effect": "NONE",
+        "cases": 42,
+        "corpus_sha256": "55be79bc94f1f32645733ff2fcacca7bd456b175d52f1df824880b5a2284d037",
+        "oracle": "EXACT_CANONICAL_TYPED_RESULTS",
+        "process_groups": 3,
+        "status": "PASS",
+        "whole_program_equivalence": "NOT_ESTABLISHED"
+      }
+    },
+    "gui": {
+      "authority_effect": "NONE",
+      "check_count": 48,
+      "checks": [
+        "ten-native-pages",
+        "initial-context-unselected",
+        "evaluation-without-reader-refused",
+        "job-completed-3",
+        "native-profile-cmba.chc.graph",
+        "job-completed-5",
+        "native-profile-cmba.gendev.rich-session",
+        "job-completed-7",
+        "native-profile-cmba.kasd",
+        "job-completed-9",
+        "native-profile-cmba.consent",
+        "job-completed-11",
+        "native-profile-cmba.admissibility",
+        "job-completed-13",
+        "native-profile-cmba.disclosure",
+        "job-completed-15",
+        "native-profile-cmba.observation",
+        "job-completed-17",
+        "native-profile-cmba.coordination",
+        "job-completed-19",
+        "native-profile-cmba.reconciliation",
+        "job-completed-21",
+        "native-profile-cmba.execution-record",
+        "job-completed-23",
+        "native-profile-cmba.claim-trace",
+        "job-completed-25",
+        "native-profile-cmba.endorsements",
+        "job-completed-27",
+        "native-profile-cmba.native-dkn",
+        "job-completed-29",
+        "job-completed-30",
+        "expiry-does-not-rewrite-object",
+        "job-completed-32",
+        "receipt-comparison-visible",
+        "explicit-follow-selected-target",
+        "failed-context-clears-current-assessment",
+        "selected-preview-omits-private-value",
+        "preview-is-not-a-write",
+        "gui-cancellation-no-write",
+        "explicit-gui-export-exact-view",
+        "gui-overwrite-refused",
+        "explicit-workspace-export",
+        "gui-workspace-import-does-not-adopt-trust",
+        "all-pages-rendered",
+        "keyboard-actions-bound",
+        "design-view-no-implicit-qualification",
+        "qualification-is-not-an-execution",
+        "job-completed-47"
+      ],
+      "external_publication": "NONE",
+      "installed_environment": false,
+      "operator_approval": "SIMULATED_EXPLICIT_GUI_CONFIRMATION_IN_TEMPORARY_DIRECTORY",
+      "platform": "ACTUAL_TK_ON_CURRENT_DISPLAY",
+      "schema": "cmba.gui-smoke.k1",
+      "status": "PASS",
+      "tk": "8.6.16"
+    },
+    "models": {
+      "I1": {
+        "authority_effect": "NONE",
+        "bound_files": 172,
+        "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+        "executed_test_binding": "CHECKED",
+        "external_anchor": "NOT_PROVIDED",
+        "obligations": 18,
+        "reference_files": 17,
+        "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+        "status": "PASS_REFERENCE_INTEGRITY"
+      },
+      "J1": {
+        "authority_effect": "NONE",
+        "bound_files": 172,
+        "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+        "executed_test_binding": "CHECKED",
+        "external_anchor": "NOT_PROVIDED",
+        "obligations": 28,
+        "semantic_commitment": "8734691fb74b3697a09c4eb67b57860fb3c95b2050a0185cd1c651db64dc97a8",
+        "status": "PASS_REFERENCE_INTEGRITY"
+      },
+      "K1": {
+        "authority_effect": "NONE",
+        "bound_files": 172,
+        "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+        "executed_test_binding": "CHECKED",
+        "external_anchor": "NOT_PROVIDED",
+        "obligations": 26,
+        "semantic_commitment": "397cd06aec8ce889c2fe98859732e331d1918b72d8aa6f97b7c76772fc1807f0",
+        "status": "PASS_REFERENCE_INTEGRITY"
+      }
+    },
+    "native_crypto": {
+      "authority_effect": "NONE",
+      "backend": "libsodium.so.23",
+      "backend_version": "1.0.18",
+      "independent_review": "NOT_PERFORMED",
+      "mutated_signature_cases": 16,
+      "point_admission_cases": 68,
+      "status": "PASS",
+      "valid_signature_cases": 16
+    }
+  },
+  "schema": "cmba.replay-stage.k1",
+  "status": "PASS"
+}

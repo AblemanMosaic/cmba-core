@@ -1,0 +1,30 @@
+{
+  "$defs": {
+    "record-native": {
+      "additionalProperties": false,
+      "properties": {
+        "arguments": {
+          "type": "object"
+        },
+        "operation": {
+          "enum": [
+            "archive",
+            "namespace",
+            "lineage",
+            "lifecycle",
+            "assurance",
+            "distributed"
+          ]
+        }
+      },
+      "required": [
+        "operation",
+        "arguments"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-native",
+  "$ref": "#/$defs/record-native",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

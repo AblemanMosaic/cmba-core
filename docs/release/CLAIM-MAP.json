@@ -1,0 +1,62 @@
+{
+  "authority_effect": "NONE",
+  "claims": [
+    {
+      "id": "L-ARCHIVE",
+      "implementation": "tools/package.py",
+      "limit": "NO_PUBLISHER_AUTHENTICATION",
+      "scope": "REGULAR_PORTABLE_TYPED_SOURCE_INVENTORY",
+      "test_file": "tests/test_l_release.py"
+    },
+    {
+      "id": "L-CORE-NODE",
+      "implementation": "interop/node-l1/core.mjs",
+      "limit": "NOT_FULL_APPLICATION_OR_GUI_PORT",
+      "scope": "SIX_I1_OPERATIONS",
+      "test_file": "tests/test_l_interop.py"
+    },
+    {
+      "id": "L-STAGES",
+      "implementation": "tools/verify_l.py",
+      "limit": "UNSIGNED_PRODUCER_EVIDENCE",
+      "scope": "EXACT_SOURCE_CONTEXT_OUTPUT_TEST_COVERAGE",
+      "test_file": "tests/test_l_release.py"
+    },
+    {
+      "id": "I1-CORE",
+      "implementation": "src/cmba_core/bindings.py",
+      "limit": "NOT_TRUTH",
+      "scope": "EXACT_BINDING",
+      "test_file": "tests/test_bindings.py"
+    },
+    {
+      "id": "J1-APPLICATIONS",
+      "implementation": "src/cmba_core/j1/evaluation.py",
+      "limit": "NOT_EXECUTION_PERMISSION",
+      "scope": "FINITE_PROFILE_PREDICATES",
+      "test_file": "tests/test_j_applications.py"
+    },
+    {
+      "id": "K1-HOST",
+      "implementation": "src/cmba_workbench/k1/effects.py",
+      "limit": "COOPERATIVE_HOST_FILESYSTEM",
+      "scope": "EXPLICIT_CREATE_ONLY_LOCAL_JSON",
+      "test_file": "tests/test_k_effects.py"
+    },
+    {
+      "id": "K1-GUI",
+      "implementation": "src/cmba_workbench/k1/app.py",
+      "limit": "TARGET_PLATFORM_LIMITED",
+      "scope": "ACTUAL_NATIVE_INTERACTIONS",
+      "test_file": "tests/test_k_gui_contract.py"
+    }
+  ],
+  "external_gates": [
+    "WSL/macOS replay",
+    "independent security review",
+    "full alternative-language realization",
+    "deployment/domain approval"
+  ],
+  "schema": "cmba.qualification-claim-map.l1",
+  "status_source": "CURRENT_EXTERNAL_RELEASE_RECEIPT"
+}

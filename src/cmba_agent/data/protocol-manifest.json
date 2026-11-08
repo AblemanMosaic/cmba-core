@@ -1,0 +1,66 @@
+{
+  "agent_protocol": "v1",
+  "authority_effect": "NONE",
+  "canonical_codec": "cmba-cjson-i1",
+  "distribution": "cmba-core",
+  "distribution_version": "RESOLVED_AT_RUNTIME",
+  "effect_interfaces_excluded": [
+    "cmba-export"
+  ],
+  "interfaces": {
+    "app": {
+      "effect_class": "PURE_READ",
+      "legacy_command": "cmba-app",
+      "operations": [
+        "capabilities",
+        "dkn-read",
+        "evaluate",
+        "profiles",
+        "replay",
+        "verify-disclosure",
+        "verify-envelope",
+        "verify-statement"
+      ],
+      "request_schema": "cmba.request.j1"
+    },
+    "core": {
+      "effect_class": "PURE_READ",
+      "legacy_command": "cmba",
+      "operations": [
+        "capabilities",
+        "catalogue",
+        "compare",
+        "evaluate",
+        "inspect",
+        "replay"
+      ],
+      "request_schema": "cmba.request.v0.1-i1"
+    },
+    "workbench": {
+      "effect_class": "PURE_READ",
+      "legacy_command": "cmba-wb",
+      "operations": [
+        "author",
+        "capabilities",
+        "catalogue",
+        "compare",
+        "compare-receipts",
+        "design",
+        "disclosure-preview",
+        "evaluate",
+        "handoff",
+        "inspect",
+        "installed-qualification",
+        "navigate",
+        "qualification",
+        "replay"
+      ],
+      "request_schema": "cmba.workbench-request.k1"
+    }
+  },
+  "max_request_bytes": 1048576,
+  "network": false,
+  "schema": "cmba.agent-protocol-manifest.v1",
+  "stdin_framing": "ONE_CANONICAL_JSON_VALUE_TO_EOF",
+  "stdout_framing": "ONE_CANONICAL_JSON_VALUE_PLUS_LF"
+}

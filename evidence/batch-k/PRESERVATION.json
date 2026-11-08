@@ -1,0 +1,38 @@
+{
+  "I1_J1_semantic_bodies_commitments_and_corpora": "BYTE_IDENTICAL",
+  "authority_effect": "NONE",
+  "changes": [
+    {
+      "new_sha256": "5c904cb201b54f05ee85d86ce5183f38d89f3c5ecb91482dcfe9c32220526d6b",
+      "old_sha256": "a2889f28b533fc80879d89c3e85c2ba39bb201cfeeb125cfabfc5af667641e9b",
+      "path": "PROGRAM-LEDGER.json"
+    },
+    {
+      "new_sha256": "c339c4ba428b8d3c25b5d6c9402cde24b0ebd534463569badb618102cb2f0dcd",
+      "old_sha256": "f60bd4c964bf029aeb3032ea7e649614afdb87e42e005416d4db9cf11674713b",
+      "path": "README.md"
+    },
+    {
+      "new_sha256": "fc14bfaa48b74ae1af8ce9102a25be13aad4e4f50f25ed7f7b5d12e0a0a35203",
+      "old_sha256": "d0820b0d6121d7a91ed797293c1c4a6c5fee420f2c791b965b113bb887b3ce75",
+      "path": "model/REALIZATION-BINDING.json"
+    },
+    {
+      "new_sha256": "136ddb962d2a5c944bc4a543bf481b6a1c1a8f8d4f5fd157267bb367df13c623",
+      "old_sha256": "2d926e52d64c6a1601cca971496ecfbbfcf48c4f28be4f0c852e3213dac4934d",
+      "path": "model/j1/REALIZATION-BINDING.json"
+    },
+    {
+      "new_sha256": "f113405c268f37051c463dfa6847004236ab3ba99a9b1304315ddbd362a576a1",
+      "old_sha256": "3c7e02d6a804c1f671d45535578440dbcb8cbfe0224d4e14c520bdcc018a9fa5",
+      "path": "pyproject.toml"
+    }
+  ],
+  "inherited_members": 285,
+  "inventory": "REGENERATED_ON_FREEZE_SEPARATE_FROM_THIS_COMPARISON",
+  "predecessor_sha256": "91c70d7f9c5bf4af335c45931ee997f873a9664e713e74ca4a0bfb3a75f2fb15",
+  "removed": [],
+  "runtime_unchanged": 41,
+  "schema": "cmba.k-preservation",
+  "unchanged": 279
+}

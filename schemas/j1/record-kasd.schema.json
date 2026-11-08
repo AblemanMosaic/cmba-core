@@ -1,0 +1,92 @@
+{
+  "$defs": {
+    "record-kasd": {
+      "additionalProperties": false,
+      "properties": {
+        "action": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "facts": {
+          "type": "object"
+        },
+        "requirements": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "constraints": {
+                "type": "object"
+              },
+              "id": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "jurisdiction": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "role": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "threshold": {
+                "maximum": 64,
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "id",
+              "role",
+              "jurisdiction",
+              "threshold",
+              "constraints"
+            ],
+            "type": "object"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "type": "array"
+        },
+        "subject": {
+          "$ref": "#/$defs/reference"
+        }
+      },
+      "required": [
+        "subject",
+        "action",
+        "facts",
+        "requirements"
+      ],
+      "type": "object"
+    },
+    "reference": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "enum": [
+            "SHA-256",
+            "BLAKE3-256"
+          ]
+        },
+        "digest_hex": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "scheme": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scheme",
+        "algorithm",
+        "digest_hex"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-kasd",
+  "$ref": "#/$defs/record-kasd",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

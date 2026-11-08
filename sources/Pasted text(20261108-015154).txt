@@ -1,0 +1,94 @@
+Yes. **There are substantial ideas worth recovering here—especially for the workbench.** I read all seven documents, roughly 10,000 lines, and checked selected mathematical and implementation claims. I left the files unchanged.
+
+My assessment is that the architectural ideas are considerably stronger than several of the security arguments used to justify them. We can preserve much of the architecture while replacing those arguments with explicit contracts, assumptions, and tests.
+
+One important finding: your recent clarification about open-ended dimensions is already present in [the whitepaper’s dimensional-flexibility section](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_Framework_Whitepaper.md:341). It describes the familiar dimensions as reference patterns and recommends selecting a minimum sufficient set. Other passages still insist on fixed “8+nD” completeness. I would retain the flexible formulation.
+
+**The most valuable additions**
+
+| Recoverable idea | What it could add to the workbench |
+|---|---|
+| **Sessions as artifacts** | Bind requirements, observable decisions, recorded rationale, rejected alternatives, disclosed uncertainty, outputs, and revision triggers into an inspectable process history. |
+| **Approvals scoped by jurisdiction** | Represent who may approve which aspects of an operation, with explicit constraints and requirements for joint approval. |
+| **Conditional, renewable consent** | Support grants with scope, conditions, expiry, delegation limits, withdrawal, and triggers requiring renewed consent. |
+| **Selective disclosure** | Let someone verify selected committed dimensions or inventory entries while other material remains private. |
+| **Policy evaluation over selected dimensions** | Evaluate the same binding under different policies and show precisely what each evaluation checked. |
+| **Preservation of competing frameworks** | Display different authority, interpretation, or approval contexts around identical underlying bytes without forcing one globally recognized interpretation. |
+| **A systematic design-space explorer** | Explore valid combinations of topology, granularity, disclosure, anchoring, time, algorithms, and amendment behavior. |
+| **Runtime measurement and enforcement adapters** | Connect artifact verification to observations of the bytes and configuration actually used by a system. |
+
+Several deserve more explanation.
+
+**Session provenance is probably the strongest immediate application.** The [mathematical framework’s session-artifact section](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_Mathematical_Framework.md:2091) goes beyond preserving finished files. It preserves why a decision was made, which alternatives were rejected, what uncertainty remained, and what should trigger reconsideration.
+
+That directly fits our workbench discussion. A future agent could inspect a decision and discover: “This approach was selected because dependency X was unavailable; reconsider when that changes.” Our exported transcript is useful source material for such an artifact, although extracting structured decisions from it would remain an attributed interpretation.
+
+**The jurisdiction model adds specificity to access and authority.** [KASD](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_Mathematical_Framework.md:774) suggests that architectural approval, security approval, and operational approval can govern different aspects of the same object. That supports capability evaluation richer than “this trusted key signed it.”
+
+I would retain that idea while allowing overlapping jurisdictions. The example’s claim that architecture and security have disjoint scopes is plainly too strong: authentication design belongs to both. The workbench should expose overlaps, conflicting constraints, and unresolved approvals.
+
+**The consent documents contain a general capability model.** The [wallet and conduction rules](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_VOTE.md:309) describe standing preferences, overrides, conditions, delegation, expiry, and renewed authorization when circumstances change. These ideas apply to agents, data sharing, publication, resource spending, and organizational decisions.
+
+For example:
+
+> Permit this agent to publish artifacts of this type, under this policy, until this date, provided the required reviewers approve.
+
+That is a concrete workbench capability. Its interpretation and enforcement would need to be implemented independently of its cryptographic binding.
+
+**Disclosure should become a first-class profile feature.** The [selective-manifest section](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_Framework_Whitepaper.md:2124) supplies a useful direction: public discovery information, private material, and proofs connecting selectively disclosed material to a recognized root. This would let the workbench produce different views of the same committed object.
+
+**The design-space matrix is particularly useful research machinery.** [Section 7.9](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_Framework_Whitepaper.md:1671) varies topology, granularity, privacy, anchoring, temporal semantics, algorithms, and amendments. That could become an executable profile designer: choose requirements, identify compatible constructions, generate obligations, and run conformance cases. The combinations would still require analysis; enumerating them does not establish their security.
+
+**What needs substantial correction**
+
+1. **Hash-chain verification does not establish correct compilation.**  
+   The old CHC argument claims that fabricating a compilation history requires inverting a hash. An attacker can instead choose an arbitrary binary, label a transformation “compile,” and calculate a completely consistent new chain. Nothing in those hash equations checks that the transformation actually produced the output.
+
+   Preserve the distinction between a *committed transformation record* and evidence validating the transformation. Rebuilding, translation validation, formal proofs, or explicitly trusted execution attestations can supply different kinds of evidence. [CompCert’s semantic-preservation theorem](https://compcert.org/man/manual001.html) illustrates the additional specification and proof needed for a compiler-correctness claim.
+
+2. **The authority construction contains a real circular dependency.**  
+   In [Appendix A](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_Framework_Whitepaper.md:2480), authority signatures sign `artifact_id`, while `artifact_id` includes the hash of those signatures. Excluding the appended self-hash field alone does not fix that cycle.
+
+   A workable construction would compute a binding root from the body—including its authority requirements—then attach signatures endorsing that root. A separately hashed envelope could include those signatures.
+
+3. **Distinct dimensions do not establish independent defenses.**  
+   The definition in [Cryptographic Dimensionality](C:/Users/minku/Downloads/Mosaic/CHC/CRYPTOGRAPHIC_DIMENSIONALITY.md:15) is insufficient to establish independence. Distinct predicates can overlap, imply one another, or depend on the same compromised observer or key.
+
+   Consequently, neither exponential attack resistance nor the claimed \(2^{256n}\) work factor follows from adding dimensions. The useful successor capability is an **assumption and dependency graph** that exposes shared failure causes.
+
+4. **The geometric language exceeds the mathematics supplied.**  
+   Defining a policy as a subset of a product space is useful. It does not supply an algorithm for deciding membership, make arbitrary compliance computable, or establish constant-time verification.
+
+   The [homological construction](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_Mathematical_Framework.md:240) also needs rebuilding. Ordinary compilation passes have not been shown to be boundary homomorphisms satisfying \(\partial^2=0\); that condition means the zero map, not an identity transformation. Isomorphic homology groups alone would not establish program equivalence. The standard algebraic requirements are explicit in [MIT’s topology notes](https://math.mit.edu/~hrm/papers/905-notes-aug19.pdf).
+
+5. **The voting privacy guarantees are not established by the proposed protocol.**  
+   The consent architecture is worth preserving, but its election-security claims require a separate protocol design. Concrete problems include:
+
+   - Some flows submit the computed ballot to the conductor while claiming the conductor cannot observe it.
+   - A voter retaining a choice and encryption randomness may be able to demonstrate how they voted.
+   - Preventing token reuse within one shard does not establish one eligible person across all shards.
+   - `tokens issued = ballots cast = ballots counted` fails when tokens remain unused or ballots are rejected.
+
+   Ballot secrecy, public verifiability, receipt-freeness, and coercion resistance need separate definitions and proofs. The [Helios paper](https://www.usenix.org/legacy/event/sec08/tech/full_papers/adida/adida.pdf), for example, explicitly distinguishes public auditability from coercion resistance. The [outline](</C:/Users/minku/Downloads/Mosaic/CHC/CMBA_VOTE (outline).md:224>) largely repeats the same unresolved architecture; it provides no independent validation.
+
+6. **Several privacy mechanisms promise more than they deliver.**  
+   Merkle inclusion proofs do not provide unlinkability. Public Bloom filters permit testing guessed members. Hashes can reveal predictable values through guessing. The encrypted-manifest example uses one shared key for all private entries, so distributing that key does not provide per-entry access separation. Rotation can restrict future access, but cannot retract previously decrypted information.
+
+7. **Popularity and signatures need narrower interpretations.**  
+   Usage observations can inform discovery and anomaly detection. They do not automatically establish publisher authenticity, truth, independent witnesses, or consensus. Likewise, the [blockchain comparison](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_BLOCKCHAIN_COMPARISON.md:309) contains a useful separation between a minimal anchor and richer contextual bindings, but its “1.5D/2D singularity” taxonomy does not establish the claimed security hierarchy.
+
+The benchmarks, deployment counts, zero-hallucination results, partnerships, and commercial projections should remain historical assertions until their supporting evidence is located. The [roadmap](C:/Users/minku/Downloads/Mosaic/CHC/CMBA_ROADMAP_11_27_2025.md:144) is useful as an application inventory; its dates and confident outcomes are not implementation evidence.
+
+There is also terminology drift to preserve explicitly: these files expand **CHC** as both *Cryptographic Homological Compilation* and *Consciousness-Harmonized Contracts*, and use multiple meanings for **CPC** and **DKN**. A workbench should assign versioned identifiers and declared relationships to these profiles rather than merge them by acronym.
+
+**How this changes the proposed workbench**
+
+I would add a separately reproducible **evaluation receipt** alongside each binding. It would identify the binding root, policy version, recognized authority set, evidence snapshot, evaluator, and relevant time or epoch. That lets the workbench answer:
+
+> “The object is unchanged. Why is its admissibility different today?”
+
+A grant may expire, an approval may be withdrawn, new contrary evidence may arrive, or policy may change. Those changes can produce new evaluations while preserving the original object and historical receipts.
+
+Your later [*Cryptographic Admissibility and Jurisdiction*](</C:/Users/minku/Downloads/Mosaic/CHC/Papers/Cryptographic Admissibility and Jurisdiction.md:19>) already makes much of this distinction explicit. I verified that file against its corpus-recorded hash before using the passage.
+
+My preferred first demonstration would combine **a session artifact, DKN resolution, a CHC transformation record, scoped approvals, and private/public views**, all evaluated through the same core. That would test whether CMBA can carry meaning, evidence, and authority across capabilities while keeping every conclusion inspectable.

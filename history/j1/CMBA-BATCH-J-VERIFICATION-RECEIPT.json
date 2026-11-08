@@ -1,0 +1,272 @@
+{
+  "artifacts": [
+    {
+      "bytes": 22243083,
+      "path": "CMBA-Core-0.1.0a2-BATCH-J-APPLICATIONS-CANDIDATE.zip",
+      "sha256": "91c70d7f9c5bf4af335c45931ee997f873a9664e713e74ca4a0bfb3a75f2fb15"
+    },
+    {
+      "bytes": 82043,
+      "path": "cmba_core-0.1.0a2-py3-none-any.whl",
+      "sha256": "a1614789d65a93199ac1399bd27ce870be4c744a3172522b3141b00fe0651920"
+    },
+    {
+      "bytes": 119,
+      "path": "CMBA-Core-0.1.0a2-BATCH-J-APPLICATIONS-CANDIDATE.zip.sha256",
+      "sha256": "e61ec74a0cb252038f364d3bb30332b7d4350dd984fce8c8d7e28226daedfabb"
+    },
+    {
+      "bytes": 3594,
+      "path": "CMBA-BATCH-J-CLEAN-REPLAY.json",
+      "sha256": "d5569eec127db5d89a4ba6a9df7aa4eb48dbb633391323105da57654506ad1ca"
+    },
+    {
+      "bytes": 150968,
+      "path": "CMBA-BATCH-J-CLEAN-REPLAY-EVIDENCE.zip",
+      "sha256": "3e79f6fefafc9ff422e4d4d79be20d8cbdbc7ce4786b7dac67da19d4067c3e82"
+    },
+    {
+      "bytes": 6053,
+      "path": "CMBA-BATCH-J-HANDOFF.md",
+      "sha256": "dffd5a38f50792df411f169a37bcaf3625c75277dbec22b3181f5d1bff97682e"
+    }
+  ],
+  "authority_effect": "NONE",
+  "conformance": {
+    "i1": {
+      "alternative_realization": false,
+      "authority_effect": "NONE",
+      "cases": 33,
+      "oracle": "EXACT_CANONICAL_RESPONSE_BYTES",
+      "status": "PASS",
+      "whole_program_equivalence": "NOT_ESTABLISHED"
+    },
+    "j1": {
+      "alternative_command_selected": false,
+      "authority_effect": "NONE",
+      "cases": 53,
+      "corpus_sha256": "3db64753a8f07bd370d4621ce7f3bfd552c0dd83a38edc6a7d2f22485f840fc6",
+      "oracle": "EXACT_CANONICAL_TYPED_RESULTS",
+      "process_groups": 4,
+      "status": "PASS",
+      "whole_program_equivalence": "NOT_ESTABLISHED"
+    }
+  },
+  "dependencies": {
+    "cryptography": "46.0.4",
+    "jsonschema": "4.26.0",
+    "pytest": "9.0.2",
+    "setuptools": "82.0.1"
+  },
+  "development_findings": [
+    "native report shape/query test assumptions repaired without changing DKN",
+    "independent application component projections added before freezing J1",
+    "native result retained as NATIVE_REPORT_COMPUTED, not unified approval",
+    "combined runner interruptions retained; bounded conformance grouping and complete native segment identity coverage"
+  ],
+  "distribution_version": "0.1.0a2",
+  "gui": {
+    "checks": 8,
+    "j1_headless_model": "TESTED",
+    "j1_native_pages": "BATCH_K_NOT_IMPLEMENTED",
+    "status": "PASS_I1_REGRESSION_ONLY"
+  },
+  "independent_review": "NOT_PERFORMED",
+  "installation": {
+    "core": {
+      "authority_effect": "NONE",
+      "checks": [
+        "graph",
+        "session",
+        "disclosure",
+        "reconciliation",
+        "trace",
+        "installed-j1-cli",
+        "stdlib-only-core",
+        "missing-signing-dependency-typed-refusal"
+      ],
+      "dependency_source": "NO_THIRD_PARTY_RUNTIME_DEPENDENCIES",
+      "distribution_version": "0.1.0a2",
+      "fresh_dependency_resolution": "NOT_NEEDED_FOR_CORE",
+      "import_path": "/mnt/data/cmba_j_core_env/lib/python3.13/site-packages/cmba_core/__init__.py",
+      "payload_files_compared": 41,
+      "prefix": "/mnt/data/cmba_j_core_env",
+      "python": "3.13.5",
+      "schema": "cmba.installed-j1-probe",
+      "status": "PASS_OUTSIDE_SOURCE_TREE",
+      "wheel_sha256": "a1614789d65a93199ac1399bd27ce870be4c744a3172522b3141b00fe0651920"
+    },
+    "dependency_inventory_sha256": "9d1d375659b84bd8be91b7971660a8b3e3c872acfaad8437817152cb5ea9b783",
+    "optional": {
+      "authority_effect": "NONE",
+      "checks": [
+        "graph",
+        "session",
+        "disclosure",
+        "reconciliation",
+        "trace",
+        "installed-j1-cli",
+        "all-13-profiles",
+        "full-joint-workflow",
+        "installed-signature-roundtrip"
+      ],
+      "dependency_source": "COPIED_GENUINE_HOST_DISTRIBUTIONS",
+      "distribution_version": "0.1.0a2",
+      "fresh_dependency_resolution": "NOT_ESTABLISHED",
+      "import_path": "/mnt/data/cmba_j_optional_env/lib/python3.13/site-packages/cmba_core/__init__.py",
+      "payload_files_compared": 41,
+      "prefix": "/mnt/data/cmba_j_optional_env",
+      "python": "3.13.5",
+      "schema": "cmba.installed-j1-probe",
+      "status": "PASS_OUTSIDE_SOURCE_TREE",
+      "wheel_sha256": "a1614789d65a93199ac1399bd27ce870be4c744a3172522b3141b00fe0651920"
+    },
+    "pip_check": "PASS"
+  },
+  "models": {
+    "I1": {
+      "authority_effect": "NONE",
+      "bound_files": 131,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 18,
+      "reference_files": 17,
+      "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "J1": {
+      "authority_effect": "NONE",
+      "bound_files": 131,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 28,
+      "semantic_commitment": "8734691fb74b3697a09c4eb67b57860fb3c95b2050a0185cd1c651db64dc97a8",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    }
+  },
+  "native_crypto": {
+    "authority_effect": "NONE",
+    "backend": "libsodium.so.23",
+    "backend_version": "1.0.18",
+    "independent_review": "NOT_PERFORMED",
+    "mutated_signature_cases": 16,
+    "point_admission_cases": 68,
+    "status": "PASS",
+    "valid_signature_cases": 16
+  },
+  "native_dkn": {
+    "authority_effect": "NONE",
+    "baseline_archive_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+    "baseline_files_unchanged": 668,
+    "collected_sha256": "30c4c895af23c2651e37a3e726026e6cda19acd5aae15f545b69831ecabd05f3",
+    "collected_test_set_exact_match": true,
+    "independent_review": "NOT_PERFORMED",
+    "legacy_blake3": "NOT_EXECUTED_UNAVAILABLE",
+    "original_combined_run": "INTERRUPTED_NO_COMPLETION_RECEIPT",
+    "platform": "Linux",
+    "python": "3.13.5",
+    "schema": "cmba.batch-j-native-replay",
+    "segments": [
+      {
+        "junit_sha256": "0db0aaaf1eaea6a3fefa73c0647687c8be04e5c2ab5d75e874b49aea5fb2f9aa",
+        "log_sha256": "25a5a98fc4c015c5e1ed20d529085c96fe7ec13e506886c2bd7024da88041746",
+        "part": "base",
+        "tests": 666
+      },
+      {
+        "junit_sha256": "f37b5728ddf77ea33d0443b82b291a0e55757ad670b9173859ba33453fd69694",
+        "log_sha256": "1aef39059ce6dd7cd09b917b31d94600f82d86b88a265beb9272edf52f651799",
+        "part": "lifecycle",
+        "tests": 195
+      },
+      {
+        "junit_sha256": "d4d4b060a719c2a298428bcdbe8ffea864b6651880aa362389fe38f5282fb231",
+        "log_sha256": "b4ad2ec82508f70e9662cb1784219d87b15ec92aad7c86b19cf9fb1d3d2f4111",
+        "part": "distributed",
+        "tests": 214
+      },
+      {
+        "junit_sha256": "0805fb1bbe329a3113010a2a20a804aa7e894b25b02ad7d8d68f5b3995715566",
+        "log_sha256": "3465dfdabcd2a6655674fd82ca948c9c444aa28eae2b9f9be50a59480d529f2f",
+        "part": "release",
+        "tests": 98
+      }
+    ],
+    "status": "PASS_SEGMENTED_COMPLETE_TEST_SET",
+    "tests": {
+      "errors": 0,
+      "failed": 0,
+      "passed": 1173,
+      "skipped": 0
+    }
+  },
+  "not_claimed": [
+    "whole-program equivalence",
+    "live distributed deployment or consensus",
+    "global freshness",
+    "general compiler correctness",
+    "encryption/unlinkability/erasure",
+    "clinical/election security",
+    "subdelegation",
+    "completed J1 graphical authoring"
+  ],
+  "platform": {
+    "machine": "x86_64",
+    "native_gui": "Xvfb Linux",
+    "python": "3.13.5",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "predecessor_sha256": "429c4317088e91ba0ef29c678665db01da07b7823cb12b182f769c78b549a2d5",
+  "preservation": {
+    "i1_contract_and_commitment": "BYTE_IDENTICAL",
+    "i1_corpus": "BYTE_IDENTICAL",
+    "inheritance_record_sha256": "05b0d8043ce21c554634a70a9b6d2636842a566d87af25ec2bdd75e6fccf13bd",
+    "native_archive_files": 668,
+    "native_artifacts": "BYTE_IDENTICAL",
+    "native_runtime_files": 43,
+    "original_i1_runtime_data_files": 19
+  },
+  "profiles": {
+    "application": "AP-J1",
+    "catalogue_records": 71,
+    "disclosure": "SD-J1",
+    "domain_engine_implementations": 0,
+    "endorsement": "SE-J1",
+    "historical_domain_templates": 52,
+    "new_application_contracts": 13,
+    "new_schemas": 24
+  },
+  "public_release_gate": "NOT_CLEARED",
+  "publication": "NOT_PERFORMED",
+  "remaining_gates": [
+    "Batch K integrated native workbench and host-controlled local effects",
+    "Batch L consolidated qualification",
+    "native Windows/WSL/macOS replay",
+    "genuine BLAKE3 legacy replay",
+    "fresh optional dependency download/resolution",
+    "independent security review",
+    "real custody/clock/authority recognition and enforcement",
+    "domain-specific validation"
+  ],
+  "reproducibility": {
+    "scope": "FROZEN_TREE_SERIALIZATION_NOT_REGENERATED_TIMESTAMPED_LOGS",
+    "source_zip_identical": true,
+    "wheel_identical": true
+  },
+  "schema": "cmba.batch-j-release-verification",
+  "signature": "NOT_SIGNED",
+  "source_fingerprint": "3ff3fe9f627a5afe48f7967721e36d9248aea245a4379ff86ddf86fa8e1b9c30",
+  "status": "PASS_SCOPED_ENGINEERING_EXTERNAL_GATES_OPEN",
+  "test_results": {
+    "errors": 0,
+    "failed": 0,
+    "inherited_cmba": 213,
+    "new_j1": 348,
+    "passed": 561,
+    "skipped": 0
+  },
+  "workflows": 4
+}

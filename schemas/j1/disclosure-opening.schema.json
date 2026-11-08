@@ -1,0 +1,80 @@
+{
+  "$defs": {
+    "disclosure-leaf": {
+      "additionalProperties": false,
+      "properties": {
+        "index": {
+          "maximum": 63,
+          "minimum": 0,
+          "type": "integer"
+        },
+        "label": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "salt_hex": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "schema": {
+          "const": "cmba.disclosure-leaf.j1"
+        },
+        "schema_id": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "value": {}
+      },
+      "required": [
+        "schema",
+        "index",
+        "label",
+        "schema_id",
+        "value",
+        "salt_hex"
+      ],
+      "type": "object"
+    },
+    "disclosure-opening": {
+      "additionalProperties": false,
+      "properties": {
+        "leaf": {
+          "$ref": "#/$defs/disclosure-leaf"
+        },
+        "path": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "hash": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "side": {
+                "enum": [
+                  "left",
+                  "right"
+                ]
+              }
+            },
+            "required": [
+              "side",
+              "hash"
+            ],
+            "type": "object"
+          },
+          "maxItems": 6,
+          "minItems": 0,
+          "type": "array"
+        }
+      },
+      "required": [
+        "leaf",
+        "path"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:disclosure-opening",
+  "$ref": "#/$defs/disclosure-opening",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

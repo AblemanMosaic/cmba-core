@@ -1,0 +1,53 @@
+{
+  "authority_effect": "NONE",
+  "classification": "ARTIFACT_MEDIATED_LOCAL_ENGINEERING_NOT_NATIVE_PIPPI",
+  "classification_namespace": "THIS_AUDIT_NOT_A_NATIVE_PIPPI_ENUM",
+  "historical_evidence_rule": "NO_RETROACTIVE_NATIVE_RECEIPTS_OR_BACKDATED_GATE_SELECTION",
+  "historical_reported_mode": {
+    "scope": "EARLY_WINDOWS_DKN_SESSION_NOT_PROOF_OF_LATER_HOST_ENFORCEMENT",
+    "source": "sources/DKN-core-CMBA-session-transcript-2026-11-07.md",
+    "value": "SIDECAR_PARTIAL"
+  },
+  "implemented_process_controls": [
+    "exact frozen artifact custody",
+    "acceptance/model-to-test traceability",
+    "source-bound phase records",
+    "output hashes and terminal exit checking",
+    "negative gate tests",
+    "same-author local replays",
+    "explicit no-authority and external-gate boundaries"
+  ],
+  "independent_review": "NOT_PERFORMED",
+  "native_handoff": {
+    "decision": "EXTERNAL_DECISION_REQUIRED",
+    "included_material": "REFERENCES_ONLY",
+    "module": "cmba_workbench.k1.views.handoff",
+    "operational_integration": "NOT_ESTABLISHED",
+    "target": "pippi"
+  },
+  "native_pippi": {
+    "all_agent_actions_mediated": "NOT_ESTABLISHED",
+    "binding": "NOT_ESTABLISHED",
+    "interpreter_execution": "NOT_DEMONSTRATED",
+    "native_admission": "NOT_ESTABLISHED",
+    "native_program": "NOT_PRESENT_IN_SUPPLIED_RELEASE",
+    "native_validator_receipt": "NOT_PRESENT"
+  },
+  "public_release_gate": "CLEARED_FOR_LABELED_RESEARCH_PREVIEW",
+  "publication": "NOT_PERFORMED",
+  "publication_nonclaims": [
+    "NOT_A_RATIFIED_STANDARD",
+    "NOT_INDEPENDENTLY_REVIEWED",
+    "NOT_A_PRODUCTION_TRUST_ROOT",
+    "NOT_AN_AUTHORITY_OR_DEPLOYMENT_GRANT"
+  ],
+  "remaining_prerequisites": [
+    "owner-selected exact native P/PPI schema/interpreter/accepted sample",
+    "native validation of translated workflow",
+    "host execution and acceptance-case-bound selection receipts",
+    "effect custody and current journal-head witnesses",
+    "independently selected review and target-machine validation"
+  ],
+  "schema": "cmba.process-posture.winqual-r001",
+  "scope": "CMBA_I_L_ARTIFACTS_AUDIT_R001_AND_WINDOWS_QUALIFICATION_SUCCESSOR"
+}

@@ -1,0 +1,1556 @@
+{
+  "schema": "cmba.optional-dependency-copies.j1",
+  "source": "GENUINE_PREINSTALLED_HOST_DISTRIBUTIONS",
+  "fresh_resolution": "NOT_ESTABLISHED",
+  "distributions": [
+    {
+      "distribution": "cryptography",
+      "version": "46.0.4",
+      "files": [
+        {
+          "path": "cryptography-46.0.4.dist-info/INSTALLER",
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "bytes": 4
+        },
+        {
+          "path": "cryptography-46.0.4.dist-info/METADATA",
+          "sha256": "23772263d659f0d86ba11a8de47e7e437df320dc4c531054aec18097f35cfc62",
+          "bytes": 5748
+        },
+        {
+          "path": "cryptography-46.0.4.dist-info/RECORD",
+          "sha256": "cfae8d39860dca44d31920845abf3a1f6ed80bc9622392949360d5c5287e06f9",
+          "bytes": 16167
+        },
+        {
+          "path": "cryptography-46.0.4.dist-info/REQUESTED",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "cryptography-46.0.4.dist-info/WHEEL",
+          "sha256": "8e4c6b25e993e23669612afebbdc4f6a55aaa28c3c6de9cd9a25df8ca5cb949c",
+          "bytes": 108
+        },
+        {
+          "path": "cryptography-46.0.4.dist-info/licenses/LICENSE",
+          "sha256": "3e0c7c091a948b82533ba98fd7cbb40432d6f1a9acbf85f5922d2f99a93ae6bb",
+          "bytes": 197
+        },
+        {
+          "path": "cryptography-46.0.4.dist-info/licenses/LICENSE.APACHE",
+          "sha256": "aac73b3148f6d1d7111dbca32099f68d26c644c6813ae1e4f05f6579aa2663fe",
+          "bytes": 11360
+        },
+        {
+          "path": "cryptography-46.0.4.dist-info/licenses/LICENSE.BSD",
+          "sha256": "602c4c7482de6479dd2e9793cda275e5e63d773dacd1eca689232ab7008fb4fb",
+          "bytes": 1532
+        },
+        {
+          "path": "cryptography/__about__.py",
+          "sha256": "8ebfbaac0bf8bc3d8db794b307bbc49dd63ad81704455da7d70d18bf9f52a52c",
+          "bytes": 445
+        },
+        {
+          "path": "cryptography/__init__.py",
+          "sha256": "9ad86e52b4dde0544e0a9518ad322a863cfab3a4fd763019ad5ee7675a0c9b6a",
+          "bytes": 364
+        },
+        {
+          "path": "cryptography/exceptions.py",
+          "sha256": "f37e445882dcd9fc31c3e83214cae27220b64aa8558844c1d742c14b2b670c87",
+          "bytes": 1087
+        },
+        {
+          "path": "cryptography/fernet.py",
+          "sha256": "dc2bf1921d0a2526d7f076e7087bb8c1f096ed4d0681f500deffea43c6bc8967",
+          "bytes": 6963
+        },
+        {
+          "path": "cryptography/hazmat/__init__.py",
+          "sha256": "e48c2b2d6ad5a7402312bff815d586fd5d39ecd489198fd6e1e80d36cb9cb748",
+          "bytes": 455
+        },
+        {
+          "path": "cryptography/hazmat/_oid.py",
+          "sha256": "a7c4e18f0241e7a0a2feb008ae3c89d5ff158e00fa7b7f5eb36761f0921404ec",
+          "bytes": 17240
+        },
+        {
+          "path": "cryptography/hazmat/asn1/__init__.py",
+          "sha256": "852fc45b1df056f6737db09c355f21cdc0e7c8c33c1fe0612284b54e2a54a2c9",
+          "bytes": 293
+        },
+        {
+          "path": "cryptography/hazmat/asn1/asn1.py",
+          "sha256": "78c1138445dad7d2d08dcc95a1f807b16eadb199e3a7775d1fb6d69247317cb3",
+          "bytes": 3860
+        },
+        {
+          "path": "cryptography/hazmat/backends/__init__.py",
+          "sha256": "3b98ef28541d6675e129ea89f87b6e95a10bf4d8bb9abd660f3658e641e56212",
+          "bytes": 361
+        },
+        {
+          "path": "cryptography/hazmat/backends/openssl/__init__.py",
+          "sha256": "a778e625f9c26a0f62139b1d32b37a56f544bb9e6ee3ac5a4bf223a08d12ae60",
+          "bytes": 305
+        },
+        {
+          "path": "cryptography/hazmat/backends/openssl/backend.py",
+          "sha256": "b55e40c41a0527619f0340cc59263ed13c5026ba50a1ec7323d4782b26dbfbee",
+          "bytes": 10215
+        },
+        {
+          "path": "cryptography/hazmat/bindings/__init__.py",
+          "sha256": "b3da0a090db2705757a0445d4b58a669fb9e4a406c2fd92f6f27e085a6ae67d6",
+          "bytes": 180
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust.abi3.so",
+          "sha256": "48bac368ad246a2ca53a49c0c83e33633bd25c42e8db77af8802951382427f99",
+          "bytes": 12817480
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/__init__.pyi",
+          "sha256": "2a1a8b85714f02b3f3cc9ec360ef4597c1685c1fc16a001dfebe039bf65ef57a",
+          "bytes": 1257
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/_openssl.pyi",
+          "sha256": "9a93492ee60b6c256b7798b7dc5053996c0bff9e43c3b24f9122e5497f50ee82",
+          "bytes": 230
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/asn1.pyi",
+          "sha256": "06b1a30bc27a9f0b92fabdc455c757241f27768b5f63d99b41839fa5b3c6d070",
+          "bytes": 354
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/declarative_asn1.pyi",
+          "sha256": "d84085998b9ed443e41c4136066eda2f0923074992513a6bdb7bfd30de29ae2e",
+          "bytes": 892
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/exceptions.pyi",
+          "sha256": "7b15ebdb1c3fd29075924f777186ccdcca216f3a149233a6b3564c522d2e4191",
+          "bytes": 640
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/ocsp.pyi",
+          "sha256": "54f556b8a1c8f4432cd3d64b458006bd1d08cf49823261335c0920247a2fa683",
+          "bytes": 4020
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/__init__.pyi",
+          "sha256": "88e00c0f21e8370c024997d9cee5c3afae20e06a4651e0e010df8b8d7a9dac13",
+          "bytes": 1522
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/aead.pyi",
+          "sha256": "e0d75dc3afb29f3201df0d96f3a5af9062932e54c393fe85e65e784470aecb71",
+          "bytes": 2688
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/ciphers.pyi",
+          "sha256": "2e13f31d649726ae20ac02579facd2bd249d57e698208b1c1c3c083e524618fb",
+          "bytes": 1315
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/cmac.pyi",
+          "sha256": "9cf1f45f9ed1629b00911a305698d0887139eba4e1513c7b617aec69d9ab9879",
+          "bytes": 564
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/dh.pyi",
+          "sha256": "6774c2f86d38f931ed49d00e3cb3358761bb9a5e5b75ad4495951c9f9c29ba19",
+          "bytes": 1564
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/dsa.pyi",
+          "sha256": "a81b64823d9a95bb76a8572767d503ae1ce83610953bb1d36f2e5549fd445cc2",
+          "bytes": 1299
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/ec.pyi",
+          "sha256": "cc9cb4a516b99fefe9d9d9b8e4fc44081ffe07a49567234a7e3c450e93ea4f7f",
+          "bytes": 1691
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/ed25519.pyi",
+          "sha256": "5577d77791ba8548af837f7d4750d87665b77936f411e6f30d3aa3442da0691c",
+          "bytes": 532
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/ed448.pyi",
+          "sha256": "631e3d96a7678ec0fb6f188357591c68cac392dba0e5ebe2e5aeb37ab322cb6b",
+          "bytes": 514
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/hashes.pyi",
+          "sha256": "39666f071ef17e8fc7265e3535cfbe0ee815c8254f229ad9dc794e3d34961fd8",
+          "bytes": 984
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/hmac.pyi",
+          "sha256": "057667ecd0e32f72406d85b4490f298358b20b90db4175615008b0b22f03151f",
+          "bytes": 702
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/kdf.pyi",
+          "sha256": "c577c505bf507a11df0ed11ac55ffae59d182bb36ab8e5480a1a532e4800b3f9",
+          "bytes": 2029
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/keys.pyi",
+          "sha256": "b5e22df0ce9910c26b9f8b375b45275b40d9fb7d0977af169d2b0a286d76e25d",
+          "bytes": 912
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/poly1305.pyi",
+          "sha256": "fd25bd36d4391439406dd72516d5a94f89469b1288287a4dfb88fc27607361f4",
+          "bytes": 585
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/rsa.pyi",
+          "sha256": "d8e4023525e4c6073edeec35c620829682104d5ea9f7f90aefd62ed2b85980f7",
+          "bytes": 1364
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/x25519.pyi",
+          "sha256": "7b09f81a94326fbccfc04fa78bb1adc9080c0b403598bbaa62c4b2aafea723fb",
+          "bytes": 523
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/openssl/x448.pyi",
+          "sha256": "8ee4d94e6962f233bfe5572e7e0faf1efc7fb42c9ece648b221ffd3d4dd37332",
+          "bytes": 505
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/pkcs12.pyi",
+          "sha256": "bc411de700e266f6fc64615ace22c26962f3030a06fedbcf5312d0c39fee3a5f",
+          "bytes": 1605
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/pkcs7.pyi",
+          "sha256": "b711812628ea66c84472aadae9bc8f35b9e2b08765c733922073f6865f5aacfb",
+          "bytes": 1601
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/test_support.pyi",
+          "sha256": "3cf86577e5a43bbe3789714f79b786d0bb602b4693cc6763708b1acb51a6e461",
+          "bytes": 757
+        },
+        {
+          "path": "cryptography/hazmat/bindings/_rust/x509.pyi",
+          "sha256": "9fd5f4210e8809b7488be131742159a0181e63a9e39b740e540559c0341d9db9",
+          "bytes": 9784
+        },
+        {
+          "path": "cryptography/hazmat/bindings/openssl/__init__.py",
+          "sha256": "b3da0a090db2705757a0445d4b58a669fb9e4a406c2fd92f6f27e085a6ae67d6",
+          "bytes": 180
+        },
+        {
+          "path": "cryptography/hazmat/bindings/openssl/_conditional.py",
+          "sha256": "0cc3a903f5cde25ef4cd3739fc9f43a7095b41e5014535a97c8278c91227d7e5",
+          "bytes": 5791
+        },
+        {
+          "path": "cryptography/hazmat/bindings/openssl/binding.py",
+          "sha256": "c7c7a87049ae90ee1c9bb707a9f5663a8618ec2097768175bf55a1650b7d9dea",
+          "bytes": 4610
+        },
+        {
+          "path": "cryptography/hazmat/decrepit/__init__.py",
+          "sha256": "c0709b59f69e7daf9f93a4c74b0f6d87d7c952c4ad268ef6e39c1f141aa676e0",
+          "bytes": 216
+        },
+        {
+          "path": "cryptography/hazmat/decrepit/ciphers/__init__.py",
+          "sha256": "c0709b59f69e7daf9f93a4c74b0f6d87d7c952c4ad268ef6e39c1f141aa676e0",
+          "bytes": 216
+        },
+        {
+          "path": "cryptography/hazmat/decrepit/ciphers/algorithms.py",
+          "sha256": "62b2a01d2e0c7f059a3263c1611ca6451942d298705a9f727080857b37893c69",
+          "bytes": 2595
+        },
+        {
+          "path": "cryptography/hazmat/primitives/__init__.py",
+          "sha256": "b3da0a090db2705757a0445d4b58a669fb9e4a406c2fd92f6f27e085a6ae67d6",
+          "bytes": 180
+        },
+        {
+          "path": "cryptography/hazmat/primitives/_asymmetric.py",
+          "sha256": "46181ca2e501e874e214306b4752f1aa4323a54c4888dbd0d6bff3263446eaa4",
+          "bytes": 532
+        },
+        {
+          "path": "cryptography/hazmat/primitives/_cipheralgorithm.py",
+          "sha256": "121de2ee5c1e7477e2d1e2d2b07f773d9c502b363d23a9642baeef2f8579b4e7",
+          "bytes": 1522
+        },
+        {
+          "path": "cryptography/hazmat/primitives/_serialization.py",
+          "sha256": "72180f0921768f12360abe6007ea9b5973af39fba9061e020114b428086ff403",
+          "bytes": 5123
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/__init__.py",
+          "sha256": "b3da0a090db2705757a0445d4b58a669fb9e4a406c2fd92f6f27e085a6ae67d6",
+          "bytes": 180
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/dh.py",
+          "sha256": "d2ffef105173e69435406f859160f2be0bfb21fb956521f943a2f2148e40f2b8",
+          "bytes": 3645
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/dsa.py",
+          "sha256": "2ddfdb6dba90173d7674e6c7c48933110cd7d125963f8d512d25a461268a86a1",
+          "bytes": 4213
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/ec.py",
+          "sha256": "55fe628363dc4b73d59ec6f9378f4ac75b88905049ca18380565d3843cf972e8",
+          "bytes": 12999
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/ed25519.py",
+          "sha256": "8d95b972ce3bdb05d7577781d2c1356fcc3ae2075acf0c14d3f313e54393897b",
+          "bytes": 3700
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/ed448.py",
+          "sha256": "c807ad827d9fd8961fd013bc31aa46cd779386cbd2306e4b9940abc553a27400",
+          "bytes": 3729
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/padding.py",
+          "sha256": "bd0ea5ea03a0f47a9c6ceb2f1eb4a225154b7448fd2f89b81e4446633893c850",
+          "bytes": 2854
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/rsa.py",
+          "sha256": "66728ea367f7e0c0823aea42d37635b91fbf8e2486e48ade947126c5a304dc3e",
+          "bytes": 8303
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/types.py",
+          "sha256": "2e7b0e2729bec263d427b2a7bbfedb08d5379088842c277a92b39a5bf254d3c2",
+          "bytes": 2996
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/utils.py",
+          "sha256": "0cf4ece93e05f94870cc541387ed5f484a50cdacc7da37f6c6922ba3722d178a",
+          "bytes": 790
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/x25519.py",
+          "sha256": "ff89d0799df22772e0d11a579daa80fb5cadeaf6f1d45fb0ccb71a647c12a5e1",
+          "bytes": 3613
+        },
+        {
+          "path": "cryptography/hazmat/primitives/asymmetric/x448.py",
+          "sha256": "58a04bb6e55f26a88146ba3ae787c6690025bec29ba9b3642bb73803f642755d",
+          "bytes": 3642
+        },
+        {
+          "path": "cryptography/hazmat/primitives/ciphers/__init__.py",
+          "sha256": "7b21179a393afc265768e3d80ebeef018197af6f50bf38162f6fb8092a252c5b",
+          "bytes": 680
+        },
+        {
+          "path": "cryptography/hazmat/primitives/ciphers/aead.py",
+          "sha256": "173972c7bc3c29841a9330e9d735a026722beb6ce066b815875bb68787b1079e",
+          "bytes": 634
+        },
+        {
+          "path": "cryptography/hazmat/primitives/ciphers/algorithms.py",
+          "sha256": "43b649c1cb31f37320c6fe72eebe82c8929276c3b00be9b2fb903aefe99adafc",
+          "bytes": 3407
+        },
+        {
+          "path": "cryptography/hazmat/primitives/ciphers/base.py",
+          "sha256": "6810bb1c7041a22c5e6e6a5aad5af4525383b37543d00ec1ea8cff01a4630eff",
+          "bytes": 4253
+        },
+        {
+          "path": "cryptography/hazmat/primitives/ciphers/modes.py",
+          "sha256": "db4b2da70843b5b02fa47d1231ff440c721c8b099317e24c054399f5b53c5a24",
+          "bytes": 8318
+        },
+        {
+          "path": "cryptography/hazmat/primitives/cmac.py",
+          "sha256": "b33fece87fdc6273afc7e54d59d20a85185edd89a9f33f09d03dc206a397de08",
+          "bytes": 338
+        },
+        {
+          "path": "cryptography/hazmat/primitives/constant_time.py",
+          "sha256": "c5dba7593d277fc3af29d72a52186514a6b21a9e3f3e0549454d96d702d2aff0",
+          "bytes": 422
+        },
+        {
+          "path": "cryptography/hazmat/primitives/hashes.py",
+          "sha256": "33c06b94a07753a0c4b47bd64d5e55463a6d787bf5912dd9c66fc1b24d3872bf",
+          "bytes": 5184
+        },
+        {
+          "path": "cryptography/hazmat/primitives/hmac.py",
+          "sha256": "469077cfdcf9b248ab090ae6ef341bb67a7da4b327023ae54d4bcaa85e5a0c37",
+          "bytes": 423
+        },
+        {
+          "path": "cryptography/hazmat/primitives/kdf/__init__.py",
+          "sha256": "e1789b667ad8ab8861e710635a2217cda616e852b1f213db55a6bf701f734bae",
+          "bytes": 750
+        },
+        {
+          "path": "cryptography/hazmat/primitives/kdf/argon2.py",
+          "sha256": "5050cd5c6d2ffabc370ea0104c1d54400b100b633912383493fe8e0b284b2aeb",
+          "bytes": 460
+        },
+        {
+          "path": "cryptography/hazmat/primitives/kdf/concatkdf.py",
+          "sha256": "51af0aa0b5d79f382cac05261e9c8aca668fb7c68f44fd041c4681cfb40243d2",
+          "bytes": 3737
+        },
+        {
+          "path": "cryptography/hazmat/primitives/kdf/hkdf.py",
+          "sha256": "33494011f468738929a78fa7c038fdc81faf359ba420e60442b5255ac04d9fda",
+          "bytes": 543
+        },
+        {
+          "path": "cryptography/hazmat/primitives/kdf/kbkdf.py",
+          "sha256": "a197a9be8e1ebe12a4909416443c1a3e821bc9368598373934f8a6c60ea57ca8",
+          "bytes": 9165
+        },
+        {
+          "path": "cryptography/hazmat/primitives/kdf/pbkdf2.py",
+          "sha256": "d562308442d1d30f33b53a53bbc06b16261698ade151f26ad3c23bf53c7089e1",
+          "bytes": 1957
+        },
+        {
+          "path": "cryptography/hazmat/primitives/kdf/scrypt.py",
+          "sha256": "5f259475452686e23d57a4ea00f3afba3092306bf55d0760d1adb52160a63be5",
+          "bytes": 590
+        },
+        {
+          "path": "cryptography/hazmat/primitives/kdf/x963kdf.py",
+          "sha256": "ccb4dc17aeb9405bd75f67fc4d2edf981653b5e5e916329a8737e38d0702272c",
+          "bytes": 1999
+        },
+        {
+          "path": "cryptography/hazmat/primitives/keywrap.py",
+          "sha256": "5d5e0f8f67ea49e0fe46a655bd8d9c0378f9ffb470252172818b8b7e4dae8c2a",
+          "bytes": 5650
+        },
+        {
+          "path": "cryptography/hazmat/primitives/padding.py",
+          "sha256": "413f94f8dbd5d9e4063b5c153db0e234635273d91e4434be8a0e5c40eacbcf41",
+          "bytes": 1865
+        },
+        {
+          "path": "cryptography/hazmat/primitives/poly1305.py",
+          "sha256": "3f910f415f9107f1493da869834d6ed13b384bf3e7026b2ba312065db19e451a",
+          "bytes": 355
+        },
+        {
+          "path": "cryptography/hazmat/primitives/serialization/__init__.py",
+          "sha256": "43bb9380396dee7dd67ec313ea3630bad0ba0c883fed211ea009b51876790791",
+          "bytes": 1705
+        },
+        {
+          "path": "cryptography/hazmat/primitives/serialization/base.py",
+          "sha256": "8a4ab9309230a7fa149e389a05ca3f3e643039362e1a2f979185181cacbc568d",
+          "bytes": 615
+        },
+        {
+          "path": "cryptography/hazmat/primitives/serialization/pkcs12.py",
+          "sha256": "992f5c14d1b869fcefb1ea1ce5ed4c5a863656c91f2fc37c63f3858e5ebb96e6",
+          "bytes": 5104
+        },
+        {
+          "path": "cryptography/hazmat/primitives/serialization/pkcs7.py",
+          "sha256": "e4e47f4e4cacc5aa6b9f815e82f2487db7a9f6b27dc2893a14b5af5b0439f8c8",
+          "bytes": 13943
+        },
+        {
+          "path": "cryptography/hazmat/primitives/serialization/ssh.py",
+          "sha256": "84f579a1b1739f3d108457d714f39e43ccba32cbab034c5531088b9cb11212cf",
+          "bytes": 53700
+        },
+        {
+          "path": "cryptography/hazmat/primitives/twofactor/__init__.py",
+          "sha256": "b66319181fa0e08535afb94816a012534d7dcebd2e3e9ff010161cc1d0c22820",
+          "bytes": 258
+        },
+        {
+          "path": "cryptography/hazmat/primitives/twofactor/hotp.py",
+          "sha256": "8af668e41adc08658bb2aaa5e27655d175c28f218f8bf8877c3165b4694e2709",
+          "bytes": 3256
+        },
+        {
+          "path": "cryptography/hazmat/primitives/twofactor/totp.py",
+          "sha256": "9b92cfa512f4d24a78cd8f204e3af9e477f3f5a3253d2e7790799591240299d6",
+          "bytes": 1652
+        },
+        {
+          "path": "cryptography/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "cryptography/utils.py",
+          "sha256": "6d9023142e4a5697e6176f6a4bfd7cbefa56de62b199d89100b72eb078534e48",
+          "bytes": 4301
+        },
+        {
+          "path": "cryptography/x509/__init__.py",
+          "sha256": "c65a0dd2cc2c78dc7e9b6585666080d7b80ea31416a9e53cd9456311d24178f4",
+          "bytes": 8257
+        },
+        {
+          "path": "cryptography/x509/base.py",
+          "sha256": "3ab993c37cbc07a004fe719740f37cc7d92af9deeb0d6787d77802aba4fa0fa5",
+          "bytes": 27997
+        },
+        {
+          "path": "cryptography/x509/certificate_transparency.py",
+          "sha256": "26aa0e203865c089eb60c156e88167efb589d2f885f8f07fae5655defb3d3187",
+          "bytes": 797
+        },
+        {
+          "path": "cryptography/x509/extensions.py",
+          "sha256": "43162ba91e92175ab347d66b68ff300e221cce511594016ec03455725b41e939",
+          "bytes": 77724
+        },
+        {
+          "path": "cryptography/x509/general_name.py",
+          "sha256": "b0ffeb575d50969b24e31dd75c6258fccbf443fb3d76d8de2dc907b23a4b4284",
+          "bytes": 7836
+        },
+        {
+          "path": "cryptography/x509/name.py",
+          "sha256": "b72d3fc5fd0b9c7c1901d11ff9df052ced4ae211aac7fec3b03dc21f0a0b2626",
+          "bytes": 15101
+        },
+        {
+          "path": "cryptography/x509/ocsp.py",
+          "sha256": "61ecba35d155d4c3e3a29db8323fd57a78c4a60de451a328a5258e2b401b781b",
+          "bytes": 12699
+        },
+        {
+          "path": "cryptography/x509/oid.py",
+          "sha256": "054ce05d71955a296406474a3d39bd478a84944f600061e07583cc640a7b3c9a",
+          "bytes": 931
+        },
+        {
+          "path": "cryptography/x509/verification.py",
+          "sha256": "811d82d9cf97650b5b959853e53e6f8d228eb426fbe1e7f66a53d59847301653",
+          "bytes": 958
+        }
+      ]
+    },
+    {
+      "distribution": "cffi",
+      "version": "2.0.0",
+      "files": [
+        {
+          "path": "_cffi_backend.cpython-313-x86_64-linux-gnu.so",
+          "sha256": "4716712759d392db6b741965c28e4310c12ace1d30af457fb1bbe6eb53cd74a8",
+          "bytes": 348752
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/INSTALLER",
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "bytes": 4
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/METADATA",
+          "sha256": "b98ce7e3417af089bc12d5c73412d9b3b1683ccf8ec73c986c35ac8c9be1ba39",
+          "bytes": 2559
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/RECORD",
+          "sha256": "2d66167b91948496649ffda52c6128cadd919f4623df81462399cc997105956c",
+          "bytes": 3366
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/REQUESTED",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/WHEEL",
+          "sha256": "b0b9f19229a01999e41df8951b408a5e4ddc6c4ce69240541eb90a2443bda3a8",
+          "bytes": 151
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/entry_points.txt",
+          "sha256": "cba8d3c67c9eb8b9cbf9725c0eff2e30bde7eb0c98886460f0c4e9fd0189f47a",
+          "bytes": 75
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/licenses/AUTHORS",
+          "sha256": "2a67a60bbfb33759d67d645ff131b8e6d6bc4cafc232d751fcac3eda4d314cc8",
+          "bytes": 208
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/licenses/LICENSE",
+          "sha256": "5ba24ddc57067f9249add644c3afc41a5d6dc37e23433ef759d95df370b0af63",
+          "bytes": 1123
+        },
+        {
+          "path": "cffi-2.0.0.dist-info/top_level.txt",
+          "sha256": "ac4ed6477ad97cd2b1588f7e8e7ea1b0708097b303901f859ae41bc568c57a14",
+          "bytes": 19
+        },
+        {
+          "path": "cffi/__init__.py",
+          "sha256": "fa4b0143b31f0f356f6c1955fdfb5805602612a7c0f3a963233331cda65e0252",
+          "bytes": 511
+        },
+        {
+          "path": "cffi/_cffi_errors.h",
+          "sha256": "cd05edeee47f9bc8145be7c8da1260d0aa129091705eff111949040d9d7bedd4",
+          "bytes": 3908
+        },
+        {
+          "path": "cffi/_cffi_include.h",
+          "sha256": "131866826f6acc75b35a2be37d37b40fb5e9e2b3d4915c5d36ec0684c4cccdbc",
+          "bytes": 15055
+        },
+        {
+          "path": "cffi/_embedding.h",
+          "sha256": "022df71476e513b5d2a47382a7c90f716c0de7ff41575e0ebcdd0955ae884e9c",
+          "bytes": 18786
+        },
+        {
+          "path": "cffi/_imp_emulation.py",
+          "sha256": "4714441bccc06c8d913c6070c3dd2eff97e2f2c59d6a1a5d8a93a83f3929ec2d",
+          "bytes": 2960
+        },
+        {
+          "path": "cffi/_shimmed_dist_utils.py",
+          "sha256": "0638f6c26f3265bbc5bd6131e4011f9aa6aa6726458587e8c8b2d01e45d9b9aa",
+          "bytes": 2230
+        },
+        {
+          "path": "cffi/api.py",
+          "sha256": "6a506fea1650923a66669941a6175a467da53cef7e08e46cfccee2c5a6ef6562",
+          "bytes": 42169
+        },
+        {
+          "path": "cffi/backend_ctypes.py",
+          "sha256": "879648ccb73a0455579c6c9cf713ea656512eea1b2ef21520ea5deebc49af33e",
+          "bytes": 42454
+        },
+        {
+          "path": "cffi/cffi_opcode.py",
+          "sha256": "243579974474fce69d057fee13bc4f3d362d31d9a9a7c23d51877a6afeda8835",
+          "bytes": 5731
+        },
+        {
+          "path": "cffi/commontypes.py",
+          "sha256": "ecdeb33ed08596fc57316847574f29b148dd6082b65e0b0ddf2a39760b9afefe",
+          "bytes": 2805
+        },
+        {
+          "path": "cffi/cparser.py",
+          "sha256": "4144df9a52fe68ef8c611f1b14696f0141dcdfa390afb5d82ded162e41858d1a",
+          "bytes": 44790
+        },
+        {
+          "path": "cffi/error.py",
+          "sha256": "bfac53892e14d24bc3732e21fc10d1a39bf7f5942e8fe20c4582efe444dd759b",
+          "bytes": 877
+        },
+        {
+          "path": "cffi/ffiplatform.py",
+          "sha256": "6afc458dd8a460626812d9893bb7b0566c06fd511597a119fd668d859602aafe",
+          "bytes": 3584
+        },
+        {
+          "path": "cffi/lock.py",
+          "sha256": "97d4d37703083298ba8c39091a742013d72f4c847b0809ed209afc1061edde96",
+          "bytes": 747
+        },
+        {
+          "path": "cffi/model.py",
+          "sha256": "5b7d14150644ef78cbe4cc7937cd584fbeeeb365b68898d39b45d87e7c33d5c8",
+          "bytes": 21797
+        },
+        {
+          "path": "cffi/parse_c_type.h",
+          "sha256": "39dc107f033d92dababe5081e377b11509b10c1b63d8c04d74af0b625d79b63c",
+          "bytes": 5976
+        },
+        {
+          "path": "cffi/pkgconfig.py",
+          "sha256": "2cfd70eef996be62b0caa2da535676e3714e58635032b80c519aef805b8e95ca",
+          "bytes": 4374
+        },
+        {
+          "path": "cffi/recompiler.py",
+          "sha256": "efc27a94c1043b28173668cdf7e7ce1453b78fb796fa21714abc5fbd06f9e1b6",
+          "bytes": 65509
+        },
+        {
+          "path": "cffi/setuptools_ext.py",
+          "sha256": "d2b0b0049d56ec51d6b6230a7cd5ec4924fcf15f145ebba2e687971650cd2c6f",
+          "bytes": 9411
+        },
+        {
+          "path": "cffi/vengine_cpy.py",
+          "sha256": "a3240a0f6de4a44d1a0a150a03c260d1eef6ddfa0f898ccb60475bf89d0c88db",
+          "bytes": 43881
+        },
+        {
+          "path": "cffi/vengine_gen.py",
+          "sha256": "0d494422b0e25629f53e7867d6c7e86a69d2e4d2ea7c970e76146879235e2518",
+          "bytes": 26939
+        },
+        {
+          "path": "cffi/verifier.py",
+          "sha256": "a17f23a5aa21836426dda1dcce789d01dbeb566e4de2c4181b46b7128e66225e",
+          "bytes": 11182
+        }
+      ]
+    },
+    {
+      "distribution": "pycparser",
+      "version": "3.0",
+      "files": [
+        {
+          "path": "pycparser-3.0.dist-info/INSTALLER",
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "bytes": 4
+        },
+        {
+          "path": "pycparser-3.0.dist-info/METADATA",
+          "sha256": "f547a60b0ab54cc2f242213d1f87960ad80df7dd5dfeb98d17a444d48bfb6b93",
+          "bytes": 8229
+        },
+        {
+          "path": "pycparser-3.0.dist-info/RECORD",
+          "sha256": "d73eac8cf0e77ac39291fdf27f958d9424ee801fa108b2e185b57d0c1b4a0be1",
+          "bytes": 1572
+        },
+        {
+          "path": "pycparser-3.0.dist-info/REQUESTED",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "pycparser-3.0.dist-info/WHEEL",
+          "sha256": "a842dba36b35633977f599ab0226d70368e33cb5187e756150d4e5c85d6bab46",
+          "bytes": 92
+        },
+        {
+          "path": "pycparser-3.0.dist-info/licenses/LICENSE",
+          "sha256": "0c846399369ea76ddd7b5c44fe6d16497415fcf015f5cbb508c24bf98b81c5b1",
+          "bytes": 1543
+        },
+        {
+          "path": "pycparser-3.0.dist-info/top_level.txt",
+          "sha256": "73e94f712ef82fff0aa07ec813a3d0179a1fca2ad140d57856191b48520f7963",
+          "bytes": 10
+        },
+        {
+          "path": "pycparser/__init__.py",
+          "sha256": "a6156247202e52682a13890d99a0aaa66e56544048bf351215aa41bf85d7df1a",
+          "bytes": 2829
+        },
+        {
+          "path": "pycparser/_ast_gen.py",
+          "sha256": "1311f9626e2993b7503c422442bf512629b97deced7414304813efa6f13ee413",
+          "bytes": 11292
+        },
+        {
+          "path": "pycparser/_c_ast.cfg",
+          "sha256": "95de5ecc4f72cc82452150147f0edecc94a5322e275ca342cdf9aa8cec904cda",
+          "bytes": 4255
+        },
+        {
+          "path": "pycparser/ast_transforms.py",
+          "sha256": "5f032c6ab73968375d35680888a9b8fa33963116226fdeb2350528d3fbb6f160",
+          "bytes": 5899
+        },
+        {
+          "path": "pycparser/c_ast.py",
+          "sha256": "bb091c6561df5c3408c3a583bc22f5ee258cffed11f94443a843263e35cb3807",
+          "bytes": 32954
+        },
+        {
+          "path": "pycparser/c_generator.py",
+          "sha256": "4552893e0bafd82be8bc71d27d092a8a672452bf70194f4fa1fc421a3db9d500",
+          "bytes": 20661
+        },
+        {
+          "path": "pycparser/c_lexer.py",
+          "sha256": "075568a9b6213d690e2495827a6e0e638ce3d08c6b3e4b4165915ed98f3b9148",
+          "bytes": 25155
+        },
+        {
+          "path": "pycparser/c_parser.py",
+          "sha256": "dc504a18b8e3942deff1a7f00ff727311ebb226a18232ef76b858a411ea15fb8",
+          "bytes": 89798
+        }
+      ]
+    },
+    {
+      "distribution": "jsonschema",
+      "version": "4.26.0",
+      "files": [
+        {
+          "path": "jsonschema-4.26.0.dist-info/INSTALLER",
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "bytes": 4
+        },
+        {
+          "path": "jsonschema-4.26.0.dist-info/METADATA",
+          "sha256": "05b189866ca98a96da3934bf6b83687ced3ff85325273b77e16b705f6d8b26d2",
+          "bytes": 7592
+        },
+        {
+          "path": "jsonschema-4.26.0.dist-info/RECORD",
+          "sha256": "b832374fe8171a1a767f355667992e382ed8f9ce2226dadb801b3d7825bbe4d5",
+          "bytes": 6415
+        },
+        {
+          "path": "jsonschema-4.26.0.dist-info/REQUESTED",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "jsonschema-4.26.0.dist-info/WHEEL",
+          "sha256": "58b82a17209f9bf2804afe161f2632d0fde933f9bb2792fd936b2474a2e2ac2f",
+          "bytes": 87
+        },
+        {
+          "path": "jsonschema-4.26.0.dist-info/entry_points.txt",
+          "sha256": "bceeeb5f816cff1215272da99c0b4a8134b17e99e8cc0550d038c29a93319d61",
+          "bytes": 51
+        },
+        {
+          "path": "jsonschema-4.26.0.dist-info/licenses/COPYING",
+          "sha256": "4f92a015a13c4d1a040bef018aa13430b4f1bc73b41b16bb846c346766de7439",
+          "bytes": 1057
+        },
+        {
+          "path": "jsonschema/__init__.py",
+          "sha256": "a7e470e134bfd0e3c76482722260d6b1d5a099de823d61cc5cbabb06e4314c67",
+          "bytes": 3941
+        },
+        {
+          "path": "jsonschema/__main__.py",
+          "sha256": "88bb197f6ba9501de294129394c9f22be1c7b760a79df930c318bf73a80bbd20",
+          "bytes": 115
+        },
+        {
+          "path": "jsonschema/_format.py",
+          "sha256": "96bb3553b892076657f59d846a5b113987909b577d91e7f0d822e8d3c1bc3f8b",
+          "bytes": 15568
+        },
+        {
+          "path": "jsonschema/_keywords.py",
+          "sha256": "afcfc3aea01f9fa40bc109e65c4820bde89253e51a20bda9da7b8f20d7a57c57",
+          "bytes": 14949
+        },
+        {
+          "path": "jsonschema/_legacy_keywords.py",
+          "sha256": "dad5aec113d66d84bb10097cc01202feb69b1aebf527875f60ba8d10fa528610",
+          "bytes": 15191
+        },
+        {
+          "path": "jsonschema/_types.py",
+          "sha256": "7ff9e44c36eb8dadc4ddfb083530bbdf2fe03174d4db5d08fc7eea2b434ddf47",
+          "bytes": 5456
+        },
+        {
+          "path": "jsonschema/_typing.py",
+          "sha256": "a572e71b2de336d2144ead37ee451fab4c1ed7bd3ce5e1ed2700c9dadfbe9901",
+          "bytes": 617
+        },
+        {
+          "path": "jsonschema/_utils.py",
+          "sha256": "5efebfc0a2ac941265c328fdfa3d9cf090c5c3ee33e1a5859d57b6a57f21ed4e",
+          "bytes": 10659
+        },
+        {
+          "path": "jsonschema/benchmarks/__init__.py",
+          "sha256": "034b10af10c15474b243ef2bbb72f5d613177f7abd815b81f71fd88076f847d3",
+          "bytes": 70
+        },
+        {
+          "path": "jsonschema/benchmarks/const_vs_enum.py",
+          "sha256": "0d5162dd60ea05a95914e89b9e3a57d6e4d2af74716b670f805728c1ded492bb",
+          "bytes": 830
+        },
+        {
+          "path": "jsonschema/benchmarks/contains.py",
+          "sha256": "81ec50a14ac23b0102a1f6edd7d05ea2c419ed614be8f0dd917e3d0d6c0194e8",
+          "bytes": 786
+        },
+        {
+          "path": "jsonschema/benchmarks/import_benchmark.py",
+          "sha256": "d834483954baa7e6ea2e7ffcdb607f5f9164211bec2765750989d5d9daeecc3b",
+          "bytes": 779
+        },
+        {
+          "path": "jsonschema/benchmarks/issue232.py",
+          "sha256": "dcb2d82c89411909d5bb2ca8da202ffb1932e4fe8f4451c0371e3ecc82103a81",
+          "bytes": 521
+        },
+        {
+          "path": "jsonschema/benchmarks/issue232/issue.json",
+          "sha256": "79a3ce663311bb9bbc4692abb00f6e93bb9c3d94b9b64286e03fe190e4d0dc79",
+          "bytes": 117105
+        },
+        {
+          "path": "jsonschema/benchmarks/json_schema_test_suite.py",
+          "sha256": "3ef7da6e9518705e3fedcb180d37136ae103f2b9c510661b758e51a935c3d3cb",
+          "bytes": 320
+        },
+        {
+          "path": "jsonschema/benchmarks/nested_schemas.py",
+          "sha256": "9a8d3b771f82220992388eb608db38839c6ed45cc79252c1a644280f159870ab",
+          "bytes": 1892
+        },
+        {
+          "path": "jsonschema/benchmarks/subcomponents.py",
+          "sha256": "7c4ca2333b1678ada977b0c4182bae63ebf31ae9f08477334415849c144b288a",
+          "bytes": 1113
+        },
+        {
+          "path": "jsonschema/benchmarks/unused_registry.py",
+          "sha256": "87047038d73d71e7cfb58ce4a17fd36113b71b25288eb8afd3e61068adef9e3d",
+          "bytes": 940
+        },
+        {
+          "path": "jsonschema/benchmarks/useless_applicator_schemas.py",
+          "sha256": "1159b9f84b4e105a0b3ff56dda3e12ac2c25c74e4d84fa8db9943a2c830fd437",
+          "bytes": 3342
+        },
+        {
+          "path": "jsonschema/benchmarks/useless_keywords.py",
+          "sha256": "6e3ff32abd6855cb4596ac9968e6c2b184e01638a23603f30b486bd58f3af261",
+          "bytes": 867
+        },
+        {
+          "path": "jsonschema/benchmarks/validator_creation.py",
+          "sha256": "52451094b027bacb27aff29d08875a77ac71da95f140b998b6c5e88a2aca7964",
+          "bytes": 285
+        },
+        {
+          "path": "jsonschema/cli.py",
+          "sha256": "6aff743ada52c6e8a4a37140c841edc6923e352b97dd632da10a48c74f686c96",
+          "bytes": 8445
+        },
+        {
+          "path": "jsonschema/exceptions.py",
+          "sha256": "6f8da150339f3c5729ac8e1994da630de2cabfc93dbce86059cb768f20e5c739",
+          "bytes": 15256
+        },
+        {
+          "path": "jsonschema/protocols.py",
+          "sha256": "960cabc951ea1628d2151033f79721dd5376173fa84c5ca18fd39b732e4ffc22",
+          "bytes": 7198
+        },
+        {
+          "path": "jsonschema/tests/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "jsonschema/tests/_suite.py",
+          "sha256": "da4d17f7537b74e1e141ce66ad8bf8d0e29fd707a2a23e91301a9680b4faf8f2",
+          "bytes": 8374
+        },
+        {
+          "path": "jsonschema/tests/fuzz_validate.py",
+          "sha256": "7d403bc932488a1682c09a659147a165ec81f381dc5c472ab58e683c95c83bb2",
+          "bytes": 1114
+        },
+        {
+          "path": "jsonschema/tests/test_cli.py",
+          "sha256": "03cf6be4b387cbea5e2cf640e580e439a3135aacd03bfc364eef16173fefa613",
+          "bytes": 28544
+        },
+        {
+          "path": "jsonschema/tests/test_deprecations.py",
+          "sha256": "c86ea6911247a531db5a8c692c2e72e47edf93c7ab18eb3c7fff55e2d081121f",
+          "bytes": 15754
+        },
+        {
+          "path": "jsonschema/tests/test_exceptions.py",
+          "sha256": "aec12a763927533ddd13225bebf0e232874f1d7b094c45b30ebc54b1c83c1b9a",
+          "bytes": 24301
+        },
+        {
+          "path": "jsonschema/tests/test_format.py",
+          "sha256": "7959b948c69617694e3cedbc6cf03036f92242f1c240acbe327b808047217c47",
+          "bytes": 3188
+        },
+        {
+          "path": "jsonschema/tests/test_jsonschema_test_suite.py",
+          "sha256": "b407f192733ae4e47d2f20cf1eed699046a899b2e08d12e727a14f8963ddc638",
+          "bytes": 8461
+        },
+        {
+          "path": "jsonschema/tests/test_types.py",
+          "sha256": "705e752930e676cc74e8cac87387d72add17f5f22c560c39ba14fc09a9956bc5",
+          "bytes": 6977
+        },
+        {
+          "path": "jsonschema/tests/test_utils.py",
+          "sha256": "b1aa3be28d4fc9833105fab07a8910378f021524baca1264e459027cc2793ec2",
+          "bytes": 4163
+        },
+        {
+          "path": "jsonschema/tests/test_validators.py",
+          "sha256": "bb397e6a0c8ba193d3b9fa2e2074b114f7cf62b7487633708c7703ff93725381",
+          "bytes": 87949
+        },
+        {
+          "path": "jsonschema/tests/typing/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "jsonschema/tests/typing/test_all_concrete_validators_match_protocol.py",
+          "sha256": "2395d4979658512668dc03e4175d25f0c9df934f685caaaf5d6b6d186777b039",
+          "bytes": 1238
+        },
+        {
+          "path": "jsonschema/validators.py",
+          "sha256": "97f171b995b4b0ca05530a9366a1252fb1753f99f3cb7b1068b6d9aab1096fa5",
+          "bytes": 47159
+        }
+      ]
+    },
+    {
+      "distribution": "attrs",
+      "version": "26.1.0",
+      "files": [
+        {
+          "path": "attr/__init__.py",
+          "sha256": "7ce608bedd5e192a90adee2e092dec256299d26c00b82f140faa9b6b9392f7f5",
+          "bytes": 2057
+        },
+        {
+          "path": "attr/__init__.pyi",
+          "sha256": "a55188980515a2fab6fd3625febfc72189c697239aa02b84871a3e12fb279d27",
+          "bytes": 11325
+        },
+        {
+          "path": "attr/_cmp.py",
+          "sha256": "dcd9f54e3c659546225ff9c9a159c4917a0393484cd4360a8f90c4ec665ee22d",
+          "bytes": 4117
+        },
+        {
+          "path": "attr/_cmp.pyi",
+          "sha256": "53efd153f5193b23d4110cd713a44c61041c8e4651636e704c7f7db0dd2cecc3",
+          "bytes": 368
+        },
+        {
+          "path": "attr/_compat.py",
+          "sha256": "c7483b88450e9c15490bbdb3c850a06f578aab2c52fbb7f62c69cdc99febf79b",
+          "bytes": 2829
+        },
+        {
+          "path": "attr/_config.py",
+          "sha256": "746ab7c51e9f819105e9406dfcbd13f9e507201e22e37911987d0fdbcb09570f",
+          "bytes": 843
+        },
+        {
+          "path": "attr/_funcs.py",
+          "sha256": "231e481134dfcf9174d45fb5d8c17f0921689889f687c6faec4555cf6802b411",
+          "bytes": 16479
+        },
+        {
+          "path": "attr/_make.py",
+          "sha256": "1fb387d9e592e429c1ccb5233451355b299f3eb985d6bf1fbf644f76df4cb980",
+          "bytes": 106129
+        },
+        {
+          "path": "attr/_next_gen.py",
+          "sha256": "050b42525cf08368161d3617050beb118067cc152b0ef3b9eeed0fcba5023e17",
+          "bytes": 26274
+        },
+        {
+          "path": "attr/_typing_compat.pyi",
+          "sha256": "5c33f9e13527f992a10fad9339079b9b3af0172a268540a8191a5c95be9a9510",
+          "bytes": 469
+        },
+        {
+          "path": "attr/_version_info.py",
+          "sha256": "c3847e1580b734afe43241945899583f87150251fd1d1682fae9b77dc8d89073",
+          "bytes": 2222
+        },
+        {
+          "path": "attr/_version_info.pyi",
+          "sha256": "c7f3372f75ae07baff50b5c05a3c7de7db9d290e072c1f25fa1b1cd450c636f9",
+          "bytes": 209
+        },
+        {
+          "path": "attr/converters.py",
+          "sha256": "1a50de3b33de4c581e0412db8fd1b9ec4cf994093af2e85200b45827f7b17bce",
+          "bytes": 3861
+        },
+        {
+          "path": "attr/converters.pyi",
+          "sha256": "a2b5366df7fe56341ada4303caf9cc415ef7a094f6591c90bb0e19475ca6d5b1",
+          "bytes": 643
+        },
+        {
+          "path": "attr/exceptions.py",
+          "sha256": "6f8bcc6e7a10dd5a7059986aad88bfb2c5d508af28d9ce074124b4f5c49433da",
+          "bytes": 1990
+        },
+        {
+          "path": "attr/exceptions.pyi",
+          "sha256": "cd9abc6c2527280cbd983b41130e366613e1014207a1329e7434089c90fcf373",
+          "bytes": 539
+        },
+        {
+          "path": "attr/filters.py",
+          "sha256": "64188a58ba774742df099b2aed7d75a67f565fc36c952db05cce23b272ce19cf",
+          "bytes": 1795
+        },
+        {
+          "path": "attr/filters.pyi",
+          "sha256": "dc9e411be753c65b41935ffe46e351507aefdaabb5bfcbf868334043bfe689f0",
+          "bytes": 208
+        },
+        {
+          "path": "attr/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "attr/setters.py",
+          "sha256": "e7e75c4fadc640adf938d1334a07d70a46c1ee93e4691faabf5e669b83d54b34",
+          "bytes": 1617
+        },
+        {
+          "path": "attr/setters.pyi",
+          "sha256": "367564685535041e0907c13826e5f2af34d482fb4ca63f29df005d258eee8b1e",
+          "bytes": 584
+        },
+        {
+          "path": "attr/validators.py",
+          "sha256": "9b7411cd94c036be1fd82e1e55d528160d753605d66a4f166ade2a4131a1bdcb",
+          "bytes": 21553
+        },
+        {
+          "path": "attr/validators.pyi",
+          "sha256": "80cd59987681724c98588d848aba51373aa6dc1d7d730e48aba0782a7a3d6023",
+          "bytes": 4087
+        },
+        {
+          "path": "attrs-26.1.0.dist-info/INSTALLER",
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "bytes": 4
+        },
+        {
+          "path": "attrs-26.1.0.dist-info/METADATA",
+          "sha256": "4cd40e690f23bf37cbcad34efd6758e062df1df07c86833f7e3ce95bf1fa38cc",
+          "bytes": 8754
+        },
+        {
+          "path": "attrs-26.1.0.dist-info/RECORD",
+          "sha256": "40de9b239d81f3e4ff3b005e4749cda91549d56e10415ffce54a25c0c995df10",
+          "bytes": 3643
+        },
+        {
+          "path": "attrs-26.1.0.dist-info/REQUESTED",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "attrs-26.1.0.dist-info/WHEEL",
+          "sha256": "41c708c5adba6e097513ab8ccb9f1d7865a2fb469e22491a9e01dcc64da459fc",
+          "bytes": 87
+        },
+        {
+          "path": "attrs-26.1.0.dist-info/licenses/LICENSE",
+          "sha256": "882115c95dfc2af1eeb6714f8ec6d5cbcabf667caff8729f42420da63f714e9f",
+          "bytes": 1109
+        },
+        {
+          "path": "attrs/__init__.py",
+          "sha256": "47168064dc1888487e7dcbc72d936943f0d62a78bbdccfe3c443c47ed8aad597",
+          "bytes": 1183
+        },
+        {
+          "path": "attrs/__init__.pyi",
+          "sha256": "da057bf60f54c49a69192338f2101927a87f3076fbd1d66824bdf564d25e6582",
+          "bytes": 9416
+        },
+        {
+          "path": "attrs/converters.py",
+          "sha256": "f244258eb5707d24d1bbc20dc0493c488d1e1abce659fb6c4fbaccd04ab2a213",
+          "bytes": 76
+        },
+        {
+          "path": "attrs/exceptions.py",
+          "sha256": "0020829a0d7dfaf0c56833d8f6f165d7df523d709030dfdb10db380c02e3ce6b",
+          "bytes": 76
+        },
+        {
+          "path": "attrs/filters.py",
+          "sha256": "54e50c66e83db8453a754b80d1d1758c89d42b43cbddf2e03f45414b977e0831",
+          "bytes": 73
+        },
+        {
+          "path": "attrs/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "attrs/setters.py",
+          "sha256": "78bd5889d6105774f687dfd2608652651d4501c1c66f54ee093cb41342efd925",
+          "bytes": 73
+        },
+        {
+          "path": "attrs/validators.py",
+          "sha256": "c5ccbac03e53b5391d086d5fe1759ba1c3d23b47da06393921f5497cfe92523d",
+          "bytes": 76
+        }
+      ]
+    },
+    {
+      "distribution": "jsonschema-specifications",
+      "version": "2025.9.1",
+      "files": [
+        {
+          "path": "jsonschema_specifications-2025.9.1.dist-info/INSTALLER",
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "bytes": 4
+        },
+        {
+          "path": "jsonschema_specifications-2025.9.1.dist-info/METADATA",
+          "sha256": "35abd41757f32b4ea24756920ded47b70173d77cbc052a5a6d3ab583b2e8d89d",
+          "bytes": 2907
+        },
+        {
+          "path": "jsonschema_specifications-2025.9.1.dist-info/RECORD",
+          "sha256": "53d0b453d30e5a6f728fbbed975d58b4e25f143383775f47eed068d30c321314",
+          "bytes": 3765
+        },
+        {
+          "path": "jsonschema_specifications-2025.9.1.dist-info/REQUESTED",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "jsonschema_specifications-2025.9.1.dist-info/WHEEL",
+          "sha256": "aad0b0a12256807936d52d4a6f88a1773236ae527564a688bab4e3fe780e8724",
+          "bytes": 87
+        },
+        {
+          "path": "jsonschema_specifications-2025.9.1.dist-info/licenses/COPYING",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+          "bytes": 1057
+        },
+        {
+          "path": "jsonschema_specifications/__init__.py",
+          "sha256": "aa84c1d83298eeabcdac684c3c7ea0b6600944b8a599543e7c56704faaf2ab0d",
+          "bytes": 386
+        },
+        {
+          "path": "jsonschema_specifications/_core.py",
+          "sha256": "b4585cd42325789dc024e2bf6e3c4ea4541376bb140a51467c5c4f054fc279b3",
+          "bytes": 1140
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft201909/metaschema.json",
+          "sha256": "7b761b3e121f0a0ca1ea2a0b8e2cc856bcf801604b8268d71bacaa202bc0c13b",
+          "bytes": 1785
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft201909/vocabularies/applicator",
+          "sha256": "6895100e99726fbb107058512bbec3ecfd4b24e8fd2facee3e505ee72b0d4c31",
+          "bytes": 1860
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft201909/vocabularies/content",
+          "sha256": "9b7d4f55a4e2fdb02c430068fdffabc732addce238da3f1df2690249c3353274",
+          "bytes": 517
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft201909/vocabularies/core",
+          "sha256": "b5a2c4957f6495d0a5081f0409ebe8a14e4139acb203fc748471f8ede2af5b2c",
+          "bytes": 1531
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft201909/vocabularies/format",
+          "sha256": "50ebbfe790611a849b8cc400a09c1d0e0fb6ab5c0d43a0f22201fd3625056bf4",
+          "bytes": 403
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft201909/vocabularies/meta-data",
+          "sha256": "d47e2445dd6a82271a298d83cc6c6cb8d4ae1e15e0dc56becd37a163ecf01286",
+          "bytes": 892
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft201909/vocabularies/validation",
+          "sha256": "1e526c1d335a734805fc82cf5798c12b960ad7da2517c66cda5a1b09359c3c1c",
+          "bytes": 2834
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/metaschema.json",
+          "sha256": "41da76f5afb7ce062d248f762463a92f7ca47e4e0f905b224ba6afeef91ded0f",
+          "bytes": 2452
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/vocabularies/applicator",
+          "sha256": "c4a6e4147b91fef7fea6dc058cb1bf93402f7414b76578a8b16aaf1dad6aacef",
+          "bytes": 1659
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/vocabularies/content",
+          "sha256": "08343747764e4a5814262793cf4d652057a7913863c5950d43297e8e1fdac5b6",
+          "bytes": 519
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/vocabularies/core",
+          "sha256": "c2d12a8e4dd11d336dfc83a3f663aa4c69f0b49b3beb094ffeb25b5316f4803d",
+          "bytes": 1564
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/vocabularies/format-annotation",
+          "sha256": "abc775adfefd89d22358170d9bf93f4ebd2349563bbbedd60f02bef7c812bcc0",
+          "bytes": 448
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/vocabularies/format-assertion",
+          "sha256": "c52242b9a1bb786b26c3e82c7add428c31f9c96e575dce99e56ea5feaa6da20c",
+          "bytes": 445
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/vocabularies/meta-data",
+          "sha256": "8f76d6e14f41b9b92ef933b708cdc5144c8b5268651ad11918485fb1754f1c76",
+          "bytes": 892
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/vocabularies/unevaluated",
+          "sha256": "2dbfbcb73994b670b0976492adee1fffb46c21682784d2f5a4ca561f9e2d0cb4",
+          "bytes": 506
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft202012/vocabularies/validation",
+          "sha256": "7010a31e541f32d2be721e2de348df75c9b36876a3ed304877fc0abda1d37a58",
+          "bytes": 2834
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft3/metaschema.json",
+          "sha256": "2cf75f64436fb5be374a2eaa27ab8b7e1fd651c9b46daea6c67b02fd64e2458b",
+          "bytes": 2600
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft4/metaschema.json",
+          "sha256": "e1489d0b4755f02793302591d3fcb8f07b6893a82a94f24895f8e4edf11b82e2",
+          "bytes": 4357
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft6/metaschema.json",
+          "sha256": "c29dfce9f54835c3a06c03b3c5d5ec0eda77706568f9c4df7cfbc7566a51006d",
+          "bytes": 4437
+        },
+        {
+          "path": "jsonschema_specifications/schemas/draft7/metaschema.json",
+          "sha256": "3d5392088261606c559b603f385329c9f1ab45b5d667eb990687453b055d405e",
+          "bytes": 4819
+        },
+        {
+          "path": "jsonschema_specifications/tests/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "jsonschema_specifications/tests/test_jsonschema_specifications.py",
+          "sha256": "5a46d8456e80e85a19d2b8af4a17ea54b482b00887276c7c4f1a840894d73d36",
+          "bytes": 1106
+        }
+      ]
+    },
+    {
+      "distribution": "referencing",
+      "version": "0.37.0",
+      "files": [
+        {
+          "path": "referencing-0.37.0.dist-info/INSTALLER",
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "bytes": 4
+        },
+        {
+          "path": "referencing-0.37.0.dist-info/METADATA",
+          "sha256": "c93b00e6ab1524fd60848376604c189a114374776475c25a31d57be47b29de6a",
+          "bytes": 2845
+        },
+        {
+          "path": "referencing-0.37.0.dist-info/RECORD",
+          "sha256": "04809580a3978099fe22d6316e0964d4ac3d2d8dd78333b3f72c780eb4211b0a",
+          "bytes": 2532
+        },
+        {
+          "path": "referencing-0.37.0.dist-info/REQUESTED",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "referencing-0.37.0.dist-info/WHEEL",
+          "sha256": "aad0b0a12256807936d52d4a6f88a1773236ae527564a688bab4e3fe780e8724",
+          "bytes": 87
+        },
+        {
+          "path": "referencing-0.37.0.dist-info/licenses/COPYING",
+          "sha256": "42dcd63495f87b4eb7c7757afa379bb55a53f94afd7a5f657d9adf57236e515c",
+          "bytes": 1057
+        },
+        {
+          "path": "referencing/__init__.py",
+          "sha256": "e4864a5da007fc55b20894646939f55dca6d2df83d72f78b6fdbb99d853124ab",
+          "bytes": 207
+        },
+        {
+          "path": "referencing/_attrs.py",
+          "sha256": "6e04fe28c84354b786b56c4cfd218a61e2da6411734f691454574090e7178bc8",
+          "bytes": 791
+        },
+        {
+          "path": "referencing/_attrs.pyi",
+          "sha256": "836c17f9a2c4a9002f594facd2a20dd8e30602a8ce03447bd91fee49f7cef3f3",
+          "bytes": 573
+        },
+        {
+          "path": "referencing/_core.py",
+          "sha256": "d923c67da4efcc0dec46a6e3ff8476c02fbe7e25e8942515a4b14b249eb3759f",
+          "bytes": 24732
+        },
+        {
+          "path": "referencing/exceptions.py",
+          "sha256": "cc581a120e9688a793e7c310b8a36c8060e71ecce9dba738a11782eac17d8073",
+          "bytes": 4176
+        },
+        {
+          "path": "referencing/jsonschema.py",
+          "sha256": "8d767ab7ac7da13bd31cc202d2d4726858d6e6bdaa78739b62ebbb52149f2b74",
+          "bytes": 18615
+        },
+        {
+          "path": "referencing/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "referencing/retrieval.py",
+          "sha256": "727f4478075a6936e7303742e094488621295c38df95174708e2c5af0d5984b0",
+          "bytes": 2729
+        },
+        {
+          "path": "referencing/tests/__init__.py",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "referencing/tests/test_core.py",
+          "sha256": "79aa74080688db7be33086d5c848fddaa2dd769de21c7dc0c42e7908a50de0b5",
+          "bytes": 37854
+        },
+        {
+          "path": "referencing/tests/test_exceptions.py",
+          "sha256": "ede39d1f2a1b5ccb7bfa1e409e71fbbbc8b0dae1cf687ed4e01b3d2612e08d6a",
+          "bytes": 934
+        },
+        {
+          "path": "referencing/tests/test_jsonschema.py",
+          "sha256": "e109e35163803009f9c9e03c66d95d264848e78bf02962560742c3ccd771e717",
+          "bytes": 11687
+        },
+        {
+          "path": "referencing/tests/test_referencing_suite.py",
+          "sha256": "c03eaf78c7cbb14bb4b3830b8e6ee94bc720e1c21f2fb14c044367824ef7cc22",
+          "bytes": 2335
+        },
+        {
+          "path": "referencing/tests/test_retrieval.py",
+          "sha256": "bdc6e77c0e13a957aa5335b4ef7c0efa72dea9522fd2b41958d5afd33f649b8f",
+          "bytes": 3719
+        },
+        {
+          "path": "referencing/typing.py",
+          "sha256": "5a351b9d9ea33c0777d5c9c214069e588544373c87b47749c8e95e96fd4663bd",
+          "bytes": 1445
+        }
+      ]
+    },
+    {
+      "distribution": "rpds-py",
+      "version": "2026.5.1",
+      "files": [
+        {
+          "path": "rpds/__init__.py",
+          "sha256": "c373205d6ee5a530880b0d0a5dbc36d105f9ef7fe46ec12758878cb0202e82f3",
+          "bytes": 99
+        },
+        {
+          "path": "rpds/__init__.pyi",
+          "sha256": "6a6ef1ea831afe9bbf92fd4d96896a25b3ebebf52f0afa32c462ab0c648c2849",
+          "bytes": 2602
+        },
+        {
+          "path": "rpds/py.typed",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "rpds/rpds.cpython-313-x86_64-linux-gnu.so",
+          "sha256": "468c739430353307b503963292eaf7ddda3b3c7bcf063db9f2f397bbf7287661",
+          "bytes": 993000
+        },
+        {
+          "path": "rpds_py-2026.5.1.dist-info/INSTALLER",
+          "sha256": "ceebae7b8927a3227e5303cf5e0f1f7b34bb542ad7250ac03fbcde36ec2f1508",
+          "bytes": 4
+        },
+        {
+          "path": "rpds_py-2026.5.1.dist-info/METADATA",
+          "sha256": "1bc561b7215de8649cb5ecde1885d9d448b27f5341245844c33b4a0e38313be5",
+          "bytes": 4147
+        },
+        {
+          "path": "rpds_py-2026.5.1.dist-info/RECORD",
+          "sha256": "cf289ce74568aee233cd4ff1e3bfa0a517dc1475f7870f5d971daa3f1930246f",
+          "bytes": 977
+        },
+        {
+          "path": "rpds_py-2026.5.1.dist-info/REQUESTED",
+          "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "bytes": 0
+        },
+        {
+          "path": "rpds_py-2026.5.1.dist-info/WHEEL",
+          "sha256": "4ad2ba24a957e93b0d93f476434169b042fe17d395e36b6c528dfa358db43bac",
+          "bytes": 147
+        },
+        {
+          "path": "rpds_py-2026.5.1.dist-info/licenses/LICENSE",
+          "sha256": "314e4e91be3baa93c0fb4bccc9e4e97cd643eb839b065af921782c2175fe9909",
+          "bytes": 1057
+        },
+        {
+          "path": "rpds_py-2026.5.1.dist-info/sboms/rpds-py.cyclonedx.json",
+          "sha256": "a08cb415b8a0ae5f93a3712f7289be6a3853719965e6fb405d64ddbf0201900d",
+          "bytes": 21652
+        }
+      ]
+    }
+  ],
+  "authority_effect": "NONE"
+}

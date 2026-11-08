@@ -1,0 +1,26 @@
+tests_v02/test_batch_b.py: 13
+tests_v02/test_batch_c.py: 14
+tests_v02/test_batch_d_assurance.py: 73
+tests_v02/test_batch_d_composition.py: 13
+tests_v02/test_batch_d_federation.py: 31
+tests_v02/test_batch_d_packaging.py: 4
+tests_v02/test_batch_d_storage_abi.py: 34
+tests_v02/test_batch_e_hardening.py: 122
+tests_v02/test_batch_e_integration.py: 88
+tests_v02/test_batch_e_interop.py: 55
+tests_v02/test_batch_e_lineage.py: 12
+tests_v02/test_batch_e_schemas.py: 90
+tests_v02/test_batch_f_binding.py: 11
+tests_v02/test_batch_f_interfaces.py: 67
+tests_v02/test_batch_f_lifecycle.py: 74
+tests_v02/test_batch_f_vault.py: 43
+tests_v02/test_batch_g_binding.py: 8
+tests_v02/test_batch_g_interfaces.py: 54
+tests_v02/test_batch_g_simulation.py: 82
+tests_v02/test_batch_g_vault.py: 2
+tests_v02/test_batch_g_views.py: 68
+tests_v02/test_batch_h_conformance.py: 66
+tests_v02/test_batch_h_release.py: 32
+tests_v02/test_review_binding.py: 12
+tests_v02/test_review_rc2.py: 105
+

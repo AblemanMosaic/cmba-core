@@ -1,0 +1,111 @@
+{
+  "archive_sha256": "c3d10a4fb42c85f01cab909b627f986fdac2198a9af6a372871d537c5ff10ee3",
+  "authority_effect": "NONE",
+  "conformance": {
+    "BASE-CONFORMANCE": {
+      "cases": 47,
+      "comparison": "EXACT_CANONICAL_RESPONSE_BYTES",
+      "corpus_sha256": "da3bce486902670c53f7f49b526438c83af137259583119d7cff7d0fa216c153",
+      "status": "PASS"
+    },
+    "DS-CONFORMANCE": {
+      "cases": 28,
+      "comparison": "EXACT_CANONICAL_RESPONSE_BYTES",
+      "corpus_sha256": "d6cd343d74b89abb553f12c231632f292ec0b45bb52eb262537e352e9de35d3c",
+      "status": "PASS"
+    },
+    "LC-CONFORMANCE": {
+      "cases": 24,
+      "comparison": "EXACT_CANONICAL_RESPONSE_BYTES",
+      "corpus_sha256": "fdeb624477d0d7cd18f06be894457be6fb80d282747254485b2e61f5c2533d6a",
+      "status": "PASS"
+    }
+  },
+  "evidence_archive": {
+    "path": "DKN-BATCH-H-CLEAN-REPLAY-EVIDENCE.zip",
+    "sha256": "60febde68719a6dbb8eaa799d2d1a62eef768d6e127c446259cf7b2c883c2847"
+  },
+  "g0": "CLOSED",
+  "independent_review": "NOT_PERFORMED",
+  "installed_wheel": {
+    "dependencies": "COPIED_PREINSTALLED_DISTRIBUTIONS_NOT_FRESH_DOWNLOAD",
+    "payload_files_compared": 43,
+    "pip_check": "PASS",
+    "probe_layers": 3,
+    "status": "PASS_OUTSIDE_SOURCE_TREE"
+  },
+  "models": {
+    "BASE-MODEL": {
+      "executed_test_binding": "CHECKED",
+      "obligations": 16,
+      "semantic_digest": "0fbd636ce484dd37e4afc4083f5207d86143ec1de0ee031ce76d1e67137497fb",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "DS-MODEL": {
+      "executed_test_binding": "CHECKED",
+      "obligations": 14,
+      "semantic_digest": "5efb09f47bf1dc3fb6e674ad4a74192682a4f2df434df2123c49f86e529ce391",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "LC-MODEL": {
+      "executed_test_binding": "CHECKED",
+      "obligations": 12,
+      "semantic_digest": "cdb44fd68c6e60d5317b889a123837c413aa629c0c77a121c17133b055a63e19",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    }
+  },
+  "public_release_gate": "NOT_CLEARED",
+  "publication": "NOT_PERFORMED",
+  "real_a5": false,
+  "reproducibility": {
+    "source_zip_byte_identical": true,
+    "wheel_byte_identical": true
+  },
+  "runtime_environment": {
+    "dependencies": {
+      "blake3": "NOT_INSTALLED",
+      "cryptography": "46.0.4",
+      "jsonschema": "4.26.0",
+      "pytest": "9.0.2",
+      "setuptools": "82.0.1"
+    },
+    "machine": "x86_64",
+    "node": "v22.16.0",
+    "prefix": "/opt/pyvenv",
+    "pytest_plugin_autoload": "DISABLED",
+    "python": "3.13.5",
+    "python_executable": "/opt/pyvenv/bin/python",
+    "release": "6.18.57",
+    "sqlite": "3.46.1",
+    "system": "Linux"
+  },
+  "schema": "dkn.batch-h-clean-replay.v0.2-rc5",
+  "source_fingerprint": "bc8dd48db155b863a1f5b7579697b9b3df81fec8693716ab15aaf8b6c3cf9870",
+  "stages": [
+    {
+      "exit_code": 0,
+      "phase": "tests"
+    },
+    {
+      "exit_code": 0,
+      "phase": "examples"
+    },
+    {
+      "exit_code": 0,
+      "phase": "audit"
+    },
+    {
+      "exit_code": 0,
+      "phase": "assemble"
+    }
+  ],
+  "status": "PASS_SCOPED_LOCAL_ENGINEERING",
+  "tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 1173,
+    "skipped": 0
+  },
+  "wheel_sha256": "6cc2d9e21c1c26b9b9104bb84a27b8e873f17c7e52bed15228230775e005ccf8",
+  "workflows_passed": 7
+}

@@ -1,0 +1,126 @@
+{
+  "$defs": {
+    "record-graph": {
+      "additionalProperties": false,
+      "properties": {
+        "nodes": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              },
+              "text": {
+                "type": "string"
+              }
+            },
+            "required": [
+              "id",
+              "text",
+              "sha256"
+            ],
+            "type": "object"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array"
+        },
+        "outputs": {
+          "items": {
+            "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+            "type": "string"
+          },
+          "maxItems": 64,
+          "minItems": 1,
+          "type": "array"
+        },
+        "steps": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "id": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "inputs": {
+                "items": {
+                  "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                  "type": "string"
+                },
+                "maxItems": 16,
+                "minItems": 1,
+                "type": "array"
+              },
+              "output": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "rule": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                    "type": "string"
+                  },
+                  "version": {
+                    "maximum": 9223372036854775807,
+                    "minimum": 0,
+                    "type": "integer"
+                  }
+                },
+                "required": [
+                  "id",
+                  "version"
+                ],
+                "type": "object"
+              },
+              "toolchain": {
+                "additionalProperties": false,
+                "properties": {
+                  "id": {
+                    "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                    "type": "string"
+                  },
+                  "implementation_sha256": {
+                    "pattern": "^[0-9a-f]{64}$",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "id",
+                  "implementation_sha256"
+                ],
+                "type": "object"
+              }
+            },
+            "required": [
+              "id",
+              "inputs",
+              "output",
+              "rule",
+              "toolchain"
+            ],
+            "type": "object"
+          },
+          "maxItems": 32,
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "nodes",
+        "steps",
+        "outputs"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-graph",
+  "$ref": "#/$defs/record-graph",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

@@ -1,0 +1,59 @@
+{
+  "$defs": {
+    "endorsement-policy": {
+      "additionalProperties": false,
+      "properties": {
+        "requirements": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "action": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "id": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "jurisdiction": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "role": {
+                "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+                "type": "string"
+              },
+              "threshold": {
+                "maximum": 64,
+                "minimum": 1,
+                "type": "integer"
+              }
+            },
+            "required": [
+              "id",
+              "role",
+              "jurisdiction",
+              "action",
+              "threshold"
+            ],
+            "type": "object"
+          },
+          "maxItems": 16,
+          "minItems": 1,
+          "type": "array"
+        },
+        "schema": {
+          "const": "cmba.endorsement-policy.j1"
+        }
+      },
+      "required": [
+        "schema",
+        "requirements"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:endorsement-policy",
+  "$ref": "#/$defs/endorsement-policy",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

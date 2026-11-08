@@ -1,0 +1,22 @@
+[
+  {
+    "case": "stage-authority",
+    "refused": true,
+    "error": "AUDIT_STAGE_CLAIM"
+  },
+  {
+    "case": "stage-schema",
+    "refused": true,
+    "error": "AUDIT_STAGE_SCHEMA"
+  },
+  {
+    "case": "duplicate-stage-field",
+    "refused": true,
+    "error": "AUDIT_RECORD_DUPLICATE_FIELD"
+  },
+  {
+    "case": "extra-native-conftest",
+    "refused": true,
+    "error": "AUDIT_NATIVE_TREE_CLOSURE:{\"extra\": [\"conftest.py\"], \"missing\": []}"
+  }
+]

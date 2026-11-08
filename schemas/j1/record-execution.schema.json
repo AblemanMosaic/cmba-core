@@ -1,0 +1,87 @@
+{
+  "$defs": {
+    "execution-request": {
+      "additionalProperties": false,
+      "properties": {
+        "artifact": {
+          "$ref": "#/$defs/reference"
+        },
+        "configuration": {},
+        "operation": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "target": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "artifact",
+        "configuration",
+        "target",
+        "operation"
+      ],
+      "type": "object"
+    },
+    "record-execution": {
+      "additionalProperties": false,
+      "properties": {
+        "jurisdiction": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        },
+        "observed": {
+          "$ref": "#/$defs/execution-request"
+        },
+        "request": {
+          "$ref": "#/$defs/execution-request"
+        },
+        "result": {
+          "$ref": "#/$defs/reference"
+        },
+        "result_hex": {
+          "maxLength": 131072,
+          "pattern": "^(?:[0-9a-f]{2})*$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "request",
+        "observed",
+        "result_hex",
+        "result",
+        "jurisdiction"
+      ],
+      "type": "object"
+    },
+    "reference": {
+      "additionalProperties": false,
+      "properties": {
+        "algorithm": {
+          "enum": [
+            "SHA-256",
+            "BLAKE3-256"
+          ]
+        },
+        "digest_hex": {
+          "pattern": "^[0-9a-f]{64}$",
+          "type": "string"
+        },
+        "scheme": {
+          "pattern": "^[a-z][a-z0-9._:/-]{0,191}$",
+          "type": "string"
+        }
+      },
+      "required": [
+        "scheme",
+        "algorithm",
+        "digest_hex"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:cmba:j1:record-execution",
+  "$ref": "#/$defs/record-execution",
+  "$schema": "https://json-schema.org/draft/2020-12/schema"
+}

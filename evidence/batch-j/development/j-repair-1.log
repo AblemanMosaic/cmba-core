@@ -1,0 +1,95 @@
+........................................................................ [ 30%]
+........................................................................ [ 61%]
+........................................................................ [ 91%]
+...............F...                                                      [100%]
+=================================== FAILURES ===================================
+____________________ test_real_native_vault_and_index_read _____________________
+
+path = PosixPath('/tmp/pytest-of-root/pytest-2/test_real_native_vault_and_ind0/index')
+operation = 'discover', arguments = {'semantic_name': None}
+
+    def read_collection(path, operation, arguments, *, kind):
+        """Host-selected existing storage only. Trusted local filesystem/custody assumed."""
+        require(kind in ('index','vault'),'CMBA_J_NATIVE_COLLECTION')
+        require(type(operation) is str,'CMBA_J_NATIVE_OPERATION');canonical(arguments)
+        allowed={'resolve_exact':{'logical_root'},'discover':{'semantic_name'},
+                 'traverse':{'logical_root','direction','max_depth','max_nodes','max_edges'},
+                 'compare_namespace':{'namespace_root'}}
+        if kind=='vault':
+            allowed.pop('compare_namespace')
+            allowed['traverse']={'logical_root','direction','max_depth','max_nodes'}
+            allowed['read_namespace']={'namespace_root'}
+        require(operation in allowed,'CMBA_J_NATIVE_OPERATION');exact(arguments,allowed[operation])
+        native=load_native()
+        try:
+            instance=(_module('vault').TransactionalVault(path) if kind=='vault' else _module('navigation').LocalIndex(path))
+>           result=getattr(instance,operation)(**arguments)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+src/cmba_core/j1/native.py:58: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+../cmba_j_dkn/src/dkn_v02/navigation.py:244: in discover
+    check(any(x is not None for x in (semantic_name,namespace_root,signer_public_key_hex)),
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+value = False, code = 'DKN_V02_NAV_QUERY_REQUIRED'
+
+    def check(value: bool, code: str):
+>       if not value: raise Refusal(code)
+                      ^^^^^^^^^^^^^^^^^^^
+E       dkn_v02.core.Refusal: DKN_V02_NAV_QUERY_REQUIRED
+
+../cmba_j_dkn/src/dkn_v02/core.py:40: Refusal
+
+The above exception was the direct cause of the following exception:
+
+tmp_path = PosixPath('/tmp/pytest-of-root/pytest-2/test_real_native_vault_and_ind0')
+
+    def test_real_native_vault_and_index_read(tmp_path):
+        from dkn_v02 import pack
+        from dkn_v02.navigation import LocalIndex
+        from dkn_v02.vault import TransactionalVault
+        raw,m=pack({'a.txt':b'hello'},[]);root=m['logical_root']
+        vault=TransactionalVault.create(tmp_path/'vault.db');vault.put_artifact(raw)
+        original=(tmp_path/'vault.db').read_bytes()
+        r=read_collection(tmp_path/'vault.db','resolve_exact',{'logical_root':root},kind='vault')
+        assert r['native_result']['result']['logical_root']==root
+        assert (tmp_path/'vault.db').read_bytes()==original
+        r=read_collection(tmp_path/'vault.db','traverse',{'logical_root':root,'direction':'outgoing','max_depth':2,'max_nodes':8},kind='vault')
+        assert r['authority_effect']=='NONE'
+        index=LocalIndex(tmp_path/'index');index.add(raw)
+        r=read_collection(tmp_path/'index','resolve_exact',{'logical_root':root},kind='index')
+        assert r['native_result']['logical_root']==root
+>       r=read_collection(tmp_path/'index','discover',{'semantic_name':None},kind='index')
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_j_interfaces.py:83: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+path = PosixPath('/tmp/pytest-of-root/pytest-2/test_real_native_vault_and_ind0/index')
+operation = 'discover', arguments = {'semantic_name': None}
+
+    def read_collection(path, operation, arguments, *, kind):
+        """Host-selected existing storage only. Trusted local filesystem/custody assumed."""
+        require(kind in ('index','vault'),'CMBA_J_NATIVE_COLLECTION')
+        require(type(operation) is str,'CMBA_J_NATIVE_OPERATION');canonical(arguments)
+        allowed={'resolve_exact':{'logical_root'},'discover':{'semantic_name'},
+                 'traverse':{'logical_root','direction','max_depth','max_nodes','max_edges'},
+                 'compare_namespace':{'namespace_root'}}
+        if kind=='vault':
+            allowed.pop('compare_namespace')
+            allowed['traverse']={'logical_root','direction','max_depth','max_nodes'}
+            allowed['read_namespace']={'namespace_root'}
+        require(operation in allowed,'CMBA_J_NATIVE_OPERATION');exact(arguments,allowed[operation])
+        native=load_native()
+        try:
+            instance=(_module('vault').TransactionalVault(path) if kind=='vault' else _module('navigation').LocalIndex(path))
+            result=getattr(instance,operation)(**arguments)
+>       except native.Refusal as e:raise Refusal('CMBA_J_NATIVE_REFUSED:'+e.code) from e
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+E       cmba_core.errors.Refusal: CMBA_J_NATIVE_REFUSED:DKN_V02_NAV_QUERY_REQUIRED
+
+src/cmba_core/j1/native.py:59: Refusal
+=========================== short test summary info ============================
+FAILED tests/test_j_interfaces.py::test_real_native_vault_and_index_read - cmba_core.errors.Refusal: CMBA_J_NATIVE_REFUSED:DKN_V02_NAV_QUERY_REQUIRED
+1 failed, 234 passed in 7.18s

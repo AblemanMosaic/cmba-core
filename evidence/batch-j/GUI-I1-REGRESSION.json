@@ -1,0 +1,9 @@
+{
+  "status": "PASS",
+  "checks": 8,
+  "display": "Xvfb Linux",
+  "tk": "8.6.16",
+  "scope": "creation,render,explicit-context gate,positive/negative evaluation,replay,session,catalogue",
+  "native_windows": "NOT_RUN",
+  "authority_effect": "NONE"
+}

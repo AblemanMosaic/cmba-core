@@ -1,0 +1,59 @@
+{
+  "authority_effect": "NONE",
+  "blake3_installed": false,
+  "conformance_included_in_test_count": true,
+  "distribution": "0.1.0a3",
+  "fresh_optional_dependency_resolution": "NOT_ESTABLISHED",
+  "gui_check_count": 48,
+  "historical_intermediates": "local-final*, native-k and initial probe logs are retained but not current passes",
+  "independent_review": "NOT_PERFORMED",
+  "inherited_cmba_tests": 561,
+  "local_effects": "TEST_OPERATOR_APPROVED_TEMPORARY_CREATE_ONLY_FILES",
+  "models": {
+    "I1": {
+      "authority_effect": "NONE",
+      "bound_files": 172,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 18,
+      "reference_files": 17,
+      "semantic_commitment": "2f7ae78f19f7c06e85b176a9f2e1eb83383b41edb158e61c4fb16b653ca34e32",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "J1": {
+      "authority_effect": "NONE",
+      "bound_files": 172,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 28,
+      "semantic_commitment": "8734691fb74b3697a09c4eb67b57860fb3c95b2050a0185cd1c651db64dc97a8",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    },
+    "K1": {
+      "authority_effect": "NONE",
+      "bound_files": 172,
+      "claim_ceiling": "TRACEABILITY_NOT_PROGRAM_EQUIVALENCE",
+      "executed_test_binding": "CHECKED",
+      "external_anchor": "NOT_PROVIDED",
+      "obligations": 26,
+      "semantic_commitment": "d248731d2654095abd1de21f0d7bcb09fc146f603c44dc16c9bbd5e1e9936431",
+      "status": "PASS_REFERENCE_INTEGRITY"
+    }
+  },
+  "native_dkn": 1173,
+  "new_tests": 198,
+  "profile": "WB-K1",
+  "public_release_gate": "NOT_CLEARED",
+  "schema": "cmba.k-local-evidence-summary",
+  "source_bound_final_leg": "final/LOCAL-RUN.json",
+  "source_fingerprint": "94004ff09eaede6711a6aa23ba585341acca8bc8050b2ee290f21c20b9f12884",
+  "tests": {
+    "errors": 0,
+    "failed": 0,
+    "passed": 759,
+    "skipped": 0
+  },
+  "workflows": 6
+}
